@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg xmlns="http://www.w3.org/2000/svg" version="1.0" id="seven-segment-abcefg">
+<style type="text/css" id="style">
+polygon {fill-opacity: 0.75; fill-rule: evenodd; stroke: white; stroke-width: 0.25; stroke-opacity: 1.0; stroke-linecap: butt; stroke-linejoin: miter; }
+</style>
+<g id="abcefg" transform="scale(16) translate(1, 1)">
+	<desc>Seven-segment (LED) display, segments abcefg lit.</desc>
+	<polygon id="a" points=" 1, 1  2, 0  8, 0  9, 1  8, 2  2, 2" fill="#EEE" />
+	<polygon id="b" points=" 9, 1 10, 2 10, 8  9, 9  8, 8  8, 2" fill="#EEE"/>
+	<polygon id="c" points=" 9, 9 10,10 10,16  9,17  8,16  8,10" fill="#EEE"/>
+	<polygon id="d" points=" 9,17  8,18  2,18  1,17  2,16  8,16" fill="#EEE"  />
+	<polygon id="e" points=" 1,17  0,16  0,10  1, 9  2,10  2,16" fill="#EEE"/>
+	<polygon id="f" points=" 1, 9  0, 8  0, 2  1, 1  2, 2  2, 8" fill="#EEE"/>
+	<polygon id="g" points=" 1, 9  2, 8  8, 8  9, 9  8,10  2,10" fill="#EEE"/>
+</g>
+<script type="text/ecmascript">
+  <![CDATA[
+    var queryString = function(qs)
+    {
+        if(!qs) var qs = location.search.slice(1);
+        var keyValPairs = qs.split('&');
+        var dict = {};
+        for(var key in keyValPairs)
+        {
+            var pair = keyValPairs[key].split('=');
+            dict[pair[0]] = pair[1];
+        }
+        return dict;
+    }
+    var q = queryString();
+    var charmap = {
+        'A':'abcefg',  'B':'abcdefg', 'C':'adef',    'D':'abcdef',  'E':'adefg',
+        'F':'aefg',    'G':'bcdef',   'H':'bcefg',   'I':'ef',      'J':'abcde',
+        'K':'abcdefg', 'L':'def',     'M':'abde',    'N':'abcef',   'O':'abcdef',
+        'P':'abcdefg', 'Q':'abcdefg', 'R':'abcdefg', 'S':'abcdefg', 'T':'abcdefg',
+        'U':'abcdefg', 'V':'abcdefg', 'W':'abcdefg', 'X':'abcdefg', 'Y':'abcdefg',
+        'Z':'abcdefg',
+        'a':'acdefg',  'b':'cdefg',   'c':'ceg',     'd':'bcdeg', 'e':'abdefg',  
+        'f':'aefg',    'g':'abcdfg',  'h':'cefg',    'i':'b',     'j':'bc',      
+        'k':'defg',    'l':'ef',      'm':'abde',    'n':'ceg',   'o':'cdeg',
+        'p':'abcdefg', 'q':'abcdefg', 'r':'abcdefg', 's':'acdfg', 't':'defg',
+        'u':'abcdefg', 'v':'abcdefg', 'w':'abcdefg', 'x':'abcdefg','y':'abcdefg',
+        'z':'abcdefg',
+        '0':'abcdef',  '1':'bc',      '2':'abdeg',   '3':'abcdg',   '4':'bcfg',    
+        '5':'acdfg',   '6':'acdefg',  '7':'abcf',    '8':'abcdefg', '9':'abcdfg', 
+        'seg_a':'a',   'seg_b':'b',   'seg_c':'c',   'seg_d':'d',   'seg_e':'e',
+        'seg_f':'f',   'seg_g':'g'
+    };
+    
+    var id = function(val){return document.getElementById(val)};
+    
+    var color = q['color'] ? q['color'] : "#F00";
+    if(q['char'])
+    {
+        var lights = charmap[q['char']];
+        for(var i in lights)
+        {
+            id(lights[i]).setAttributeNS(null,"fill",color);
+        }
+    }
+  ]]>
+</script>
+</svg>
