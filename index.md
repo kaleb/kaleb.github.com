@@ -1,6 +1,8 @@
 ---
+
 title: Root
 layout: default
+
 ---
 
 Kaleb Hornsby
