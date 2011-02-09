@@ -11,4 +11,6 @@ layout: default
 
 <em>Posted on {{ post.date | date_to_long_string }}.</em>
 
+{{ post.categories }}
+
 {% endfor %}
