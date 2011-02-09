@@ -1,6 +1,5 @@
 ---
 title: Root
-layout: default
 ---
 
 {% for post in site.posts limit:5 %}
