@@ -1,22 +1,16 @@
 ---
-
-title: Root
 layout: default
-
+title: Root
 ---
 
-Kaleb Hornsby
-=============
+{% for post in site.posts limit:5 %}
 
-hello
+# <a href="{{ post.url }}">{{ post.title }}</a>
 
-- one
-- two
-- three
+{{ post.content }}
 
-and
+<em>Posted on {{ post.date | date_to_long_string }}.</em>
 
- 1. one
- 2. two
- 3. three
+{{ post.categories }}
 
+{% endfor %}
