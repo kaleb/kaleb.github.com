@@ -17,7 +17,7 @@ Or you could go <a href="/">home</a>, and start from there.
 <script>
 var hostname = window.location.hostname,
     pathname = window.location.pathname;
-document.getElementById("google").href += hostname + " " + pathname;
+document.getElementById("google").href += hostname + pathname.split("/").join(" ");
 </script>
 </body>
 </html>
