@@ -6,8 +6,7 @@ title: Root
 {% for post in site.posts limit:5 %}
 <article>
 
-<a href="{{ post.url }}">{{ post.title }}</a>
-=============================
+# <a href="{{ post.url }}">{{ post.title }}</a> #
 
 {{ post.content }}
 
