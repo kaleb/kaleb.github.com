@@ -2,9 +2,8 @@
 layout: default
 title: Root
 path: /index.md
----
 
-{{page.title}} / {{site.edit}}{{page.url}}
+---
 
 {% for post in site.posts limit:5 %}
 <article>
