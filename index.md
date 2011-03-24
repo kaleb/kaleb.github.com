@@ -3,7 +3,7 @@ layout: default
 title: Root
 ---
 
-{{title}} / {{url}}
+{{page.title}} / {{page.url}}
 
 {% for post in site.posts limit:5 %}
 <article>
