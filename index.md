@@ -1,6 +1,7 @@
 ---
 layout: default
 title: Root
+edit: index.md
 ---
 
 {{page.title}} / {{site.edit}}{{page.url}}
