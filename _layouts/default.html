@@ -4,13 +4,13 @@
 <title>{{ page.title }}</title>
 <meta name="author" content="Kaleb Hornsby">
 <meta name="description" content="{{ description }}">
+<meta name="keywords" content="{{ keywords }}">
 <meta http-equiv="content-type" content="text/html;charset=UTF-8">
-<meta http-equiv="Content-Style-Type" content="text/css">
-<link rel="alternate" type="application/x-wiki" title="Edit this page" href="{{site.edit}}{{page.path}}" /> 
-<link rel="edit" title="Edit this page" href="{{site.edit}}{{page.path}}" /> 
+<link rel="alternate" type="application/x-wiki" title="Edit this page" href="{{ site.edit }}{{ page.path }}"> 
+<link rel="edit" title="Edit this page" href="{{ site.edit }}{{ page.path }}"> 
 </head>
 <body>
-<h1>{{page.title}}</h1>
+<h1>{{ page.title }}</h1>
 {{ content }}
 </body>
 </html>
