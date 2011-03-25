@@ -1,4 +1,4 @@
-permalink: pretty
+permalink: /:categories/:title
 pygments: true
 layout: default
 
