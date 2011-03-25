@@ -17,6 +17,10 @@ path: /index.md
       {{ post.date | date_to_long_string }}
     </time>.
   </aside>
-  {{ post.categories | join: ' ' }}
+  <nav>
+    {% for category in post.categories %}
+    <a href="/{{ category }}">{{ category }}</a>.
+    {% endfor %}
+  </nav>
 </article>
 {% endfor %}
