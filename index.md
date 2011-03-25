@@ -17,6 +17,6 @@ path: /index.md
       {{ post.date | date_to_long_string }}
     </time>.
   </aside>
-  {{ post.categories }}
+  {{ post.categories | join: ' ' }}
 </article>
 {% endfor %}
