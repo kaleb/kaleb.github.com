@@ -18,9 +18,7 @@ path: /index.md
     </time>.
   </aside>
   <nav>
-    {% for category in post.categories %}
-    <a href="/{{ category }}">{{ category }}</a>.
-    {% endfor %}
+    {% for category in post.categories %}<a href="/{{ category }}">{{ category }}</a>.{% endfor %}
   </nav>
 </article>
 {% endfor %}
