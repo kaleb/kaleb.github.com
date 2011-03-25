@@ -6,8 +6,10 @@
 <meta name="description" content="{{ site.description }}">
 <meta name="keywords" content="{{ site.keywords | join: ',' }}">
 <meta http-equiv="content-type" content="text/html;charset=UTF-8">
+{% if page.path %}
 <link rel="alternate" type="application/x-wiki" title="Edit this page" href="{{ site.edit }}{{ page.path }}"> 
-<link rel="edit" title="Edit this page" href="{{ site.edit }}{{ page.path }}"> 
+<link rel="edit" title="Edit this page" href="{{ site.edit }}{{ page.path }}">
+{% endif %}
 </head>
 <body>
   <header>
