@@ -7,9 +7,9 @@ path: /index.md
 
 {% for post in site.posts limit:5 %}
 <article>
-  <h1 id="{{post.title}}"><a href="{{ post.url }}">{{ post.title }}</a></h1>
+  <h1><a href="{{ post.url }}">{{ post.title }}</a></h1>
   {{ post.content }}
-  <em>Posted on {{ post.date | date_to_long_string }}.</em>
+  <aside>Posted on <time pubdate datetime={{ post.date }}>{{ post.date | date_to_long_string }}</time>.</aside>
   {{ post.categories }}
 </article>
 {% endfor %}
