@@ -18,7 +18,10 @@ path: /index.md
     </time>.
   </aside>
   <nav>
-    {% for category in post.categories %}<a href="/{{ category }}">{{ category }}</a>.{% endfor %}
+    {% for category in post.categories %}
+{% capture previous_category %} {{ previous_category }}/{{ category }}{% endcapture %}
+<a href="{{ previous_category }}">{{ category }}</a>.
+{% endfor %}
   </nav>
 </article>
 {% endfor %}
