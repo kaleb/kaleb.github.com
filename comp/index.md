@@ -27,6 +27,14 @@ I am a computer science major at <a rel='nofollow' href='http://www.aug.edu/'>AS
 ## Links
 - [Git vs. Mercurial](http://gitvsmercurial.com/)
 
-<hr>
+## Posts
+
+{% for post in site.categories.comp %}
+---
+
+{{post}}
+{% endfor %}
+
+---
 
 Subpages (8): <a href="databases/">databases</a> <a href="editors/">editors</a> <a href="lang/">lang</a> <a href="misc/">misc</a> <a href="org/">org</a> <a href="os/">os</a> <a href="programming/">programming</a> <a href="text/">text</a>
