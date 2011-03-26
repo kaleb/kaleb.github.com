@@ -7,11 +7,11 @@ title: comp
 # Navigation
 
 - comp
-- <a href="../rec/index.html">rec</a>
-- <a href="../root/index.html">root</a>
-- <a href="../sci/index.html">sci</a>
-- <a href="../soc/index.html">soc</a>
-- <a href="../talk/index.html">talk</a>
+- <a href="../rec/l">rec</a>
+- <a href="../root/">root</a>
+- <a href="../sci/">sci</a>
+- <a href="../soc/">soc</a>
+- <a href="../talk/">talk</a>
 
 <a rel='me' href='http://stackoverflow.com/users/143739'>
 <img src='http://stackoverflow.com/users/flair/143739.png' alt='Stack Overflow profile for kzh at Stack Overflow, Q&amp;A for professional and enthusiast programmers'/>
@@ -26,7 +26,7 @@ I am a computer science major at <a rel='nofollow' href='http://www.aug.edu/'>AS
 - Data Transport Language: <a rel='nofollow' href='http://www.yaml.org/'>YAML</a>
 
 ## Links
-- <a rel='nofollow' href='http://gitvsmercurial.com/'>Git vs. Mercurial</a>
+- <a href='http://gitvsmercurial.com/'>Git vs. Mercurial</a>
 
 <hr>
 
