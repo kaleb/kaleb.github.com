@@ -1,5 +1,6 @@
 ---
 title: sci.lang
+h1: <a href="..">sci</a>.lang
 path: /sci/lang/index.md
 layout: default
 
