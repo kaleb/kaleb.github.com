@@ -6,7 +6,9 @@ lsi: true
 exclude: []
 maruku:
     use_tex: true
+
 author: Kaleb Hornsby
+email: kaleb@hornsby.ws
 description: Software Engineer in Augusta, GA.
 keywords:
 - Hypertext
