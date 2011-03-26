@@ -22,8 +22,6 @@ Links
 
 - [Git vs. Mercurial](http://gitvsmercurial.com/)
 
-<section>
-
 Posts
 ---------
 
@@ -31,7 +29,6 @@ Posts
 - [{{ post.title }}]({{ post.url }})
 {% endfor %}
 
-</section>
 
 Subpages
 --------------
