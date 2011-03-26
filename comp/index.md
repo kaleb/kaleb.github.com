@@ -33,4 +33,11 @@ Posts
 Subpages
 --------------
 
-<a href="databases/">databases</a> <a href="editors/">editors</a> <a href="lang/">lang</a> <a href="misc/">misc</a> <a href="org/">org</a> <a href="os/">os</a> <a href="programming/">programming</a> <a href="text/">text</a>
+<a href="databases/">databases</a>
+<a href="editors/">editors</a>
+<a href="lang/">lang</a>
+<a href="misc/">misc</a>
+<a href="org/">org</a>
+<a href="os/">os</a>
+<a href="programming/">programming</a>
+<a href="text/">text</a>
