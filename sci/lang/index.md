@@ -13,7 +13,7 @@ Posts
 -----
 
 {% for post in site.categories.lang %}
-{% if post.categories contains 'sci' %}
+{% if post.categories[0] == 'sci' %}
 - [{{ post.title }}]({{ post.url }})
 {% endif %}
 {% endfor %}
