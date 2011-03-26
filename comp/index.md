@@ -32,7 +32,7 @@ I am a computer science major at <a rel='nofollow' href='http://www.aug.edu/'>AS
 {% for post in site.categories.comp %}
 ---
 
-{{post.title}}
+- [{{ post.title }}]({{ post.url }})
 {% endfor %}
 
 ---
