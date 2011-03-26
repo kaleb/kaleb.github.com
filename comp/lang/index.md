@@ -1,5 +1,5 @@
 ---
-title: comp.lang
+title: <a href="/comp">comp</a>.lang
 path: /comp/lang/index.md
 layout: default
 
