@@ -2,3 +2,6 @@ body {
   background-color: black;
   color: white;
 }
+body > header h1, body > header h2 {
+  display: inline;
+}
