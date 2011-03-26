@@ -4,12 +4,11 @@ title: Root
 path: /index.md
 
 ---
-<span markdown="1">**bold** text</span>
+
 {% for post in site.posts limit:5 %}
 <article markdown="1">
-<header markdown="1">
-# yyy<a href="{{ post.url }}">{{ post.title }}</a>
-
+  <header markdown="1">
+    <h1><a href="{{ post.url }}">{{ post.title }}</a></h1>
     <aside>
       Posted on
       <time pubdate="pubdate" datetime="{{ post.date | date_to_xmlschema }}">
