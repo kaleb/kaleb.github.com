@@ -1,6 +1,7 @@
 permalink: /:categories/:title
 pygments: true
 layout: default
+paginate: 5
 
 author: Kaleb Hornsby
 description: Software Engineer in Augusta, GA.
