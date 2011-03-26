@@ -7,9 +7,8 @@ path: /index.md
 
 {% for post in site.posts limit:5 %}
 <article>
-  <header markdown="1">
-  <a href="{{ post.url }}">{{ post.title }}</a>
-  ==============================
+<header markdown="1">
+# <a href="{{ post.url }}">{{ post.title }}</a>
 
     <aside>
       Posted on
