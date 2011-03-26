@@ -4,7 +4,7 @@ title: Root
 path: /index.md
 
 ---
-
+<span markdown="1">**bold** text</span>
 {% for post in site.posts limit:5 %}
 <article markdown="1">
 <header markdown="1">
