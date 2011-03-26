@@ -10,6 +10,7 @@ path: /index.md
   <header markdown="1">
   <a href="{{ post.url }}">{{ post.title }}</a>
   ==============================
+
     <aside>
       Posted on
       <time pubdate="pubdate" datetime="{{ post.date | date_to_xmlschema }}">
