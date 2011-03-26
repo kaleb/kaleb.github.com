@@ -3,7 +3,9 @@ pygments: true
 layout: default
 paginate: 5
 lsi: true
-
+exclude: []
+maruku:
+    use_tex: true
 author: Kaleb Hornsby
 description: Software Engineer in Augusta, GA.
 keywords:
