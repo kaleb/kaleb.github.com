@@ -22,12 +22,16 @@ Links
 
 - [Git vs. Mercurial](http://gitvsmercurial.com/)
 
+<section>
+
 Posts
 ---------
 
 {% for post in site.categories.comp %}
 - [{{ post.title }}]({{ post.url }})
 {% endfor %}
+
+</section>
 
 Subpages
 --------------
