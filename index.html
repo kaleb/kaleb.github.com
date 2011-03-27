@@ -4,7 +4,9 @@ title: Root
 path: /index.html
 ---
 {% for page in paginator.posts %}
-{% include post.html %}
+<article>
+  {% include post.html %}
+</article>
 {% endfor %}
 <div class="pagination">
   {% if paginator.previous_page == 1 %}
