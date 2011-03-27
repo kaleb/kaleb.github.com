@@ -1,7 +1,7 @@
 permalink: /:categories/:title
 pygments: true
 layout: default
-paginate: 3
+paginate: true
 lsi: true
 exclude: []
 maruku:
