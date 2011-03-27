@@ -1,5 +1,5 @@
 ---
 title: Testing Categories
-layout: post
+layout: default
 ---
 This is a test of the github blog categories feature.
