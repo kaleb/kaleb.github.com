@@ -17,6 +17,11 @@ path: /index.html
       <a href="{{ previous_category }}">{{ category }}</a>
       {% endfor %}
     </nav>
+    by
+    {% if page.author %}
+      {% if page.author_url %}<a href="{{ page.author_url }}">{{ page.author }}</a>
+      {% else %}{{ page.author }}{% endif %}
+    {% else %}{{ site.author }}{% endif %}
   </header>
   {{ post.content }}
 </article>
