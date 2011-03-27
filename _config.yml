@@ -1,8 +1,8 @@
 permalink: /:categories/:title
 pygments: true
 layout: default
-paginate: 5
-\\ lsi: true
+paginate: 3
+lsi: true
 exclude: []
 maruku:
     use_tex: true
