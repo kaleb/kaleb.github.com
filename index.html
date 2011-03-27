@@ -24,7 +24,7 @@ path: /index.md
   </nav>
 </article>
 {% endfor %}
-
+{{paginator.previous_page}}
 <div class="pagination">
   {% if paginator.previous_page %}
     <a href="/page{{paginator.previous_page}}" class="previous">Newer</a>
