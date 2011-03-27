@@ -5,3 +5,6 @@ body {
 body > header h1, body > header h2 {
   display: inline;
 }
+article header nav {
+  display: inline;
+}

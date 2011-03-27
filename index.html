@@ -1,32 +1,35 @@
 ---
 layout: default
 title: Root
-path: /index.md
+path: /index.html
 ---
 {% for post in paginator.posts %}
 <article>
   <header>
     <h1><a href="{{ post.url }}">{{ post.title }}</a></h1>
-    <aside>
-      Posted on
-      <time pubdate="pubdate" datetime="{{ post.date | date_to_xmlschema }}">
-        {{ post.date | date_to_long_string }}
-      </time>.
-    </aside>
-  {{ post.id }}
+    Posted
+    <time pubdate="pubdate" datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date_to_long_string }}</time>
+    in
+    <nav>
+      {% for category in post.categories %}
+      {% capture previous_category %}{{ previous_category }}/{{ category }}{% endcapture %}
+      {% unless forloop.first %}.{% endunless %}
+      <a href="{{ previous_category }}">{{ category }}</a>
+      {% endfor %}
+    </nav>
+    by
+    {% if page.author %}
+      {% if page.author_url %}<a href="{{ page.author_url }}">{{ page.author }}</a>
+      {% else %}{{ page.author }}{% endif %}
+    {% else %}{{ site.author }}{% endif %}
   </header>
   {{ post.content }}
-  <nav>
-    {% for category in post.categories %}
-    {% capture previous_category %}{{ previous_category }}/{{ category }}{% endcapture %}
-    <a href="{{ previous_category }}">{{ category }}</a> .
-    {% endfor %}
-  </nav>
 </article>
 {% endfor %}
-
 <div class="pagination">
-  {% if paginator.previous_page %}
+  {% if paginator.previous_page == 1 %}
+    <a href="/" class="previous">Newer</a>
+  {% elsif paginator.previous_page %}
     <a href="/page{{paginator.previous_page}}" class="previous">Newer</a>
   {% else %}
     <span class="previous">Newer</span>
