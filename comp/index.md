@@ -1,7 +1,7 @@
 ---
 layout: default
 path: /comp/index.html
-subpages: ["databases", "editors", "lang", "misc", "org", "os", "programming", "text"]
+subpages: [databases, editors, lang, misc, org, os, programming, text]
 title: comp
 ---
 
