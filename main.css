@@ -132,5 +132,5 @@ nav ul li:first-child:before {
 	content: none;
 }
 nav ul li:before {
-	content: "|";
+	content: "| ";
 }
