@@ -27,8 +27,7 @@ Posts
 ---------
 
 {% for post in site.categories.comp %}
-- [{{ post.title }}]({{ post.url }})
-{% endfor %}
+- [{{ post.title }}]({{ post.url }}){% endfor %}
 
 
 Subpages
