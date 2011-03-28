@@ -1,3 +1,4 @@
+<article>
 <header>
   <hgroup>
     <h1><a href={{ page.url}}>{% if page.h1 %}{{ page.h1 }}{% else %}{{ page.title }}{% endif %}</a></h1>
@@ -6,7 +7,7 @@
   {% if page.date %}
   <time pubdate="pubdate" datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date_to_long_string }}</time>
   {% endif %}
-  {% if page.categories %} in
+  {% if page.categories and page.categories.length %} in
   <nav>
     {% for category in page.categories %}
       {% capture previous_category %}{{ previous_category }}/{{ category }}{% endcapture %}
@@ -26,3 +27,4 @@
 {% if forloop %}
 {{ page.content }}
 {% endif %}
+</article>
