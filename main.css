@@ -120,10 +120,13 @@ ol {
 
 /* ****************************************************** */
 body > header h1, body > header h2 {
-  display: inline;
+	display: inline;
 }
 article header nav {
-  display: inline;
+	display: inline;
+}
+nav ul {
+	margin: 0;
 }
 nav ul li {
 	display: inline;
