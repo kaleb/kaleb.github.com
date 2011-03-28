@@ -125,3 +125,12 @@ body > header h1, body > header h2 {
 article header nav {
   display: inline;
 }
+nav ul li {
+	display: inline;
+}
+nav ul li:first-child:before {
+	content: none;
+}
+nav ul li:before {
+	content: "|";
+}
