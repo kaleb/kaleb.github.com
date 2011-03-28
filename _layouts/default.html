@@ -2,41 +2,8 @@
 <html>
 <head>
 <title>{{ page.title }} - {{ site.title }}</title>
-<meta http-equiv="content-type" content="text/html;charset=UTF-8">
-<meta name=author content="{% if page.author %}{{ page.author }}{% else %}{{ site.author }}{% endif %}">
-<meta name=description content="{%if page.description%}{{page.description}}{%else%}{{site.description}}{%endif%}">
-<meta name=keywords content="{%if page.categories%}{%page.categories|join:','}}{%else%}{{site.keywords|join:','}}{%endif%}">
-<link rel=alternate type="application/atom+xml" href="/atom.xml" /> 
-{% if page.path %}
-<link rel=alternate type="application/x-wiki" title="Edit this page" href="{{ site.edit }}{{ page.path }}"> 
-<link rel=edit title="Edit this page" href="{{ site.edit }}{{ page.path }}">
-{% endif %}
-<script src="/main.js"></script>
-<link rel=stylesheet type="text/css" href="/main.css">
 </head>
 <body>
-<header>
-  <hgroup>
-    <h1><a href="/">{{ site.title }}</a></h1>
-    <h2>{{ site.description }}</h2>
-  </hgroup>
-  <nav>
-    <a href="/comp">comp</a>
-    | <a href="/rec">rec</a>
-    | <a href="/sci">sci</a>
-    | <a href="/soc">soc</a>
-    | <a href="/talk">talk</a>
-  </nav>
-</header>
 {{ content }}
-<footer>
-  <h2>Related Posts</h2>
-  <ul>
-  {% for post in site.related_posts %}
-    <li><a href={{post.url}}>{{post.title}}</a>
-  {% endfor %}
-  </ul>
-  <div><small>© {{ site.author }} 2011</small></div>
-</footer>
 </body>
 </html>
