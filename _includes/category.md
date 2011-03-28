@@ -13,4 +13,4 @@ Subpages
 {% for subpage in page.subpages%}
 <li markdown="1">[{{subpage}}]({{subpage}})</li>{% endfor %}
 {% endif %}
-</ol></nav>
+</ul></nav>
