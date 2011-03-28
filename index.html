@@ -8,18 +8,18 @@ path: /index.html
   {% include post.md %}
 </article>
 {% endfor %}
-<div class="pagination">
+<div class=pagination>
   {% if paginator.previous_page == 1 %}
-    <a href="/" class="previous">Newer</a>
+    <a href=/ rel=prev class=previous>Newer</a>
   {% elsif paginator.previous_page %}
-    <a href="/page{{paginator.previous_page}}" class="previous">Newer</a>
+    <a href="/page{{paginator.previous_page}}" rel=prev class=previous>Newer</a>
   {% else %}
-    <span class="previous">Newer</span>
+    <span class=previous>Newer</span>
   {% endif %}
-  <span class="page_number ">Page: {{paginator.page}} of {{paginator.total_pages}}</span>
+  <span class=page-number>Page: {{paginator.page}} of {{paginator.total_pages}}</span>
   {% if paginator.next_page %}
-    <a href="/page{{paginator.next_page}}" class="next ">Older</a>
+    <a href="/page{{paginator.next_page}}" rel=next class=next>Older</a>
   {% else %}
-    <span class="next ">Older</span>
+    <span class=next>Older</span>
   {% endif %}
 </div>
