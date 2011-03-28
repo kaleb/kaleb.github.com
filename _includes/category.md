@@ -11,6 +11,6 @@ Subpages
 
 <nav markdown="1">
 {% for subpage in page.subpages%}
-- [{{subpage}}]({{subpage}}){% endfor %}
+[{{subpage}}]({{subpage}}){% unless forloop.last %} | {% endif %}{% endfor %}
 {% endif %}
 </nav>
