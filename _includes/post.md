@@ -6,6 +6,7 @@
     {% else %}
     <h1>{% if page.h1 %}{{ page.h1 }}{% else %}{{ page.title }}{% endif %}</h1>
     <h2>{{ page.subtitle }}</h2>
+    {% endif %}
   </hgroup>
   {% if page.date %}<time pubdate=pubdate datetime={{ page.date | date_to_xmlschema }}>{{ page.date | date_to_long_string }}</time>{% endif %}
   {% if page.categories and page.categories[0] %} in
