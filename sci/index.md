@@ -1,7 +1,7 @@
 ---
 layout: default
 path: /rec/index.html
-subpages: [lang,logic,math,physics]
+subpages: [lang, logic, math, physics]
 title: sci
 ---
 
