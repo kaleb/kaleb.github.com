@@ -24,4 +24,4 @@ Links
 - [Git vs. Mercurial](http://gitvsmercurial.com/)
 
 {% assign posts = site.categories.comp %}
-{% include category.md %}
+{% include category.html %}
