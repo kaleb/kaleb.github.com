@@ -121,6 +121,7 @@ ol {
 /* ****************************************************** */
 body {
 	font-family: 'Ubuntu', arial, serif;
+	font-weight: 300;
 }
 body > header hgroup h1, body > header hgroup h2 {
 	display: inline;
