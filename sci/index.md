@@ -8,7 +8,7 @@ title: sci
 Links
 -----
 
-- <a rel='nofollow' href='http://hasthelargehadroncolliderdestroyedtheworldyet.com/'>http://hasthelargehadroncolliderdestroyedtheworldyet.com/</a>
+- [http://hasthelargehadroncolliderdestroyedtheworldyet.com/](http://hasthelargehadroncolliderdestroyedtheworldyet.com)
 
 {% assign posts = site.categories.sci %}
 {% include category.md %}
