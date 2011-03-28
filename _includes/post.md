@@ -23,4 +23,6 @@
     {% endif %}
   {% endif %}
 </header>
+{% if forloop %}
 {{ page.content }}
+{% endif %}
