@@ -34,6 +34,6 @@ Posts
 Subpages
 --------------
 
-{% for subpage in subpages%}
+{% for subpage in page.subpages%}
 - [subpage](subpage)
 {% endfor %}
