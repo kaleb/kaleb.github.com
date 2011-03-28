@@ -23,7 +23,7 @@ Links
 
 - [Git vs. Mercurial](http://gitvsmercurial.com/)
 
-{% assign categories = site.categories.comp %}
+{% assign posts = site.categories.comp %}
 {% if categories %}
 Posts
 ---------
