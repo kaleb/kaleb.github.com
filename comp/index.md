@@ -1,8 +1,8 @@
 ---
 layout: default
 path: /comp/index.html
+subpages1: ["databases", "editors", "lang", "misc", "org", "os", "programming", "text"]
 title: comp
-subpages: ["databases", "editors", "lang", "misc", "org", "os", "programming", "text"]
 ---
 
 <a rel='me' href='http://stackoverflow.com/users/143739'>
