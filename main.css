@@ -126,8 +126,9 @@ body {
 body > header hgroup h1, body > header hgroup h2 {
 	display: inline;
 }
-body > header hgroup h2 {
+header hgroup h2 {
 	font-style: italic;
+	font-weight: 400;
 }
 article header nav {
 	display: inline;
