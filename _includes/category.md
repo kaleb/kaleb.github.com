@@ -9,8 +9,8 @@ Posts
 Subpages
 --------------
 
-<nav markdown="1">
+<nav><ol>
 {% for subpage in page.subpages%}
-[{{subpage}}]({{subpage}}){% unless forloop.last %} | {% endunless %}{% endfor %}
+<li>[{{subpage}}]({{subpage}}){% endfor %}
 {% endif %}
-</nav>
+</ol></nav>
