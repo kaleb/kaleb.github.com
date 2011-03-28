@@ -9,3 +9,6 @@ Links
 -----
 
 - <a rel='nofollow' href='http://hasthelargehadroncolliderdestroyedtheworldyet.com/'>http://hasthelargehadroncolliderdestroyedtheworldyet.com/</a>
+
+{% assign posts = site.categories.sci %}
+{% include category.md %}
