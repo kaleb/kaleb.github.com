@@ -1,7 +1,7 @@
 ---
 layout: default
 path: /comp/index.html
-subpages1: ["databases", "editors", "lang", "misc", "org", "os", "programming", "text"]
+subpages: ["databases", "editors", "lang", "misc", "org", "os", "programming", "text"]
 title: comp
 ---
 
@@ -23,10 +23,11 @@ Links
 
 - [Git vs. Mercurial](http://gitvsmercurial.com/)
 
+{% assign categories = site.categories.comp %}
 Posts
 ---------
 
-{% for post in site.categories.comp %}
+{% for post in categories %}
 - [{{ post.title }}]({{ post.url }}){% endfor %}
 
 {% if page.subpages %}
