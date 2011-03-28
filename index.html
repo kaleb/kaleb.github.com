@@ -10,7 +10,7 @@ path: /index.html
 {% endfor %}
 <div class=pagination>
   {% if paginator.previous_page == 1 %}
-    <a href=/ rel=prev class=previous>Newer</a>
+    <a href=/ rel="prev start" class=previous>Newer</a>
   {% elsif paginator.previous_page %}
     <a href="/page{{paginator.previous_page}}" rel=prev class=previous>Newer</a>
   {% else %}
