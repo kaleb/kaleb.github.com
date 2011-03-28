@@ -24,11 +24,11 @@ Links
 - [Git vs. Mercurial](http://gitvsmercurial.com/)
 
 {% assign posts = site.categories.comp %}
-{% if categories %}
+{% if posts %}
 Posts
 ---------
 
-{% for post in categories %}
+{% for post in posts %}
 - [{{ post.title }}]({{ post.url }}){% endfor %}
 {% endif %}
 {% if page.subpages %}
