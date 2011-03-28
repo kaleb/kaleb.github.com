@@ -119,9 +119,14 @@ ol {
 }
 
 /* ****************************************************** */
-h1 { font-family: 'Ubuntu', arial, serif; }
-body > header h1, body > header h2 {
+body {
+	font-family: 'Ubuntu', arial, serif;
+}
+body > header hgroup h1, body > header hgroup h2 {
 	display: inline;
+}
+body > header hgroup h2 {
+	font-style: italic;
 }
 article header nav {
 	display: inline;
