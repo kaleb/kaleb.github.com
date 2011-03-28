@@ -101,10 +101,23 @@ input, select {
     vertical-align:middle;
 }
 /* ****************************************************** */
-body {
-  background-color: black;
-  color: white;
+ul, ol {
+	display: block;
+	list-style-type: disc;
+	-webkit-margin-before: 1em;
+	-webkit-margin-after: 1em;
+	margin-start: 0;
+	-webkit-margin-end: 0;
+	padding-start: 40px;
 }
+ul {
+	list-style-type: disc;
+}
+ol {
+	list-style-type: decimal;
+}
+
+/* ****************************************************** */
 body > header h1, body > header h2 {
   display: inline;
 }
