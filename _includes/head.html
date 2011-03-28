@@ -5,10 +5,8 @@
 <meta name=description content="{%if page.description%}{{page.description}}{%else%}{{site.description}}{%endif%}">
 <meta name=keywords content="{%if page.categories%}{{page.categories|join:','}}{%else%}{{site.keywords|join:','}}{%endif%}">
 <link rel=alternate type=application/atom+xml href=/atom.xml /> 
-{% if page.path %}
-<link rel=alternate type=application/x-wiki title="Edit this page" href="{{ site.edit }}{{ page.path }}"> 
-<link rel=edit title="Edit this page" href="{{ site.edit }}{{ page.path }}">
-{% endif %}
+{% if page.path %}<link rel=alternate type=application/x-wiki title="Edit this page" href="{{ site.edit }}{{ page.path }}"> 
+<link rel=edit title="Edit this page" href="{{ site.edit }}{{ page.path }}">{% endif %}
 <script src=/main.js></script>
 <link rel=stylesheet href=/main.css>
 </head>
