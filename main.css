@@ -109,6 +109,7 @@ ul, ol {
 	margin-start: 0;
 	-webkit-margin-end: 0;
 	padding-start: 40px;
+	margin-left: 1em;
 }
 ul {
 	list-style-type: disc;
