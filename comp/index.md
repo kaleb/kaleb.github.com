@@ -29,9 +29,10 @@ Posts
 {% for post in site.categories.comp %}
 - [{{ post.title }}]({{ post.url }}){% endfor %}
 
-
+{% if page.subpages %}
 Subpages
 --------------
 
 {% for subpage in page.subpages%}
 - [{{subpage}}]({{subpage}}){% endfor %}
+{% endif %}
