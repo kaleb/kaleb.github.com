@@ -9,7 +9,7 @@ Posts
 Subpages
 --------------
 
-<nav markdown>
+<nav markdown="1">
 {% for subpage in page.subpages%}
 - [{{subpage}}]({{subpage}}){% endfor %}
 {% endif %}
