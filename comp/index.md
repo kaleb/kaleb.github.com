@@ -34,5 +34,4 @@ Subpages
 --------------
 
 {% for subpage in page.subpages%}
-- [subpage](subpage)
-{% endfor %}
+- [subpage](subpage){% endfor %}
