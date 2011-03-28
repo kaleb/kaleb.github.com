@@ -12,7 +12,7 @@
   {% if page.categories and page.categories[0] %} in
   <nav>
     {% for category in page.categories %}{% capture previous_category %}{{ previous_category }}/{{ category }}{% endcapture %}{% unless forloop.first %}.{% endunless %}
-    <a href="{{ previous_category }}">{{ category }}</a>
+    <a href="{{ previous_category }}" rel=tag>{{ category }}</a>
     {% endfor %}
   </nav>
   {% endif %}
