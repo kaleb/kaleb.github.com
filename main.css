@@ -119,6 +119,7 @@ ol {
 }
 
 /* ****************************************************** */
+h1 { font-family: 'Ubuntu', arial, serif; }
 body > header h1, body > header h2 {
 	display: inline;
 }
