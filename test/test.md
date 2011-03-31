@@ -8,4 +8,4 @@ array:
 
 {{ page.array|size}}
 
-{{ page.array|map:size}}
+{{ page.array|map:0}}
