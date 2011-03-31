@@ -1,9 +1,9 @@
 ---
 array:
 - aardvark
-- beaver
-- cow
-- donkyey
+//- beaver
+//- cow
+//- donkyey
 ---
 
 {{ page.array|size}}
