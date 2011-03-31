@@ -8,4 +8,4 @@ array:
 
 {{ page.array|size}}
 
-{{ page.array|map: 'hello'}}
+{{ page.array|map: count }}
