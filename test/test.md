@@ -6,4 +6,6 @@ array:
 - donkyey
 ---
 
+{{ page.array|size}}
+
 {{ page.array|map:size}}
