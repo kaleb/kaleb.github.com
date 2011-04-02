@@ -138,7 +138,7 @@ nav ul li:before {
 h1 a {
 	text-decoration: none;
 }
-h1 a:onhover {
+h1 a:hover {
 	text-decoration: underline;
 }
 article {
