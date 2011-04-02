@@ -135,3 +135,12 @@ nav ul li:first-child:before {
 nav ul li:before {
 	content: "| ";
 }
+h1 a {
+	text-decoration: none;
+}
+h1 a:onhover {
+	text-decoration: underline;
+}
+article {
+	border: 1px solid black;
+}
