@@ -151,9 +151,11 @@ nav.pagination {
 	text-align: center;
 }
 nav.pagination previous {
+	display: block;
 	float: left;
 }
 nav.pagination next {
+	display: block;
 	float: right;
 }
 body > header, body > footer, body > nav {
