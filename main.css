@@ -147,3 +147,12 @@ article {
 	background-color: white;
 	padding: 2em;
 }
+nav.pagination {
+	text-align: center;
+}
+nav.pagination a.previous {
+	float: left;
+}
+nav.pagination a.next {
+	float: right;
+}
