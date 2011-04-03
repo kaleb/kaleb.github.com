@@ -145,7 +145,6 @@ h1 a:hover {
 article {
 	border: 1px solid black;
 	background-color: white;
-	padding: 2em;
 }
 nav.pagination {
 	text-align: center;
