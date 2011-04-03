@@ -150,12 +150,12 @@ article {
 nav.pagination {
 	text-align: center;
 }
-nav.pagination a.previous {
+nav.pagination previous {
 	float: left;
 }
-nav.pagination a.next {
+nav.pagination next {
 	float: right;
 }
-body > header, body > footer {
+body > header, body > footer, body > nav {
 	color: white;
 }
