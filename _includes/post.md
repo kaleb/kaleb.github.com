@@ -1,4 +1,3 @@
-<article>
 <header>
   <hgroup>
     {% if forloop %}
@@ -19,4 +18,3 @@
   {% if page.author %} by {% if page.author_url %} <a href="{{ page.author_url }}" rel=author>{{ page.author }}</a>{% else %}{{ page.author }}{% endif %}{% endif %}
 </header>
 {% if forloop %}{{ page.content }}{% endif %}
-</article>
