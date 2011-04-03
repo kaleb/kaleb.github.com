@@ -9,6 +9,6 @@
     {% for category in page.categories %}{% capture previous_category %}{{ previous_category }}/{{ category }}{% endcapture %}{% unless forloop.first %}.{% endunless %}<a href="{{ previous_category }}" rel=tag>{{ category }}</a>{% endfor %}
   </nav>
   {% endif %}
-  {% if page.author %} by {% if page.author_url %} <a href="{{ page.author_url }}" rel=author>{{ page.author }}</a>{% else %}{{ page.author }}{% endif %}{% endif %}
-</header>
+  {% if page.author %} by {% if page.author_url %} <a href="{{ page.author_url }}" rel=author>{{ page.author }}</a>{% else %}{{ page.author }}{% endif %}
+{% endif %}</header>
 {% if forloop %}{{ page.content }}{% endif %}
