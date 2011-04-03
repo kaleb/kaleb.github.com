@@ -156,3 +156,6 @@ nav.pagination a.previous {
 nav.pagination a.next {
 	float: right;
 }
+body > header, body > footer {
+	color: white;
+}
