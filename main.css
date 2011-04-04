@@ -87,37 +87,37 @@ h2 {
 }
 /* ****************************************************** */
 body {
-	font-family: 'Ubuntu', arial, serif;
-	font-weight: 300;
-	background-color: black;
+	font-family:'Ubuntu', arial, serif;
+	font-weight:300;
+	background-color:black;
 }
 body > header hgroup h1, body > header hgroup h2 {
-	display: inline;
+	display:inline;
 }
 header hgroup h2 {
-	font-style: italic;
-	font-weight: 400;
+	font-style:italic;
+	font-weight:400;
 }
 article header nav {
-	display: inline;
+	display:inline;
 }
 nav ul {
-	margin: 0;
+	margin:0;
 }
 nav ul li {
-	display: inline;
+	display:inline;
 }
 nav ul li:first-child:before {
-	content: none;
+	content:none;
 }
 nav ul li:before {
-	content: "| ";
+	content:"| ";
 }
 h1 a {
-	text-decoration: none;
+	text-decoration:none;
 }
 h1 a:hover {
-	text-decoration: underline;
+	text-decoration:underline;
 }
 article>div {
 	background-color:white;
