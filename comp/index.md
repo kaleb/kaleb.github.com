@@ -4,12 +4,11 @@ path: /comp/index.html
 subpages: [databases, editors, lang, misc, org, os, programming, text]
 title: comp
 ---
+[![Stack Overflow profile][SO Flair]][SO Profile]
 
-[![Stack Overflow profile for kzh at Stack Overflow, Q&amp;A for professional and enthusiast programmers](http://stackoverflow.com/users/flair/143739.png)](http://stackoverflow.com/users/143739)
-
-<a rel="me" href="http://stackoverflow.com/users/143739">
-<img src="http://stackoverflow.com/users/flair/143739.png" alt="Stack Overflow profile for kzh at Stack Overflow, Q&amp;A for professional and enthusiast programmers"/>
-</a>
+  [SO Profile]: <http://stackoverflow.com/users/143739>
+  [SO Flair]:    <http://stackoverflow.com/users/flair/143739.png>
+      "Stack Overflow profile for kzh at Stack Overflow, Q&amp;A for professional and enthusiast programmers"
 
 I am a computer science major at <a href="http://www.aug.edu">ASU</a> and a software developer at <a href="http://www.esi911.com">ESI</a>. Check out my <a href="../root/Portfolio/index.html">portfolio</a>.
 
