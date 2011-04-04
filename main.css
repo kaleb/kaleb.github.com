@@ -78,9 +78,6 @@ input, select {
 /* ****************************************************** */
 h1, h2 {
 	display: block;
-	margin-start: 0;
-	-webkit-margin-end: 0;
-	font-weight: bold;
 }
 h1 {
 	font-size: 2em;
@@ -153,7 +150,7 @@ nav.pagination .next {
 body>header, body>footer, body>nav {
 	color:white;
 }
-header {
+article>header {
 	display:inline-block;
 	background-color:white;
 }
