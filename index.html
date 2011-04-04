@@ -10,17 +10,17 @@ path: /index.html
 {% endfor %}
 </section>
 <nav class=pagination>
-  {% if paginator.previous_page == 1 %}
-    <a href=/ rel="prev start" class=previous>Newer</a>
-  {% elsif paginator.previous_page %}
-    <a href="/page{{paginator.previous_page}}" rel=prev class=previous>Newer</a>
-  {% else %}
-    <span class=previous>Newer</span>
-  {% endif %}
+{% if paginator.previous_page == 1 %}
+  <a href=/ rel="prev start" class=previous>Newer</a>
+{% elsif paginator.previous_page %}
+  <a href="/page{{paginator.previous_page}}" rel=prev class=previous>Newer</a>
+{% else %}
+  <span class=previous>Newer</span>
+{% endif %}
   <span class=page-number>Page: {{paginator.page}} of {{paginator.total_pages}}</span>
-  {% if paginator.next_page %}
-    <a href="/page{{paginator.next_page}}" rel=next class=next>Older</a>
-  {% else %}
-    <span class=next>Older</span>
-  {% endif %}
+{% if paginator.next_page %}
+  <a href="/page{{paginator.next_page}}" rel=next class=next>Older</a>
+{% else %}
+  <span class=next>Older</span>
+{% endif %}
 </nav>
