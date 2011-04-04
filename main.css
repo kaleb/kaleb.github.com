@@ -76,6 +76,12 @@ input, select {
 	vertical-align:middle;
 }
 /* ****************************************************** */
+ul, ol {
+	display: block;
+	margin-start: 0;
+	padding-start: 40px;
+	margin-left: 2em;
+}
 h1, h2 {
 	display: block;
 }
