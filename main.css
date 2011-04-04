@@ -158,9 +158,3 @@ nav.pagination .next {
 body > header, body > footer, body > nav {
 	color: white;
 }
-header div.info {
-	float: right;
-}
-header h1 {
-	float: left;
-}
