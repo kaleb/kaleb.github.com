@@ -9,4 +9,4 @@
   {% if page.author_url %} <a href="{{ page.author_url }}" rel=author>{{ page.author }}</a>{% else %}{{ page.author }}{% endif %}{% endif %}
   </div>
 </header>
-{% if forloop %}{{ page.content }}{% endif %}
+{% if forloop %}<div>{{ page.content }}</div>{% endif %}
