@@ -138,3 +138,6 @@ article>header {
 	display:inline-block;
 	background-color:white;
 }
+article {
+	margin:1em;
+}
