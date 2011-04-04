@@ -138,7 +138,9 @@ article>header {
 	padding:0 1em;
 	display:inline-block;
 	background-color:white;
-
+}
+article>header div.info {
+	margin-left:1em;
 }
 article {
 	margin:1em;
