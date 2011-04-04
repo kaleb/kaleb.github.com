@@ -139,7 +139,6 @@ h1 a:hover {
 	text-decoration: underline;
 }
 article>div {
-	border:1px solid black;
 	background-color:white;
 }
 nav.pagination {
@@ -156,6 +155,5 @@ body>header, body>footer, body>nav {
 }
 header {
 	display:inline-block;
-	margin-bottom:1em;
 	background-color:white;
 }
