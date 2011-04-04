@@ -6,7 +6,8 @@ path: /index.html
 <section>
 {% for page in paginator.posts %}<article>
 {% include post.md %}
-</article>{% endfor %}
+</article>
+{% endfor %}
 </section>
 <nav class=pagination>
   {% if paginator.previous_page == 1 %}
