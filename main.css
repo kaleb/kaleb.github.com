@@ -141,6 +141,6 @@ article>header {
 article {
 	margin:1em;
 }
-div.info {
-	padding-bottom:1em;
+article>div {
+	padding-top:1em;
 }
