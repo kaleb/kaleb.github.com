@@ -154,3 +154,6 @@ nav.pagination .next {
 body > header, body > footer, body > nav {
 	color: white;
 }
+header {
+	margin-bottom: 1em;
+}
