@@ -155,7 +155,7 @@ body>header, body>footer, body>nav {
 	color:white;
 }
 header {
-	display:inline;
+	display:inline-block;
 	margin-bottom:1em;
 	background-color:red;
 	color:red;
