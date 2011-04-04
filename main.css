@@ -161,3 +161,6 @@ body > header, body > footer, body > nav {
 header div.info {
 	float: right;
 }
+header h1 {
+	float: left;
+}
