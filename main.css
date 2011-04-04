@@ -157,4 +157,5 @@ body>header, body>footer, body>nav {
 header {
 	display:inline;
 	margin-bottom:1em;
+	background-color:red;
 }
