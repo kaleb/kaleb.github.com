@@ -152,7 +152,7 @@ article {
 	margin:1em;
 }
 article>div {
-	padding:1em 0;
+	padding:1em 1em;
 	-webkit-border-radius: 11px;
 	-webkit-border-top-left-radius: 0;
 	-moz-border-radius: 11px;
