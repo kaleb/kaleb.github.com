@@ -3,11 +3,13 @@ layout: default
 title: Root
 path: /index.html
 ---
+<section>
 {% for page in paginator.posts %}
 <article>
   {% include post.md %}
 </article>
 {% endfor %}
+</section>
 <nav class=pagination>
   {% if paginator.previous_page == 1 %}
     <a href=/ rel="prev start" class=previous>Newer</a>
