@@ -139,21 +139,22 @@ h1 a:hover {
 	text-decoration: underline;
 }
 article {
-	border: 1px solid black;
-	background-color: white;
+	border:1px solid black;
+	background-color:white;
 }
 nav.pagination {
-	text-align: center;
+	text-align:center;
 }
 nav.pagination .previous {
-	float: left;
+	float:left;
 }
 nav.pagination .next {
-	float: right;
+	float:right;
 }
-body > header, body > footer, body > nav {
-	color: white;
+body>header, body>footer, body>nav {
+	color:white;
 }
 header {
-	margin-bottom: 1em;
+	float:left;
+	margin-bottom:1em;
 }
