@@ -153,4 +153,10 @@ article {
 }
 article>div {
 	padding-top:1em;
+	-webkit-border-bottom-right-radius: 11px;
+	-webkit-border-bottom-left-radius: 11px;
+	-moz-border-radius-bottomright: 11px;
+	-moz-border-radius-bottomleft: 11px;
+	border-bottom-right-radius: 11px;
+	border-bottom-left-radius: 11px;
 }
