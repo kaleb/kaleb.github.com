@@ -85,22 +85,6 @@ h1 {
 h2 {
 	font-size: 1.5em;
 }
-ul, ol {
-	display: block;
-	-webkit-margin-before: 1em;
-	-webkit-margin-after: 1em;
-	margin-start: 0;
-	-webkit-margin-end: 0;
-	padding-start: 40px;
-	margin-left: 2em;
-}
-ul {
-	list-style-type: disc;
-}
-ol {
-	list-style-type: decimal;
-}
-
 /* ****************************************************** */
 body {
 	font-family: 'Ubuntu', arial, serif;
