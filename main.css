@@ -84,13 +84,9 @@ h1, h2 {
 }
 h1 {
 	font-size: 2em;
-	-webkit-margin-before: 0.67em;
-	-webkit-margin-after: 0.67em;
 }
 h2 {
 	font-size: 1.5em;
-	-webkit-margin-before: 0.83em;
-	-webkit-margin-after: 0.83em;
 }
 ul, ol {
 	display: block;
