@@ -135,8 +135,10 @@ body>header, body>footer, body>nav {
 	color:white;
 }
 article>header {
+	padding:0 1em;
 	display:inline-block;
 	background-color:white;
+
 }
 article {
 	margin:1em;
