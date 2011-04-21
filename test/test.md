@@ -14,10 +14,15 @@ yepnope:
 
 {% if page.yepnope %}
 <pre>
-yepnope([{ {% for a in page.yepnope %}{% if a.load %}
-    load: "{{ a.load }}"{% endif %}{% if a.complete %},
-    complete: function() {
-        {{ a.complete }}    }{% endif %}{% if forloop.last %}
+yepnope([{ {% for a in page.yepnope %}
+    0: 0{% if a.test %},
+    test: {{ a.test }}{% endif %}{% if a.yep %},
+    yep: {{ a.yep }}{% endif %}{% if a.nope %},
+    nope: {{ a.nope }}{% endif %}{% if a.both  %},
+    both: {{ a.both }}{% endif %}{% if a.load  %},
+    load: "{{ a.load }}"{% endif %}{% if a.callback  %},
+    callback: {{ a.callback }}{% endif %}{% if a.complete  %},
+    complete: function() { {{ a.complete }} }{% endif %}{% if forloop.last %}
 }{% else %}
 }, { {% endif %}{% endfor %}
 }]);
