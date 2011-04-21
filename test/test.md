@@ -14,7 +14,7 @@ yepnope:
 
 {% for a in page.yepnope %}
 
-a
+{{ a }}
 
 {% endfor %}
 
