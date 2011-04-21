@@ -19,8 +19,7 @@ yepnope([{ {% for a in page.yepnope %}{% if a.load %}
     complete: function() {
         {{ a.complete }}    }{% endif %}{% if forloop.last %}
 }{% else %}
-}, { {% endif %}
-{% endfor %}
+}, { {% endif %}{% endfor %}
 }]);
 </pre>
 {% endif %}
