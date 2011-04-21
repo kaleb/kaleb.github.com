@@ -7,9 +7,9 @@ yepnope:
                 yepnope('local/jquery.min.js');
 - load: jquery.plugin.js
   complete: >
-      jQuery(function () {
+    jQuery(function () {
                 jQuery('div').plugin();
-        });
+          });
 ---
 
 {% if page.yepnope %}
