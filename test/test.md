@@ -12,6 +12,7 @@ yepnope:
     });
 ---
 
+<pre>
 yepnope([{
 {% for a in page.yepnope %}
     load: "{{ a.load }}",
@@ -19,5 +20,5 @@ yepnope([{
 }, {
 }]);
 {% endfor %}
-
+</pre>
 {{ site.time }}
