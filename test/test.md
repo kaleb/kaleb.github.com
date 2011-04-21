@@ -12,14 +12,12 @@ yepnope:
     });
 ---
 
+yepnope([{
 {% for a in page.yepnope %}
-
-{{ a }}
-
-{{ a.load }}
-
-{{ a.complete }}
-
+    load: "{{ a.load }}",
+    complete: "{{ a.complete }}"
+}, {
+}]);
 {% endfor %}
 
 {{ site.time }}
