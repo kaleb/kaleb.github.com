@@ -1,13 +1,13 @@
 ---
 layout: nil
 yepnope:
-- load: ""http://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js""
+- load: "'http://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js'"
   complete: |
     function() {
         if (!window.jQuery)
           yepnope('local/jquery.min.js');
     }
-- load: jquery.plugin.js
+- load: "'jquery.plugin.js'"
   complete: >
     function() {
         jQuery(function () {
