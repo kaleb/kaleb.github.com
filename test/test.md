@@ -16,6 +16,10 @@ yepnope:
 
 {{ a }}
 
+{% for b in a %}
+
+{{ b }}
+
 {% endfor %}
 
 {{ site.time }}
