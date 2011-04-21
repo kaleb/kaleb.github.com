@@ -25,7 +25,7 @@ yepnope:
 
 {% if page.hsh.length %}{{ page.hsh }}{% else %}no hsh{% endif %}
 
-<pre>{{ hsh.a }}</pre>
+<pre>{{ page.hsh }}</pre>
 
 <hr>
 
