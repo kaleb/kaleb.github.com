@@ -16,9 +16,9 @@ yepnope:
 
 {{ a }}
 
-{% for b in a %}
+{{ a.load }}
 
-{{ b }}
+{{ a.complete }}
 
 {% endfor %}
 
