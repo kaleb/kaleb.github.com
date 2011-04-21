@@ -15,12 +15,13 @@ yepnope:
 {% if page.yepnope %}
 <pre>
 yepnope([{
-{% for a in page.yepnope %}
-    {% if a.load %}load: "{{ a.load }}",{% endif %}
-    {% if a.complete %}complete: function() {
+{% for a in page.yepnope %}{% if a.load %}
+    load: "{{ a.load }}"{% endif %}{% if a.complete %},
+    complete: function() {
         {{ a.complete }}
-    }{% endif %}
-{% if forloop.last %} } {% else %} }, { {% endif %}
+    }{% endif %}{% if forloop.last %}
+}{% else %}
+}, {{% endif %}
 {% endfor %}
 }]);
 </pre>
