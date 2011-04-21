@@ -25,6 +25,10 @@ yepnope:
 
 {% if page.hsh.length %}{{ page.hsh }}{% else %}no hsh{% endif %}
 
+<pre>{{hsh}}</pre>
+
+<hr>
+
 {% if page.yepnope %}
 <pre>
 yepnope([{ {% for a in page.yepnope %}
