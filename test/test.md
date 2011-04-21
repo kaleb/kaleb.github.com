@@ -19,11 +19,11 @@ yepnope:
     }
 ---
 
-{{ page.arr | size }}
+{{ page.arr | first }}
 
-{{ page.str | size }}
+{{ page.str | first }}
 
-{{ page.hsh | size }}
+{{ page.hsh | first }}
 
 <pre>{{ page.hsh }}</pre>
 
