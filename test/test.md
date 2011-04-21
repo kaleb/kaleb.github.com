@@ -2,7 +2,7 @@
 layout: nil
 yepnope:
 - load: http://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js
-  complete: >
+  complete: |
       if (!window.jQuery)
                   yepnope('local/jquery.min.js');
 - load: jquery.plugin.js
