@@ -12,15 +12,18 @@ yepnope:
     });
 ---
 
+{% if page.yepnope %}
 <pre>
 yepnope([{
 {% for a in page.yepnope %}
-    load: "{{ a.load }}",
-    complete: function() {
+    {% if a.load %}load: "{{ a.load }}",{% endif %}
+    {% if a.complete %}complete: function() {
         {{ a.complete }}
-    }
-}, {
+    }{% endif %}
+{% if forloop.last %} } {% else %} }, { {% endif %}
 {% endfor %}
 }]);
 </pre>
+{% endif %}
+
 {{ site.time }}
