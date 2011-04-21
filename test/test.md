@@ -1,7 +1,7 @@
 ---
 arr: [1, 2, 3]
 str: a, b, c
-hsh: { a:1, b:2 }
+hsh: {a: 1, b: 2}
 layout: nil
 yepnope:
 - load: "'http://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js'"
