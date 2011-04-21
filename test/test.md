@@ -12,6 +12,10 @@ yepnope:
     });
 ---
 
-{{ page.yepnope }}
+{% for a in page.yepnope %}
+
+a
+
+{% endfor %}
 
 {{ site.time }}
