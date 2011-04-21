@@ -1,6 +1,7 @@
 ---
 arr: [1, 2, 3]
 str: a, b, c
+hsh: {a:1,b:2}
 layout: nil
 yepnope:
 - load: "'http://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js'"
@@ -18,8 +19,11 @@ yepnope:
     }
 ---
 
-{% if page.arr[0] %}{{ page.arr[0] }}{% else %}no arr{% endif %}
-{% if page.str[0] %}{{ page.str[0] }}{% else %}no str{% endif %}
+{% if page.arr.length %}{{ page.arr }}{% else %}no arr{% endif %}
+
+{% if page.str.length %}{{ page.str }}{% else %}no str{% endif %}
+
+{% if page.hsh.length %}{{ page.hsh }}{% else %}no hsh{% endif %}
 
 {% if page.yepnope %}
 <pre>
