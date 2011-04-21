@@ -16,9 +16,11 @@ yepnope:
 yepnope([{
 {% for a in page.yepnope %}
     load: "{{ a.load }}",
-    complete: "{{ a.complete }}"
+    complete: function() {
+        {{ a.complete }}
+    }
 }, {
-}]);
 {% endfor %}
+}]);
 </pre>
 {{ site.time }}
