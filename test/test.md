@@ -19,11 +19,11 @@ yepnope:
     }
 ---
 
-{% if page.arr.length %}{{ page.arr }}{% else %}no arr{% endif %}
+{{ page.arr | size }}
 
-{% if page.str.length %}{{ page.str }}{% else %}no str{% endif %}
+{{ page.str | size }}
 
-{% if page.hsh.length %}{{ page.hsh }}{% else %}no hsh{% endif %}
+{{ page.hsh | size }}
 
 <pre>{{ page.hsh }}</pre>
 
