@@ -25,9 +25,15 @@ yepnope:
 
 {{ page.arr | map: 'foo' }}
 
+---
+
 {{ page.str.quantity }}
 
+---
+
 {{ page.hsh.quantity }}
+
+---
 
 <pre>{{ page.hsh }}</pre>
 
