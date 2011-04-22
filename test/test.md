@@ -1,5 +1,5 @@
 ---
-arr: [1, 2, 3]
+arr: [{a: 1}, {a: 2}]
 str: a, b, c
 hsh: {a: 1, b: 2}
 layout: nil
@@ -23,7 +23,7 @@ yepnope:
     }
 ---
 
-{{ site.posts | map: 'title' }}
+{{ page.arr | map: 'a' }}
 
 ---
 
