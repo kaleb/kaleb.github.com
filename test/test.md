@@ -38,10 +38,10 @@ yepnope:
 yepnope([{ {% for a in page.yepnope %}
     0: 0{% if a.test %},
     test: {{ a.test }}{% endif %}{% if a.yep %},
-    yep: {% if a.yep[0] %}[{{ a.yep | join: '", "' }}]{% else %}"{{ a.yep }}"{% endif %}{% endif %}{% if a.nope %},
-    nope: {% if a.nope[0] %}[{% for b in a.nope %}{{ b }}{% unless b.last %},{% endunless %}{% endfor %}]{% else %}"{{ a.nope }}"{% endif %}{% endif %}{% if a.both  %},
-    both: {% if a.both[0] %}[{% for b in a.both %}{{ b }}{% unless b.last %},{% endunless %}{% endfor %}]{% else %}"{{ a.both }}"{% endif %}{% endif %}{% if a.load  %},
-    load: {% if a.load[0] %}[{% for b in a.load %}{{ b }}{% unless b.last %},{% endunless %}{% endfor %}]{% else %}"{{ a.load }}"{% endif %}{% endif %}{% if a.callback  %},
+    yep: {% if a.yep[0] %}["{{ a.yep | join: '", "' }}"]{% else %}"{{ a.yep }}"{% endif %}{% endif %}{% if a.nope %},
+    nope: {% if a.nope[0] %}["{{ a.nope | join '", "' }}"]{% else %}"{{ a.nope }}"{% endif %}{% endif %}{% if a.both  %},
+    both: {% if a.both[0] %}["{{ a.both | join '", "' }}"]{% else %}"{{ a.both }}"{% endif %}{% endif %}{% if a.load  %},
+    load: {% if a.load[0] %}["{{ a.load | join '", "' }}"]{% else %}"{{ a.load }}"{% endif %}{% endif %}{% if a.callback  %},
     callback: {{ a.callback }}{% endif %}{% if a.complete  %},
     complete: {{ a.complete }}{% endif %}{% if forloop.last %}
 }{% else %}
