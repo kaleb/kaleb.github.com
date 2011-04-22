@@ -4,13 +4,17 @@ str: a, b, c
 hsh: {a: 1, b: 2}
 layout: nil
 yepnope:
-- load: "'http://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js'"
+- load: http://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js
   complete: |
     function() {
         if (!window.jQuery)
           yepnope('local/jquery.min.js');
     }
-- load: "'jquery.plugin.js'"
+- test: a === 'aaa'
+  yep:
+  - foo.js
+  - bar.js
+  load: "'jquery.plugin.js'"
   complete: >
     function() {
         jQuery(function () {
