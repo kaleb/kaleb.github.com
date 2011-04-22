@@ -23,7 +23,7 @@ yepnope:
     }
 ---
 
-{{ site.categories | map: 0 }}
+{{ site.posts | map: 'title' }}
 
 ---
 
