@@ -23,7 +23,7 @@ yepnope:
     }
 ---
 
-{{ site.categories.comp[0] }}
+{{ site.categories.comp[1] }}
 
 ---
 
