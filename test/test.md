@@ -23,7 +23,7 @@ yepnope:
     }
 ---
 
-{{ site.posts[0] }}
+{{ site.posts[1] }}
 
 ---
 
