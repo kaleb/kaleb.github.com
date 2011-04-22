@@ -23,11 +23,11 @@ yepnope:
     }
 ---
 
-{{ page.arr | first }}
+{{ page.arr.quantity }}
 
-{{ page.str | first }}
+{{ page.str.quantity }}
 
-{{ page.hsh | first }}
+{{ page.hsh.quantity }}
 
 <pre>{{ page.hsh }}</pre>
 
