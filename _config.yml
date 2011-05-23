@@ -1,3 +1,20 @@
-permalink: pretty
+permalink: /:categories/:title
 pygments: true
 layout: default
+paginate: 3
+lsi: true
+exclude: []
+maruku:
+    use_tex: true
+
+author: Kaleb Hornsby
+email: kaleb@hornsby.ws
+description: Software Engineer in Augusta, GA.
+keywords:
+- Hypertext
+- ECMAScript 5
+
+title: Kaleb Hornsby
+url: http://git.kaleb.hornsby.ws
+
+edit: https://github.com/kaleb/kaleb.github.com/file-edit/master
