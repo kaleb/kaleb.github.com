@@ -1,7 +1,14 @@
+---
+layout: default
+---
+
+Note, all methods that are marked with an exclamation mark (!) will mutate their
+object. All _italicized_ parameters are optional.
+
 Static Methods
 --------------
 
-isArray()
+isArray(obj)
 
     [[], [1], 2, "3"].map(Array.isArray); // [true,true,false,false]
 
