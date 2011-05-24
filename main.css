@@ -165,10 +165,12 @@ a:hover { color: #036; }
 /**
  * Primary styles
  *
- * Author: 
+ * Author: Kaleb Hornsby
  */
 
-
+em {
+  font-style: italic;
+}
 
 
 
