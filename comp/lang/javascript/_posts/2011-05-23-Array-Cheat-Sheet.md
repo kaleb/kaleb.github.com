@@ -46,7 +46,7 @@ indexOf(searchArg, _fromIndex_)
 
     [1,2,3].indexOf(3); // 2
 
-join(_separator_)
+join( _separator_ )
 
     [1,2,3].join();    // "1,2,3"
     [1,2,3].join("+"); // "1+2+3"
@@ -101,7 +101,7 @@ some(callback, _thisObj_)
 
     [1,2,3].some(decr); // true
 
-sort(_compareFunction_)!
+sort( _compareFunction_ )!
 
     var a = [2,3,1];
     a.sort(); a;                             // [1,2,3]
