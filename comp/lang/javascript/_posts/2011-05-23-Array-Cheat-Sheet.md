@@ -11,7 +11,8 @@ Static Methods
 isArray(obj)
 
     {% highlight js %}
-    [[], [1], 2, "3"].map(Array.isArray); // [true,true,false,false]
+    [[], [1], 2, "3"].map(Array.isArray);
+        //-> [true,true,false,false]
     {% endhighlight %}
 
 Instance Properties
@@ -36,7 +37,9 @@ concat(args,)
 every(callback, _thisObj_)
 
     {% highlight js %}
-    function decr(n, i, ary) { return n - 1; }
+    function decr(n, i, ary) {
+        return n - 1;
+    }
     [1,2,3].every(decr);
         //-> false
     [2,3].every(decr);
@@ -46,7 +49,9 @@ every(callback, _thisObj_)
 filter(callback, _thisObj_)
 
     {% highlight js %}
-    function decr(n, i, ary) { return n - 1; }
+    function decr(n, i, ary) {
+        return n - 1;
+    }
     [1,2,3].filter(decr);
         //-> [2,3]
     {% endhighlight %}
@@ -84,7 +89,9 @@ lastIndexOf(searchArg, _thisObj_)
 map(callback, _thisObj_)
 
     {% highlight js %}
-    function decr(n, i, ary) { return n - 1; }
+    function decr(n, i, ary) {
+        return n - 1;
+    }
     [1,2,3].map(decr);
         //-> [0,1,2]
     {% endhighlight %}
@@ -112,7 +119,9 @@ push(args,)!
 reduce(callBack, _initialValue_)
 
     {% highlight js %}
-    function sub(prev, current, i, ary) { return prev - current; }
+    function sub(prev, current, i, ary) {
+        return prev - current;
+    }
     [1,2,3].reduce(sub);
         //-> -4
     {% endhighlight %}
@@ -120,7 +129,9 @@ reduce(callBack, _initialValue_)
 reduceRight()
 
     {% highlight js %}
-    function sub(prev, current, i, ary) { return prev - current; }
+    function sub(prev, current, i, ary) {
+        return prev - current;
+    }
     [1,2,3].reduceRight(sub);
         //-> 0
     {% endhighlight %}
@@ -153,7 +164,9 @@ slice(begin, _end_)
 some(callback, _thisObj_)
 
     {% highlight js %}
-    [1,2,3].some(decr);
+    [1,2,3].some(function (n, i, ary) {
+        return n - 1;
+    });
         //-> true
     {% endhighlight %}
 
@@ -165,7 +178,7 @@ sort( _compareFunction_ )!
         //-> [1,2,3]
     function longer(a, b) {
         return a.length > b.length? 1:
-               a.length < b.length? -1: 0;
+            a.length < b.length? -1: 0;
     }
     ["aardvark","beaver","cat"].sort(longer);
         //-> ["cat","beaver","aardvark"]
@@ -183,10 +196,10 @@ splice(index, howMany, _args_,)!
 
 unshift(args,)!
 
-    {% highlight js %}
-    var a = [1,2];
-    a.unshift(3,4);
-        //-> 4
-    a;
-        //-> [1,2,3,4]
-    {% endhighlight %}
+{% highlight js %}
+var a = [1,2];
+a.unshift(3,4);
+    //-> 4
+a;
+    //-> [1,2,3,4]
+{% endhighlight %}
