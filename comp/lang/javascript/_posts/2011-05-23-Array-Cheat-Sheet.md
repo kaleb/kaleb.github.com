@@ -26,7 +26,7 @@ Instance Methods
 ----------------
 
 <dl>
-<dd>concat(args,)
+<dd>concat(args,)</dd>
 <dt>
 {% highlight js %}
 [1,2].concat(3,4);
@@ -34,9 +34,9 @@ Instance Methods
 [1,2].concat([3,4],[5,6]);
     //-> [1,2,3,4,5,6]
 {% endhighlight %}
-</dl>
-every(callback, _thisObj_)
-
+</dt>
+<dd>every(callback, _thisObj_)</dd>
+<dt>
 {% highlight js %}
 function decr(n, i, ary) {
     return n - 1;
@@ -46,9 +46,9 @@ function decr(n, i, ary) {
 [2,3].every(decr);
     //-> true
 {% endhighlight %}
-
-filter(callback, _thisObj_)
-
+</dt>
+<dd>filter(callback, _thisObj_)</dd>
+<dt>
 {% highlight js %}
 function decr(n, i, ary) {
     return n - 1;
@@ -56,39 +56,39 @@ function decr(n, i, ary) {
 [1,2,3].filter(decr);
     //-> [2,3]
 {% endhighlight %}
-
-foreach(callback, _thisObj_)
-
+</dt>
+<dd>foreach(callback, _thisObj_)</dd>
+<dt>
 {% highlight js %}
 [1,2,3].forEach(alert);
     // 3 alerts
 {% endhighlight %}
-
-indexOf(searchArg, _fromIndex_)
-
+</dt>
+<dd>indexOf(searchArg, _fromIndex_)</dd>
+<dt>
 {% highlight js %}
 [1,2,3].indexOf(3);
     //-> 2
 {% endhighlight %}
-
-join( _separator_ )
-
+</dt>
+<dd>join( _separator_ )</dd>
+<dt>
 {% highlight js %}
 [1,2,3].join();
     //-> "1,2,3"
 [1,2,3].join("+");
     //-> "1+2+3"
 {% endhighlight %}
-
-lastIndexOf(searchArg, _thisObj_)
-
+</dt>
+<dd>lastIndexOf(searchArg, _thisObj_)</dd>
+<dt>
 {% highlight js %}
 [1,2,3].indexOf(3);
     //-> 2
 {% endhighlight %}
-
-map(callback, _thisObj_)
-
+</dt>
+<dd>map(callback, _thisObj_)</dd>
+<dt>
 {% highlight js %}
 function decr(n, i, ary) {
     return n - 1;
@@ -96,9 +96,9 @@ function decr(n, i, ary) {
 [1,2,3].map(decr);
     //-> [0,1,2]
 {% endhighlight %}
-
-pop()!
-
+</dt>
+<dd>pop()!</dd>
+<dt>
 {% highlight js %}
 var a = [1,2,3];
 a.pop();
@@ -106,9 +106,9 @@ a.pop();
 a;
     //-> [1,2]
 {% endhighlight %}
-
-push(args,)!
-
+</dt>
+<dd>push(args,)!</dd>
+<dt>
 {% highlight js %}
 var a = [1,2];
 a.push(3, 4);
@@ -116,9 +116,9 @@ a.push(3, 4);
 a;
     //-> [1,2,3,4]
 {% endhighlight %}
-
-reduce(callBack, _initialValue_)
-
+</dt>
+<dd>reduce(callBack, _initialValue_)</dd>
+<dt>
 {% highlight js %}
 function sub(prev, current, i, ary) {
     return prev - current;
@@ -126,9 +126,9 @@ function sub(prev, current, i, ary) {
 [1,2,3].reduce(sub);
     //-> -4
 {% endhighlight %}
-
-reduceRight()
-
+</dt>
+<dd>reduceRight()</dd>
+<dt>
 {% highlight js %}
 function sub(prev, current, i, ary) {
     return prev - current;
@@ -136,17 +136,17 @@ function sub(prev, current, i, ary) {
 [1,2,3].reduceRight(sub);
     //-> 0
 {% endhighlight %}
-
-reverse()!
-
+</dt>
+<dd>reverse()!</dd>
+<dt>
 {% highlight js %}
 var a = [1,2,3];
 a.reverse(); a;
     //-> [3,2,1]
 {% endhighlight %}
-
-shift()!
-
+</dt>
+<dd>shift()!</dd>
+<dt>
 {% highlight js %}
 var a = [1,2,3];
 a.shift();
@@ -154,25 +154,25 @@ a.shift();
 a;
     //-> [2,3]
 {% endhighlight %}
-
-slice(begin, _end_)
-
+</dt>
+<dd>slice(begin, _end_)</dd>
+<dt>
 {% highlight js %}
 [1,2,3].slice(1,2);
     //-> [2]
 {% endhighlight %}
-
-some(callback, _thisObj_)
-
+</dt>
+<dd>some(callback, _thisObj_)</dd>
+<dt>
 {% highlight js %}
 [1,2,3].some(function (n, i, ary) {
     return n - 1;
 });
     //-> true
 {% endhighlight %}
-
-sort( _compareFunction_ )!
-
+</dt>
+<dd>sort( _compareFunction_ )!</dd>
+<dt>
 {% highlight js %}
 var a = [2,3,1];
 a.sort(); a;
@@ -184,9 +184,9 @@ function longer(a, b) {
 ["aardvark","beaver","cat"].sort(longer);
     //-> ["cat","beaver","aardvark"]
 {% endhighlight %}
-
-splice(index, howMany, _args_,)!
-
+</dt>
+<dd>splice(index, howMany, _args_,)!</dd>
+<dt>
 {% highlight js %}
 var a = [1,2,3];
 a.splice(1,2,4,5);
@@ -194,9 +194,9 @@ a.splice(1,2,4,5);
 a;
     //-> [1,4,5]
 {% endhighlight %}
-
-unshift(args,)!
-
+</dt>
+<dd>unshift(args,)!</dd>
+<dt>
 {% highlight js %}
 var a = [1,2];
 a.unshift(3,4);
@@ -204,3 +204,5 @@ a.unshift(3,4);
 a;
     //-> [1,2,3,4]
 {% endhighlight %}
+</dt>
+</dl>
