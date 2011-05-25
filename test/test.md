@@ -57,6 +57,9 @@ yepnope([{ {% for a in page.yepnope %}
 {% endif %}
 
 Hello
+: cruel
 : world
+Foo
+: bar
 
 {{ site.time }}
