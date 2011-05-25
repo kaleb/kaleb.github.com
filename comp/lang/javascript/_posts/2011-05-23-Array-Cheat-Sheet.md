@@ -35,7 +35,7 @@ Instance Methods
     //-> [1,2,3,4,5,6]
 {% endhighlight %}
 </dt>
-<dd>every(callback, _thisObj_)</dd>
+<dd>every(callback, <em>thisObj</em>)</dd>
 <dt>
 {% highlight js %}
 function decr(n, i, ary) {
@@ -47,7 +47,7 @@ function decr(n, i, ary) {
     //-> true
 {% endhighlight %}
 </dt>
-<dd>filter(callback, _thisObj_)</dd>
+<dd>filter(callback, <em>thisObj</em>)</dd>
 <dt>
 {% highlight js %}
 function decr(n, i, ary) {
@@ -57,21 +57,21 @@ function decr(n, i, ary) {
     //-> [2,3]
 {% endhighlight %}
 </dt>
-<dd>foreach(callback, _thisObj_)</dd>
+<dd>foreach(callback, <em>thisObj</em>)</dd>
 <dt>
 {% highlight js %}
 [1,2,3].forEach(alert);
     // 3 alerts
 {% endhighlight %}
 </dt>
-<dd>indexOf(searchArg, _fromIndex_)</dd>
+<dd>indexOf(searchArg, <em>fromIndex</em>)</dd>
 <dt>
 {% highlight js %}
 [1,2,3].indexOf(3);
     //-> 2
 {% endhighlight %}
 </dt>
-<dd>join( _separator_ )</dd>
+<dd>join(<em>separator</em>)</dd>
 <dt>
 {% highlight js %}
 [1,2,3].join();
@@ -80,14 +80,14 @@ function decr(n, i, ary) {
     //-> "1+2+3"
 {% endhighlight %}
 </dt>
-<dd>lastIndexOf(searchArg, _thisObj_)</dd>
+<dd>lastIndexOf(searchArg, <em>thisObj</em>)</dd>
 <dt>
 {% highlight js %}
 [1,2,3].indexOf(3);
     //-> 2
 {% endhighlight %}
 </dt>
-<dd>map(callback, _thisObj_)</dd>
+<dd>map(callback, <em>thisObj</em>)</dd>
 <dt>
 {% highlight js %}
 function decr(n, i, ary) {
@@ -117,7 +117,7 @@ a;
     //-> [1,2,3,4]
 {% endhighlight %}
 </dt>
-<dd>reduce(callBack, _initialValue_)</dd>
+<dd>reduce(callBack, <em>initialValue</em>)</dd>
 <dt>
 {% highlight js %}
 function sub(prev, current, i, ary) {
@@ -155,14 +155,14 @@ a;
     //-> [2,3]
 {% endhighlight %}
 </dt>
-<dd>slice(begin, _end_)</dd>
+<dd>slice(begin, <em>end</em>)</dd>
 <dt>
 {% highlight js %}
 [1,2,3].slice(1,2);
     //-> [2]
 {% endhighlight %}
 </dt>
-<dd>some(callback, _thisObj_)</dd>
+<dd>some(callback, <em>thisObj</em>)</dd>
 <dt>
 {% highlight js %}
 [1,2,3].some(function (n, i, ary) {
@@ -171,7 +171,7 @@ a;
     //-> true
 {% endhighlight %}
 </dt>
-<dd>sort( _compareFunction_ )!</dd>
+<dd>sort( <em>compareFunction</em> )!</dd>
 <dt>
 {% highlight js %}
 var a = [2,3,1];
@@ -185,7 +185,7 @@ function longer(a, b) {
     //-> ["cat","beaver","aardvark"]
 {% endhighlight %}
 </dt>
-<dd>splice(index, howMany, _args_,)!</dd>
+<dd>splice(index, howMany, <em>args</em>,)!</dd>
 <dt>
 {% highlight js %}
 var a = [1,2,3];
