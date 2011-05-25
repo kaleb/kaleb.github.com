@@ -11,7 +11,7 @@ Static Methods
 isArray(obj)
 
 {% highlight js %}
-[[], [1], 2, "3"].map(Array.isArray);
+[[],[1],2,"3"].map(Array.isArray);
     //-> [true,true,false,false]
 {% endhighlight %}
 
@@ -38,7 +38,7 @@ Instance Methods
 <dd>every(callback, <em>thisObj</em>)</dd>
 <dt>
 {% highlight js %}
-function decr(n, i, ary) {
+function decr(n,i,ary) {
     return n - 1;
 }
 [1,2,3].every(decr);
@@ -50,7 +50,7 @@ function decr(n, i, ary) {
 <dd>filter(callback, <em>thisObj</em>)</dd>
 <dt>
 {% highlight js %}
-function decr(n, i, ary) {
+function decr(n,i,ary) {
     return n - 1;
 }
 [1,2,3].filter(decr);
@@ -90,7 +90,7 @@ function decr(n, i, ary) {
 <dd>map(callback, <em>thisObj</em>)</dd>
 <dt>
 {% highlight js %}
-function decr(n, i, ary) {
+function decr(n,i,ary) {
     return n - 1;
 }
 [1,2,3].map(decr);
@@ -120,7 +120,7 @@ a;
 <dd>reduce(callBack, <em>initialValue</em>)</dd>
 <dt>
 {% highlight js %}
-function sub(prev, current, i, ary) {
+function sub(prev,current,i,ary) {
     return prev - current;
 }
 [1,2,3].reduce(sub);
@@ -130,7 +130,7 @@ function sub(prev, current, i, ary) {
 <dd>reduceRight()</dd>
 <dt>
 {% highlight js %}
-function sub(prev, current, i, ary) {
+function sub(prev,current,i,ary) {
     return prev - current;
 }
 [1,2,3].reduceRight(sub);
@@ -165,19 +165,19 @@ a;
 <dd>some(callback, <em>thisObj</em>)</dd>
 <dt>
 {% highlight js %}
-[1,2,3].some(function (n, i, ary) {
+[1,2,3].some(function(n,i,ary) {
     return n - 1;
 });
     //-> true
 {% endhighlight %}
 </dt>
-<dd>sort( <em>compareFunction</em> )!</dd>
+<dd>sort(<em>compareFunction</em>)!</dd>
 <dt>
 {% highlight js %}
 var a = [2,3,1];
 a.sort(); a;
     //-> [1,2,3]
-function longer(a, b) {
+function longer(a,b) {
     return a.length > b.length? 1:
         a.length < b.length? -1: 0;
 }
