@@ -57,7 +57,8 @@ yepnope([{ {% for a in page.yepnope %}
 {% endif %}
 
 Hello
-:     cruel
+:
+     cruel
 : world
 
 Foo
