@@ -182,7 +182,8 @@ function longer(a,b) {
   return a.length > b.length? 1:
     a.length < b.length? -1: 0;
 }
-["aardvark","beaver","cat"].sort(longer);
+a = ["aardvark","beaver","cat"]
+a.sort(longer);
   //-> ["cat","beaver","aardvark"]
 {% endhighlight %}
 </dt>
