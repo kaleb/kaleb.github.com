@@ -1,4 +1,4 @@
 ---
 layout: redirect
-redirect: http://google.com/
 ---
+http://google.com/
