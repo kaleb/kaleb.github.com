@@ -27,13 +27,13 @@ author:
 
 ## The absolute URL of your site. Should be user.github.com or whatever is in
 ## the root CNAME file
-url:         http://git.kaleb.hornsby.ws/gh-pages-boilerplate
+url:         http://git.kaleb.hornsby.ws
 
 ## The name of the site, <title> and <h1> in _layouts/default.html
-title:       GitHub Pages Boilerplate
+title:       Kaleb Hornsby
 
 ## <meta name=description> and <h2> in /_layouts/default.html
-description: Simplifying pages setup.
+description: ... code monkey
 
 ## <meta name=keywords> in  /_layouts/default.html, probably not useful anymore.
 keywords:    [ GitHub, HTML5, CSS3 ]
@@ -59,7 +59,7 @@ markdown:    maruku
 
 ## Controls the URLs that posts are generated with.
 ## https://github.com/mojombo/jekyll/wiki/Permalinks
-permalink:   date
+permalink:   /:categories/:title
 
 ## Enables or disables Jekyll from recreating the site when files are modified.
 #auto:        false
