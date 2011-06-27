@@ -61,7 +61,7 @@ function wikify(userName, repoName, pageName, extension) {
 $(function() {
     $(window).bind('hashchange', function(e) {
         var url = e.fragment.replace(' ','-');
-        wikify('kaleb', 'gh-pages-boilerplate', url, 'md');
+        wikify('kaleb', 'kaleb.github.com', url, 'md');
     });
     $(window).trigger('hashchange');
 });
