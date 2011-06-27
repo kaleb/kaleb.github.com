@@ -1,0 +1,68 @@
+---
+layout: root
+---
+<div id="container">
+  <header id="site_header">{% include site-header.html %}</header>
+  <section id="main" role="main">
+<div id="wiki-content">
+<h1>Wiki</h1>
+Loading...
+</div>
+<div id="wiki-warning">
+It looks like you don't have JavaScript enabled. You can view the
+<a href="https://github.com/{{ site.author.gh.user }}/{{ site.author.gh.repo }}/wiki">
+{{ site.title }} wiki on GitHub</a> instead.
+</div>
+  </section>
+  <footer id="site_footer" class="clearfix">{% include site-footer.html %}</footer>
+</div>
+{% include scripts.html %}
+<script src="https://github.com/coreyti/showdown/raw/master/compressed/showdown.js"></script>
+<script src="http://github.com/cowboy/jquery-bbq/raw/v1.2.1/jquery.ba-bbq.min.js"></script>
+<script>
+function escapeWikiAnchors(text) {
+    text = text.replace(/\[\[([^|\]]+)\|([^\]]+)\]\]/g, function(wholeMatch, m1, m2) {
+        return "[" + m1 + "](" + (!(/\/\//).test(m2) ? '#' : '') + m2 + ")";
+    });
+
+    text = text.replace(/\[\[([^\]]+)\]\]/g, function(wholeMatch, m1) {
+        return "[" + m1 + "](#" + m1.split(' ').join('-') + ")";
+    });
+
+    return text;
+}
+
+var converter = new Showdown.converter();
+
+function wikify(userName, repoName, pageName, extension) {
+    var pageName = pageName || 'Home',
+        wikiUrl = ['https://github.com/', userName, '/', repoName, '/wiki/'].join(''),
+        url = [
+        "http://query.yahooapis.com/v1/public/yql?q=select%20*%20from%20data.headers%20where%20url%3D%22",
+        wikiUrl, pageName, ".", extension,
+        "%22&format=json&env=store%3A%2F%2Fdatatables.org%2Falltableswithkeys&callback=?"].join('');
+    $.getJSON(url, function(data, textStatus, jqXHR) {
+        var content;
+        if (data.query.results.resources.redirect) {
+            $('#edit-link').attr('href', wikiUrl + '_new?wiki[name]=' + pageName);
+            content = "This is a non-existent page";
+            pageName = "Not Found";
+        } else {
+            content = converter.makeHtml(escapeWikiAnchors(data.query.results.resources.content));
+            $('#edit-link').attr('href', wikiUrl + pageName + '/_edit');
+        }
+        content = $('#wiki-content').html(content);
+        if (content.find('h1').length < 1) {
+            content.prepend('<h1>' + pageName.replace('-',' ') + '</h1>');
+        }
+    });
+}
+
+$(function() {
+    $(window).bind('hashchange', function(e) {
+        var url = e.fragment.replace(' ','-');
+        wikify('kaleb', 'gh-pages-boilerplate', url, 'md');
+    });
+    $(window).trigger('hashchange');
+});
+</script>
