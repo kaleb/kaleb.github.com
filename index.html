@@ -1,23 +1,8 @@
 ---
 layout: default
-title: Home
+title: Root
 ---
-<p>
-This is a boilerplate for use in <a href="http://pages.github.com/">Github Pages</a>.
-It is based on <a href="http://html5boilerplate.com">The HTML5 Boilerplate</a>, and
-comes with <a href="http://jquery.org">jQuery</a> and
-<a href="http://960.gs">text.css from 960.gs</a>.
-</p>
-<h2>Instructions</h2>
-<ol>
- <li>fork this repo
- <li>rename this repo to <em>user</em>.github.com
- <li>edit <code>_config.yml</code>
- <li>edit <code>index.html</code>
- <li>edit <code>_includes/style.css</code>
- <li>navigate to <em>user</em>.github.com and enjoy
-</ol>
-<hr>
+Some general info will go here in the future.
 <section>
 <h2>Web Log</h2>
 {% for page in paginator.posts %}
@@ -26,7 +11,7 @@ comes with <a href="http://jquery.org">jQuery</a> and
 </section>
 <footer class="pagination">
 {% if paginator.previous_page == 1 %}
-  <a href="{{ site.url }}/blog" rel="prev start" class="previous">Newer</a>
+  <a href="{{ site.url }}" rel="prev start" class="previous">Newer</a>
 {% elsif paginator.previous_page %}
   <a href="{{ site.url }}/page{{paginator.previous_page}}" rel="prev" class="previous">Newer</a>
 {% else %}
