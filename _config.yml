@@ -109,7 +109,7 @@ kramdown:
 #lsi:         false
 
 ## Enables highlight tag with Pygments.
-#pygments:    false
+pygments:    yes
 
 ##
 #safe:        false
