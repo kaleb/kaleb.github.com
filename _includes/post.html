@@ -21,9 +21,7 @@
     {% if page.categories and page.categories[0] %}
     in
     <span class="categories" itemprop="articleSection">
-      {% for category in page.categories %}
-      {% capture previous_category %}{{ previous_category }}/{{ category }}{% endcapture %}
-      {% unless forloop.first %}:{% endunless %}
+      {% for category in page.categories %}{% capture previous_category %}{{ previous_category }}/{{ category }}{% endcapture %}{% unless forloop.first %}.{% endunless %}
       <a href="{{ site.url }}{{ previous_category }}" rel="tag">{{ category }}</a>
       {% endfor %}
     </span>
