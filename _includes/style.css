@@ -71,3 +71,6 @@ a {
 a:hover {
 	text-decoration:underline;
 }
+header ul, nav ul {
+	-webkit-padding-start:0;
+}
