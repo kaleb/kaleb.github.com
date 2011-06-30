@@ -63,6 +63,7 @@ dl.cheatsheet>dt:target+dd {
 	display:block;
 }
 a {
+	color:#607890;
 	text-decoration:none;
 }
 a:hover {
