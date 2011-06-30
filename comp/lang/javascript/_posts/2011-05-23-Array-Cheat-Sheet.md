@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: post
 ---
 Note, all methods that are marked with an exclamation mark (!) will mutate their
 object. All _italicized_ parameters are optional.
