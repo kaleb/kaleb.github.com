@@ -2,8 +2,8 @@
 layout: body
 ---
 <section>
-<header>
+{% if page.title %}<header>
 <h1>{{ page.title }}</h1>
-</header>
+</header>{% endif %}
 {{ content }}
 </section>
