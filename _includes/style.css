@@ -62,8 +62,10 @@ dl.cheatsheet dd {
 dl.cheatsheet>dt:target+dd {
 	display:block;
 }
-a {
+a, a:active, a:visited {
 	color:#607890;
+}
+a {
 	text-decoration:none;
 }
 a:hover {
