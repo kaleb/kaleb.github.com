@@ -63,6 +63,6 @@ footer.pagination .next {
 dl.cheatsheet dd {
 	display:none;
 }
-dl.cheatsheet dd:target {
+dl.cheatsheet>dt:target+dd {
 	display:block;
 }
