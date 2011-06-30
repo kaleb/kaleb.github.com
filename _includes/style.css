@@ -60,3 +60,9 @@ footer.pagination .next {
 #SE-flair {
 	float:left;
 }
+dl.cheatsheet dd {
+	display:none;
+}
+dl.cheatsheet dd:target {
+	display:block;
+}

@@ -1,31 +1,22 @@
 ---
 layout: default
 ---
-<style>
-* {
-  background:lightgrey;
-}
-dd {
-  display:none;
-}
-dd:target {
-  display:block;
-}
-</style>
-
 Note, all methods that are marked with an exclamation mark (!) will mutate their
 object. All _italicized_ parameters are optional.
 
 Static Methods
 --------------
 
-isArray(obj)
-
+<dl class="cheatsheet">
+<dt id="Array.isArray"><a href="#Array.isArray">isArray(obj)</a></dt>
+<dd>
 {% highlight js %}
 var a = [[],[1],2,"3"];
 a.map(Array.isArray);
   //-> [true,true,false,false]
 {% endhighlight %}
+</dd>
+</dl>
 
 Instance Properties
 -------------------
@@ -37,9 +28,9 @@ length
 Instance Methods
 ----------------
 
-<dl>
-<dt><a href="#Array.prototype.concat">concat(args,)</a></dt>
-<dd id="Array.prototype.concat">
+<dl class="cheatsheet">
+<dt id="Array.prototype.concat"><a href="#Array.prototype.concat">concat(args,)</a></dt>
+<dd>
 {% highlight js %}
 [1,2].concat(3,4);
   //-> [1,2,3,4]
@@ -47,8 +38,8 @@ Instance Methods
   //-> [1,2,3,4,5,6]
 {% endhighlight %}
 </dd>
-<dt><a href="#Array.prototype.every">every(callback, <em>thisObj</em>)</a></dt>
-<dd id="Array.prototype.every">
+<dt id="Array.prototype.every"><a href="#Array.prototype.every">every(callback, <em>thisObj</em>)</a></dt>
+<dd>
 {% highlight js %}
 function decr(n,i,ary) {
   return n - 1;
@@ -59,8 +50,8 @@ function decr(n,i,ary) {
   //-> true
 {% endhighlight %}
 </dd>
-<dt><a href="#Array.prototype.filter">filter(callback, <em>thisObj</em>)</a></dt>
-<dd id="Array.prototype.filter">
+<dt id="Array.prototype.filter"><a href="#Array.prototype.filter">filter(callback, <em>thisObj</em>)</a></dt>
+<dd>
 {% highlight js %}
 function decr(n,i,ary) {
   return n - 1;
@@ -69,22 +60,22 @@ function decr(n,i,ary) {
   //-> [2,3]
 {% endhighlight %}
 </dd>
-<dt><a href="#Array.prototype.foreach">foreach(callback, <em>thisObj</em>)</a></dt>
-<dd id="Array.prototype.foreach">
+<dt id="Array.prototype.foreach"><a href="#Array.prototype.foreach">foreach(callback, <em>thisObj</em>)</a></dt>
+<dd>
 {% highlight js %}
 [1,2,3].forEach(alert);
   // 3 alerts
 {% endhighlight %}
 </dd>
-<dt><a href="#Array.prototype.indexOf">indexOf(searchArg, <em>fromIndex</em>)</a></dt>
-<dd id="Array.prototype.indexOf">
+<dt id="Array.prototype.indexOf"><a href="#Array.prototype.indexOf">indexOf(searchArg, <em>fromIndex</em>)</a></dt>
+<dd>
 {% highlight js %}
 [1,2,3].indexOf(3);
   //-> 2
 {% endhighlight %}
 </dd>
-<dt><a href="#Array.prototype.join">join(<em>separator</em>)</a></dt>
-<dd id="Array.prototype.join">
+<dt id="Array.prototype.join"><a href="#Array.prototype.join">join(<em>separator</em>)</a></dt>
+<dd>
 {% highlight js %}
 [1,2,3].join();
   //-> "1,2,3"
@@ -92,15 +83,15 @@ function decr(n,i,ary) {
   //-> "1+2+3"
 {% endhighlight %}
 </dd>
-<dt><a href="#Array.prototype.lastIndexOf">lastIndexOf(searchArg, <em>thisObj</em>)</a></dt>
-<dd id="Array.prototype.lastIndexOf">
+<dt id="Array.prototype.lastIndexOf"><a href="#Array.prototype.lastIndexOf">lastIndexOf(searchArg, <em>thisObj</em>)</a></dt>
+<dd>
 {% highlight js %}
 [1,2,3].indexOf(3);
   //-> 2
 {% endhighlight %}
 </dd>
-<dt><a href="#Array.prototype.map">map(callback, <em>thisObj</em>)</a></dt>
-<dd id="Array.prototype.map">
+<dt id="Array.prototype.map"><a href="#Array.prototype.map">map(callback, <em>thisObj</em>)</a></dt>
+<dd>
 {% highlight js %}
 function decr(n,i,ary) {
   return n - 1;
@@ -109,8 +100,8 @@ function decr(n,i,ary) {
   //-> [0,1,2]
 {% endhighlight %}
 </dd>
-<dt><a href="#Array.prototype.pop">pop()!</a></dt>
-<dd id="Array.prototype.pop">
+<dt id="Array.prototype.pop"><a href="#Array.prototype.pop">pop()!</a></dt>
+<dd>
 {% highlight js %}
 var a = [1,2,3];
 a.pop();
@@ -119,8 +110,8 @@ a;
   //-> [1,2]
 {% endhighlight %}
 </dd>
-<dt><a href="#Array.prototype.push">push(args,)!</a></dt>
-<dd id="Array.prototype.push">
+<dt id="Array.prototype.push"><a href="#Array.prototype.push">push(args,)!</a></dt>
+<dd>
 {% highlight js %}
 var a = [1,2];
 a.push(3, 4);
@@ -129,8 +120,8 @@ a;
   //-> [1,2,3,4]
 {% endhighlight %}
 </dd>
-<dt><a href="#Array.prototype.reduce">reduce(callBack, <em>initialValue</em>)</a></dt>
-<dd id="Array.prototype.reduce">
+<dt id="Array.prototype.reduce"><a href="#Array.prototype.reduce">reduce(callBack, <em>initialValue</em>)</a></dt>
+<dd>
 {% highlight js %}
 function sub(p,n,i,ary) {
   return p - n;
@@ -139,8 +130,8 @@ function sub(p,n,i,ary) {
   //-> -4
 {% endhighlight %}
 </dd>
-<dt><a href="#Array.prototype.reduceRight">reduceRight()</a></dt>
-<dd id="Array.prototype.reduceRight">
+<dt id="Array.prototype.reduceRight"><a href="#Array.prototype.reduceRight">reduceRight()</a></dt>
+<dd>
 {% highlight js %}
 function sub(p,n,i,ary) {
   return p - n;
@@ -149,16 +140,16 @@ function sub(p,n,i,ary) {
   //-> 0
 {% endhighlight %}
 </dd>
-<dt><a href="#Array.prototype.reverse">reverse()!</a></dt>
-<dd id="Array.prototype.reverse">
+<dt id="Array.prototype.reverse"><a href="#Array.prototype.reverse">reverse()!</a></dt>
+<dd>
 {% highlight js %}
 var a = [1,2,3];
 a.reverse(); a;
   //-> [3,2,1]
 {% endhighlight %}
 </dd>
-<dt><a href="#Array.prototype.shift">shift()!</a></dt>
-<dd id="Array.prototype.shift">
+<dt id="Array.prototype.shift"><a href="#Array.prototype.shift">shift()!</a></dt>
+<dd>
 {% highlight js %}
 var a = [1,2,3];
 a.shift();
@@ -167,15 +158,15 @@ a;
   //-> [2,3]
 {% endhighlight %}
 </dd>
-<dt><a href="#Array.prototype.slice">slice(begin, <em>end</em>)</a></dt>
-<dd id="Array.prototype.slice">
+<dt id="Array.prototype.slice"><a href="#Array.prototype.slice">slice(begin, <em>end</em>)</a></dt>
+<dd>
 {% highlight js %}
 [1,2,3].slice(1,2);
   //-> [2]
 {% endhighlight %}
 </dd>
-<dt><a href="#Array.prototype.some">some(callback, <em>thisObj</em>)</a></dt>
-<dd id="Array.prototype.some">
+<dt id="Array.prototype.some"><a href="#Array.prototype.some">some(callback, <em>thisObj</em>)</a></dt>
+<dd>
 {% highlight js %}
 [1,2,3].some(function(n,i,ary) {
   return n - 1;
@@ -183,8 +174,8 @@ a;
   //-> true
 {% endhighlight %}
 </dd>
-<dt><a href="#Array.prototype.sort">sort(<em>compareFunction</em>)!</a></dt>
-<dd id="Array.prototype.sort">
+<dt id="Array.prototype.sort"><a href="#Array.prototype.sort">sort(<em>compareFunction</em>)!</a></dt>
+<dd>
 {% highlight js %}
 var a = [2,3,1];
 a.sort(); a;
@@ -198,8 +189,8 @@ a.sort(longer);
   //-> ["cat","beaver","aardvark"]
 {% endhighlight %}
 </dd>
-<dt><a href="#Array.prototype.splice">splice(index, howMany, <em>args</em>,)!</a></dt>
-<dd id="Array.prototype.splice">
+<dt id="Array.prototype.splice"><a href="#Array.prototype.splice">splice(index, howMany, <em>args</em>,)!</a></dt>
+<dd>
 {% highlight js %}
 var a = [1,2,3];
 a.splice(1,2,4,5);
@@ -208,8 +199,8 @@ a;
   //-> [1,4,5]
 {% endhighlight %}
 </dd>
-<dt><a href="#Array.prototype.unshift">unshift(args,)!</a></dt>
-<dd id="Array.prototype.unshift">
+<dt id="Array.prototype.unshift"><a href="#Array.prototype.unshift">unshift(args,)!</a></dt>
+<dd>
 {% highlight js %}
 var a = [1,2];
 a.unshift(3,4);
