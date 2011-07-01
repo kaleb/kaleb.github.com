@@ -17,6 +17,9 @@ headers and footers
 	list-style:none;
 	list-style-image: none;
 }
+#site-header h1, #site_header h2 {
+	margin:0;
+}
 #site_footer img {
 	float: right;
 }
