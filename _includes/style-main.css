@@ -1,35 +1,32 @@
-#main {
-	background: white;
-	padding-bottom: 0.5px;
-}
+#main {	background: white; }
 
 {%comment%}--------------------------------------------------------------------
- %  Headers and Footers
+%% Headers and Footers
 {%endcomment%}-----------------------------------------------------------------
 
-#site_header hgroup, #site_footer { background: #AAA; }
-#site_header, footer.pagination { background: #CCC; }
-#site_header li, .post header li {
+#site-header hgroup, #site-footer { background: #AAA; }
+#site-header, footer.pagination { background: #CCC; }
+#site-header li, .post header li {
 	display:inline;
 	margin:0;
 	list-style:none;
 	list-style-image: none;
 }
-#site-header h1, #site_header h2 {
+#site-header h1, #site-header h2 {
 	margin:0;
 	-webkit-margin-before:0;
 	-webkit-margin-after:0;
 	-webkit-margin-start:0;
 	-webkit-margin-end:0;
 }
-#site_footer img { float: right; }
+#site-footer img { float: right; }
 footer.pagination { text-align: center; }
 footer.pagination .previous { float: left; }
 footer.pagination .next { float: right; }
 header ul, nav ul { -webkit-padding-start:0; }
 
 {%comment%}--------------------------------------------------------------------
- %  Other Elements
+%% Other Elements
 {%endcomment%}-----------------------------------------------------------------
 
 .posted {
