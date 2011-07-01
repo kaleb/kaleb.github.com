@@ -1,5 +1,4 @@
 /* This is where all custom styles go.*/
-{% include text.css %}
 #main {
 	background: white;
 	padding-bottom: 0.5px;
