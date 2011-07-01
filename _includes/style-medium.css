@@ -1,5 +1,6 @@
 #site-header h1, #site-header h2 { display:inline; }
 #SE-flair {
 	float:left;
-	margin:0.5em;
+	margin-right:0.5em;
 }
+#main { margin:1em; }
