@@ -4,13 +4,13 @@
 %% Headers and Footers
 {%endcomment%}-----------------------------------------------------------------
 
-#site-header hgroup, #site-footer { background: #AAA; }
-#site-header, footer.pagination { background: #CCC; }
+#site-header hgroup, #site-footer { background:#AAA; }
+#site-header, footer.pagination { background:#CCC; }
 #site-header li, .post header li {
 	display:inline;
 	margin:0;
 	list-style:none;
-	list-style-image: none;
+	list-style-image:none;
 }
 #site-header h1, #site-header h2 {
 	margin:0;
@@ -19,10 +19,10 @@
 	-webkit-margin-start:0;
 	-webkit-margin-end:0;
 }
-#site-footer img { float: right; }
-footer.pagination { text-align: center; }
-footer.pagination .previous { float: left; }
-footer.pagination .next { float: right; }
+#site-footer img { float:right; }
+footer.pagination { text-align:center; }
+footer.pagination .previous { float:left; }
+footer.pagination .next { float:right; }
 header ul, nav ul { -webkit-padding-start:0; }
 
 {%comment%}--------------------------------------------------------------------
@@ -35,7 +35,6 @@ header ul, nav ul { -webkit-padding-start:0; }
 }
 .float-right { float:right; }
 .js #wiki-warning, .no-js #wiki-content, dl.cheatsheet dd { display:none; }
-#SE-flair { float:left; }
 dl.cheatsheet>dt:target+dd { display:block; }
 a, a:active, a:visited { color:#607890; }
 a { text-decoration:none; }
