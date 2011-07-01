@@ -207,8 +207,8 @@ table { border-collapse: collapse; border-spacing: 0; }
    Author: 
    ========================================================================== */
 
-{% include style.css %}
-{% include code.css %}
+{% include style-main.css %}
+{% include style-code.css %}
 
 /* =============================================================================
    Non-semantic helper classes
@@ -248,12 +248,12 @@ table { border-collapse: collapse; border-spacing: 0; }
 
 @media only screen and (min-width: 480px) {
   /* Style adjustments for viewports 480px and over go here */
-
+{% include style-medium.css %}
 }
 
 @media only screen and (min-width: 768px) {
   /* Style adjustments for viewports 768px and over go here */
-
+{% include style-wide.css %}
 }
 
 
