@@ -4,7 +4,7 @@
 %% Headers and Footers
 {%endcomment%}-----------------------------------------------------------------
 
-#site-header hgroup, #site-footer { background:red; }
+#site-header hgroup, #site-footer { background:red !important; }
 #site-header, footer.pagination { background:#CCC; }
 #site-header li, .post header li {
 	display:inline;
