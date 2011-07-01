@@ -1,1 +1,6 @@
-#site-header h1, #site-header h2 { display:inline;background:red; }
+#site-header h1, #site-header h2 { display:inline; }
+#SE-flair {
+	float:left;
+	margin:0.5em;
+	display:inline-block;
+}
