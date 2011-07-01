@@ -19,6 +19,7 @@
 	-webkit-margin-start:0;
 	-webkit-margin-end:0;
 }
+#site-header h2 { display:none; }
 #site-footer img { float:right; }
 footer.pagination { text-align:center; }
 footer.pagination .previous { float:left; }
