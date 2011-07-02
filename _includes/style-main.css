@@ -3,42 +3,59 @@ body { background:#CCC; }
 #main {	background:white; }
 
 {%comment%}--------------------------------------------------------------------
+%% Utility Classes
+{%endcomment%}-----------------------------------------------------------------
+
+.float-right { float:right; }
+
+{%comment%}--------------------------------------------------------------------
 %% Headers and Footers
 {%endcomment%}-----------------------------------------------------------------
 
-#site-header hgroup, #site-footer { background:red !important; }
-#site-header li, .post header li {
+#site-header hgroup, #site-footer { background-color:#BADA55 !important; }
+header li {
 	display:inline;
 	margin:0;
 	list-style:none;
-	list-style-image:none;
 }
-#site-header h1, #site-header h2 {
-	margin:0;
-/*
-	-webkit-margin-before:0;
-	-webkit-margin-after:0;
-	-webkit-margin-start:0;
-	-webkit-margin-end:0;
-*/
-}
+#site-header h1, #site-header h2 { margin:0; }
 #site-header h2 { display:none; }
 #site-footer img { float:right; }
+
+{%comment%}--------------------------------------------------------------------
+%% Pagination
+{%endcomment%}-----------------------------------------------------------------
+
 footer.pagination { text-align:center; }
 footer.pagination .previous { float:left; }
 footer.pagination .next { float:right; }
 
 {%comment%}--------------------------------------------------------------------
-%% Other Elements
+%% Anchors
+{%endcomment%}-----------------------------------------------------------------
+
+a, a:active, a:visited { color:#607890; }
+a { text-decoration:none; }
+a:hover { text-decoration:underline; }
+
+{%comment%}--------------------------------------------------------------------
+%% Posts
 {%endcomment%}-----------------------------------------------------------------
 
 .posted {
 	margin-top:-20px;
 	margin-bottom:20px;
 }
-.float-right { float:right; }
-.js #wiki-warning, .no-js #wiki-content, dl.cheatsheet dd { display:none; }
+
+{%comment%}--------------------------------------------------------------------
+%% Wiki
+{%endcomment%}-----------------------------------------------------------------
+
+.js #wiki-warning, .no-js #wiki-content { display:none; }
+
+{%comment%}--------------------------------------------------------------------
+%% Cheatsheets
+{%endcomment%}-----------------------------------------------------------------
+
+dl.cheatsheet dd { display:none; }
 dl.cheatsheet>dt:target+dd { display:block; }
-a, a:active, a:visited { color:#607890; }
-a { text-decoration:none; }
-a:hover { text-decoration:underline; }
