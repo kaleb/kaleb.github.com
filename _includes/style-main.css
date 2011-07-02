@@ -5,8 +5,6 @@ header li, footer li, nav li { display:inline; }
 %% Colors
 -----------------------------------------------------------------{%endcomment%}
 
-body { background:#CCC; }
-#main {	background:white; }
 #site-header, #site-footer { background-color:#BADA55; }
 a, a:active, a:visited { color:#607890; }
 
