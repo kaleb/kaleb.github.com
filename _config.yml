@@ -33,10 +33,10 @@ url:         http://kaleb.hornsby.ws
 title:       Kaleb Hornsby
 
 ## <meta name=description> and <h2> in /_layouts/default.html
-description: ... code monkey
+description: Software Developer in Augusta, GA
 
 ## <meta name=keywords> in  /_layouts/default.html, probably not useful anymore.
-keywords:    [ GitHub, HTML5, CSS3 ]
+keywords:    [ HTML5, CSS3, JavaScript, ES5, Linux ]
 
 ## Splits your posts up over multiple subdirectories called “page2”, “page3”, … “pageN”
 paginate:    5

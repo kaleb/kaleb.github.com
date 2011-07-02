@@ -11,7 +11,7 @@
   {% comment %}
     Always force latest IE rendering engine (even in intranet) & Chrome Frame
   {% endcomment %}
-  <!--[if IE]><meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"><![endif]-->
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
   <title>{% if page.title %} {{page.title}} - {% endif %} {{site.title}}</title>
   <meta name="description" content="{%if page.description%}{{page.description}}{%else%}{{site.description}}{%endif%}">
   <meta name="keywords" content="{%if page.categories%}{{page.categories|join:','}}{%else%}{{site.keywords|join:','}}{%endif%}">
@@ -24,7 +24,7 @@
   <link rel="alternate" type="application/atom+xml" title="Site Changes Atom Feed" href="https://github.com/{{site.author.gh.user}}/{{site.author.gh.repo}}/commits/gh-pages.atom">
   <link rel="alternate" type="application/x-wiki" title="Edit this page on Github." href="{% include edit.url %}">{% comment %}http://universaleditbutton.org{% endcomment %}
   <link rel="stylesheet" href="{{ site.url }}/+/style.css?v=2">{% comment %}CSS: implied media="all"{% endcomment %}
-  <script src="//cdnjs.cloudflare.com/ajax/libs/modernizr/2.0.4/modernizr.min.js">{% comment %}
+  <script src="//cdnjs.cloudflare.com/ajax/libs/modernizr/2.0.6/modernizr.min.js">{% comment %}
     All JavaScript at the bottom, except for Modernizr which enables HTML5
     elements & feature detects
   {% endcomment %}</script>
