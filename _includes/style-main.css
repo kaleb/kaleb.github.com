@@ -1,6 +1,14 @@
-header ul, footer ul, nav ul { padding:0; }
+header ul, footer ul, nav ul { padding:0; margin:0; }
+header li, footer li, nav li { display:inline; }
+
+{%comment%}--------------------------------------------------------------------
+%% Colors
+-----------------------------------------------------------------{%endcomment%}
+
 body { background:#CCC; }
 #main {	background:white; }
+#site-header, #site-footer { background-color:#BADA55; }
+a, a:active, a:visited { color:#607890; }
 
 {%comment%}--------------------------------------------------------------------
 %% Utility Classes
@@ -12,12 +20,6 @@ body { background:#CCC; }
 %% Headers and Footers
 -----------------------------------------------------------------{%endcomment%}
 
-#site-header hgroup, #site-footer { background-color:#BADA55 !important; }
-header li {
-	display:inline;
-	margin:0;
-	list-style:none;
-}
 #site-header h1, #site-header h2 { margin:0; }
 #site-header h2 { display:none; }
 #site-footer img { float:right; }
@@ -34,7 +36,6 @@ footer.pagination .next { float:right; }
 %% Anchors
 -----------------------------------------------------------------{%endcomment%}
 
-a, a:active, a:visited { color:#607890; }
 a { text-decoration:none; }
 a:hover { text-decoration:underline; }
 
