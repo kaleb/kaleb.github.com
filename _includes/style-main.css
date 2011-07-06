@@ -1,10 +1,8 @@
-header ul, footer ul, nav ul { padding:0; margin:0; }
-header li, footer li, nav li { display:inline; }
-
 {%comment%}--------------------------------------------------------------------
 %% Colors
 -----------------------------------------------------------------{%endcomment%}
 
+html { background-color:orange; }
 #site-header, #site-footer { background-color:#BADA55; }
 a, a:active, a:visited { color:#607890; }
 
@@ -58,4 +56,14 @@ a:hover { text-decoration:underline; }
 -----------------------------------------------------------------{%endcomment%}
 
 dl.cheatsheet dd { display:none; }
-dl.cheatsheet>dt:target+dd { display:block; }
+dl.cheatsheet>dt:target+dd {
+	display:block;
+	margin
+}
+
+{%comment%}--------------------------------------------------------------------
+%% Navigation
+-----------------------------------------------------------------{%endcomment%}
+
+header ul, footer ul { padding:0; margin:0; }
+header li, footer li { display:inline; }
