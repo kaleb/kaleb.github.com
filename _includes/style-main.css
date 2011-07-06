@@ -4,7 +4,7 @@
 
 body { background-color:#630;color:white; }
 #site-header, #site-footer { background-color:#f90; }
-#site-header h1, #site-header h2 { color:white; }
+#site-header h1, #site-header a, #site-header h2 { color:white; }
 a, a:active, a:visited { color:#f90; }
 h1, h2, h3 { color:#f60; }
 
