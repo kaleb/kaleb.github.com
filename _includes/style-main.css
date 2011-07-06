@@ -2,9 +2,10 @@
 %% Colors
 -----------------------------------------------------------------{%endcomment%}
 
-html { background-color:orange; }
-#site-header, #site-footer { background-color:#BADA55; }
-a, a:active, a:visited { color:#607890; }
+html { background-color:#630;color:white; }
+#site-header, #site-footer { background-color:#f90; }
+a, a:active, a:visited { color:#f90; }
+h1, h2, h3 { color:#f60; }
 
 {%comment%}--------------------------------------------------------------------
 %% Utility Classes
