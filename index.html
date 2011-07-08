@@ -1,6 +1,7 @@
 ---
 layout: body
 ---
+<div class="article">
 <div id="SE-flair">
 <img width="208" height="58" alt="profile for kzh on Stack Exchange" usemap="#SE_img_map" 
     src="http://stackexchange.com/users/flair/d67268b6910a49d8810f22b34b1081f9.png">
@@ -25,9 +26,9 @@ layout: body
 <p class="clearfix">
   Some general info will go here in the future.
 </p>
-
+</div>
 <section>
-<h2>Web Log</h2>
+<h2 class="visuallyhidden">Web Log</h2>
 {% for page in paginator.posts %}
 {% include post.html %}
 {% endfor %}
