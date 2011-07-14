@@ -7,10 +7,8 @@
 
 Last night, I was invited to a [Google+ Hangout][1] to participate in a
 [Chrome extension hackathon][2].  I was not able to participate much due to
-bloat that I've allowed to accumulate in my [Ubuntu][] based desktop
-combined with the slowness of my DSL internet connection.  It is really
-too bad, because I felt that I could have learned much from the other
-coders involved.
+some technical issues.  It is really too bad, because I felt that I could
+have learned much from the other coders involved.
 
 The project that we were working on is a [chrome extension that allows users to
 play a game of pong while using Hangouts][3].  This adds a whole new
