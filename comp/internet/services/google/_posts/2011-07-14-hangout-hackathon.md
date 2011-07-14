@@ -1,6 +1,5 @@
 ---
     layout: post
-    published: false
     title: Google+ Hangout Hackathon
     subtitle: Google+ Hangouts Uses Google Wave and jQuery
 ---
