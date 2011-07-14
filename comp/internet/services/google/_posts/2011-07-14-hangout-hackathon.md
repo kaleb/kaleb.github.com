@@ -7,17 +7,19 @@
 
 Last night, I was invited to a [Google+ Hangout][1] to participate in a
 [Chrome extension hackathon][2].  I was not able to participate much due to
-bloat that I've allowed to accumulate in my [Ubuntu][] along with the slowness
-of my DSL internet connection.  It is really too bad, because I felt that I
-could have learned much from the other individuals involved.
+bloat that I've allowed to accumulate in my [Ubuntu][] based desktop
+combined with the slowness of my DSL internet connection.  It is really
+too bad, because I felt that I could have learned much from the other
+coders involved.
 
 The project that we were working on is a [chrome extension that allows users to
 play a game of pong while using Hangouts][3].  This adds a whole new
-dynamic to what users can do in Hangouts.
+dynamic to how users can participate in Hangouts. Kudos to whomever first
+thought of the idea.
 
 To be able to pull off creating this extension, we had to delve into the source
-code of Hangouts.  While doing this, we noticed some interesting things.
-[Mohamed Mansour][4] noticed a couple of interesting things.
+code of Hangouts.  While doing this, we noticed a couple of interesting
+things after being pointed out by [Mohamed Mansour][4].
 
 Google+ Hangouts Uses Google Wave
 ---------------------------------
@@ -33,25 +35,27 @@ logic and data.
 </a>
 </div>
 
-Deep inside this maze, Mansour discovered that Hangouts made some calls to
+Deep inside this maze, Mansour noticed that Hangouts made some calls to
 [Google Wave][5] services. This was pretty interesting considering the fact
 that [Google wave was retired][6] almost 3 years ago. Well, not that interesting
 in that they did state they stated that they will
 <q cite="http://googleblog.blogspot.com/2010/08/update-on-google-wave.html">
-extend the technology for use in other Google projects.</q> 
+extend the technology for use in other Google projects.</q> I really liked Wave
+none the less, and I wish it had caught on. That was not the only interesting 
+discovery made during our code spelunking, though.
 
 Google+ Hangouts Uses jQuery
 ----------------------------
 
-Another interesting Mansour discovered is that Hangouts uses [jQuery][7] throughout.
-This seemed like an odd finding for a couple reasons.  The first strange thing about
-this choice of JavaScript library, is that I have not seen its usage in any other
-Google product.  The second oddity is that none of the JavaScript was not compiled
-with [Google Closure][8].  Is Google getting real JavaScript web developer so work
-on these new projects and shying away from the Java Google Web Toolkit programmers
-from previous products?  I don't mean to sound harsh by saying that, but I think
-that JavaScript needs a little more respect than the
-<abbr title="Google Web Toolkit">GWT</abbr> project gives it.
+Mansour had also discovered that Hangouts uses [jQuery][7]. Hangouts is powered
+by jQuery all throughout. This seemed like an odd finding for a couple reasons.
+The first strange thing about this choice of JavaScript library, is that I have
+not seen its usage in any other Google product.  The second oddity is that none
+of the JavaScript was not compiled with [Google Closure][8].  Is Google getting
+real JavaScript web developer so work on these new projects and shying away from
+the Java Google Web Toolkit programmers from previous products?  I don't mean to
+sound harsh by saying that, but I think that JavaScript needs a little more
+respect than the <abbr title="Google Web Toolkit">GWT</abbr> project gives it.
 
 All and all, for the brief time that I was participating in the hackathon, I was
 enjoying myself immensely. I would love to do one again, but before I do, I need
