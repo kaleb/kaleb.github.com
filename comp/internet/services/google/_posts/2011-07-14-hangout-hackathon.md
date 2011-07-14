@@ -34,8 +34,8 @@ logic and data.
 
 Deep inside this maze, Mansour noticed that Hangouts made some calls to
 [Google Wave][5] services. This was pretty interesting considering the fact
-that [Google wave was retired][6] almost 3 years ago. Well, not that interesting
-in that they did state they stated that they will
+that [Google wave was retired][6] almost a  year ago. Well, not that interesting
+in that they stated that they will
 <q cite="http://googleblog.blogspot.com/2010/08/update-on-google-wave.html">extend
 the technology for use in other Google projects.</q> I really liked Wave
 none the less, and I wish it had caught on. That was not the only interesting 
