@@ -3,7 +3,7 @@
     published: false
 ---
 
-Last night, I was invited to a a [Google+ Hangout][1] to participate in a
+Last night, I was invited to a [Google+ Hangout][1] to participate in a
 [Chrome extension hackathon][2].  I was not able to participate much due to
 bloat that I've allowed to accumulate in my [Ubuntu][] along with the slowness
 of my DSL internet connection.  It is really too bad, because I felt that I
@@ -20,9 +20,11 @@ code of Hangouts.  While doing this, we noticed some interesting things.
 Google+ Hangouts Uses Google Wave
 ---------------------------------
 
+<a href="https://picasaweb.google.com/lh/photo/XpQ8ldm8H5mZRFzsX1Nw_Q?feat=embedwebsite"><img src="https://lh3.googleusercontent.com/-OIL3stpOehc/Th8XA5_cwhI/AAAAAAAADtU/2RSjslEQmpQ/s400/screenshot-20110714-121716.png" height="250" width="400" /></a>
+
 One of the tasks needed to get the extension to work is that we needed to find
 a way to easily and programmatically access the list of all users currently in
-the Hangout.  Mansour discovered a hidden `<iframe>` that contained much of the
+the Hangout.  Mansour discovered a hidden `<iframe>` that contained much of its
 logic and data.  
 
 Google+ Hangouts Uses jQuery
