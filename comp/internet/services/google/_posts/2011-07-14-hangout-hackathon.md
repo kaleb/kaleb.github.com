@@ -15,8 +15,8 @@ play a game of pong while using Hangouts][3].  This adds a whole new
 dynamic to how users can participate in Hangouts. Kudos to whomever first
 thought of the idea.
 
-To be able to pull off creating this extension, we had to delve into the source
-code of Hangouts.  While doing this, we noticed a couple of interesting
+To be able to pull off creating this extension, we had to delve into the Hangouts source
+code.  While doing this, we noticed a couple of interesting
 things after being pointed out by [Mohamed Mansour][4].
 
 Google+ Hangouts Uses Google Wave
