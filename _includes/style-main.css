@@ -75,3 +75,9 @@ dl.cheatsheet>dt:target+dd {
 
 header ul, footer ul { padding:0; margin:0; }
 header li, footer li { display:inline; }
+
+{%comment%}--------------------------------------------------------------------
+%% Images
+-----------------------------------------------------------------{%endcomment%}
+
+img { max-width: 460px; }
