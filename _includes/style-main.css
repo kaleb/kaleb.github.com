@@ -81,3 +81,18 @@ header li, footer li { display:inline; }
 -----------------------------------------------------------------{%endcomment%}
 
 img { max-width: 320px; }
+
+{%comment%}--------------------------------------------------------------------
+%% kbd, etc
+-----------------------------------------------------------------{%endcomment%}
+
+kbd {
+	padding: 2px 4px;
+	white-space: nowrap;
+	color: black;
+	background: #EEE;
+	border-width: 1px 3px 3px 1px;
+	border-style: solid;
+	border-color: #CCC #AAA #888 #BBB;
+}
+.kbd { white-space: nowrap; }
