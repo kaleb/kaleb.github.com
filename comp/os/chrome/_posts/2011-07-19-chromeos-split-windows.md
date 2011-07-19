@@ -38,7 +38,7 @@ It's a boon to productivity.  In the upper right hand corner of the browser
 windows there is now a _maximize_ button so that the user may quickly maximize
 a window. Another change made was the functionality of one of the function
 keys.  What used to be a button dedicated to switching windows&mdash;exactly the
-same functionality of <kbd>alt</alt> + <kbd>tab</kbd>&mdash;is now used to maximize
+same functionality of <kbd>alt</kbd> + <kbd>tab</kbd>&mdash;is now used to maximize
 windows from the keyboard.  If you want to be able to resize your windows with
 the keyboard, there's keyboard shortcuts for that. 
 
