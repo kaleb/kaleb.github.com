@@ -2,7 +2,7 @@
     title: ChromeOS Split Windows
     subtitle: Kiling SSH and More
     path: /comp/os/chrome/_posts/2011-07-11.md
-    publish: false
+    publish: no
 ---
 
 [ChromeOS][1] recently updated and added some new features.  One of them was an
@@ -45,7 +45,7 @@ the keyboard, there's keyboard shortcuts for that.
 Keyboard Shortcuts
 ------------------
 
-
+<a href="https://picasaweb.google.com/lh/photo/Pj_A9KSL73sQ7kYsUd69mg?feat=embedwebsite"><img src="https://lh4.googleusercontent.com/-uYbEbPcZIbI/TiTElYaaOkI/AAAAAAAADzc/KC83i4B1dt8/s400/ChromeOS-Resized-Windows.png" height="250" width="400" /></a>
 
 If the user hits <kbd>ctrl</kbd> + <kbd>alt</kbd> + <kbd> < </kbd> or
 <kbd>ctrl</kbd> + <kbd>alt</kbd> + <kbd> > </kbd>, the window will resize to
@@ -67,8 +67,8 @@ really wanted the hung sessions gone, I would have to log out and log back in.
 Now, it is a simple <kbd>shift</kbd> + <kbd>ctrl</kbd> + <kbd>w</kbd>, just
 like in [gnome-terminal][6].
 
-[1]: "ChromeOS"
-[2]: "Google Docs"
-[3]: "Panelize Chrome Extension"
-[4]: "Linux Terminal"
-[6]: "GNOME Terminal"
+[1]: http://en.wikipedia.org/wiki/Google_Chrome_OS (ChromeOS)
+[2]: http://en.wikipedia.org/wiki/Google_Docs (Google Docs)
+[3]: https://chrome.google.com/webstore/detail/illfnfpoggnlapniilhkplbofldeimie (Panelize Chrome Extension)
+[4]: http://en.wikipedia.org/wiki/Linux_terminal (Linux Terminal)
+[6]: http://en.wikipedia.org/wiki/GNOME_Terminal (GNOME Terminal)
