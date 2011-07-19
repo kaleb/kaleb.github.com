@@ -64,10 +64,8 @@ a:hover { text-decoration:underline; }
 -----------------------------------------------------------------{%endcomment%}
 
 dl.cheatsheet dd { display:none; }
-dl.cheatsheet>dt:target+dd {
-	display:block;
-	margin:0;
-}
+dl.cheatsheet>dt:target+dd {display:block;}
+dl.cheatsheet>dt+dd { margin:0; }
 
 {%comment%}--------------------------------------------------------------------
 %% Navigation
