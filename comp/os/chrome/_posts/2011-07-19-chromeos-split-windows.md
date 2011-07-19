@@ -1,7 +1,7 @@
 ---
     title: ChromeOS Split Windows
     subtitle: Kiling SSH and More
-    path: /comp/os/chrome/_posts/2011-07-19.md
+    path: /comp/os/chrome/_posts/2011-07-19-chromeos-split-windows.md
     layout: post
 ---
 
