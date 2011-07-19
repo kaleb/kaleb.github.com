@@ -2,6 +2,7 @@
     layout: post
     title: Google+ Hangout Hackathon
     subtitle: Google+ Hangouts Uses Google Wave and jQuery
+    path: /comp/internet/services/google/_posts/2011-07-14-hangout-hackathon.md
 ---
 
 Last night, I was invited to a [Google+ Hangout][1] to participate in a
