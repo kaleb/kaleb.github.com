@@ -46,8 +46,8 @@ Keyboard Shortcuts
 
 <a href="https://picasaweb.google.com/lh/photo/Pj_A9KSL73sQ7kYsUd69mg?feat=embedwebsite"><img src="https://lh4.googleusercontent.com/-uYbEbPcZIbI/TiTElYaaOkI/AAAAAAAADzc/KC83i4B1dt8/s400/ChromeOS-Resized-Windows.png" height="250" width="400" /></a>
 
-If the user hits <kbd>ctrl</kbd> + <kbd>alt</kbd> + <kbd> < </kbd> or
-<kbd>ctrl</kbd> + <kbd>alt</kbd> + <kbd> > </kbd>, the window will resize to
+If the user hits <kbd>ctrl</kbd> + <kbd>alt</kbd> + <kbd>&gt;</kbd> or
+<kbd>ctrl</kbd> + <kbd>alt</kbd> + <kbd>&lt; </kbd>, the window will resize to
 the left or to the right respectively.  Chrome has many other useful keyboard
 shortcuts such as taking screenshots or changing input language.  By hitting
 <kbd>ctrl</kbd> + <kbd>alt</kbd> + <kbd>/</kbd> the user can view all the
