@@ -45,7 +45,7 @@ the keyboard, there's keyboard shortcuts for that.
 Keyboard Shortcuts
 ------------------
 
-<a href="https://picasaweb.google.com/lh/photo/Pj_A9KSL73sQ7kYsUd69mg?feat=embedwebsite"><img src="https://lh4.googleusercontent.com/-uYbEbPcZIbI/TiTElYaaOkI/AAAAAAAADzc/KC83i4B1dt8/s400/ChromeOS-Resized-Windows.png" height="250" width="400" /></a>
+<a href="https://picasaweb.google.com/lh/photo/Pj_A9KSL73sQ7kYsUd69mg?feat=embedwebsite"><img src="https://lh4.googleusercontent.com/-uYbEbPcZIbI/TiTElYaaOkI/AAAAAAAADzc/KC83i4B1dt8/s400/ChromeOS-Resized-Windows.png" height="250" width="400" alt="Screenshot" /></a>
 
 If the user hits <kbd>ctrl</kbd> + <kbd>alt</kbd> + <kbd>&gt;</kbd> or
 <kbd>ctrl</kbd> + <kbd>alt</kbd> + <kbd>&lt; </kbd>, the window will resize to
