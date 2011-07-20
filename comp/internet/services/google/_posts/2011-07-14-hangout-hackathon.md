@@ -29,7 +29,7 @@ logic and data.
 
 <div class="centered">
 <a href="https://picasaweb.google.com/lh/photo/XpQ8ldm8H5mZRFzsX1Nw_Q?feat=embedwebsite">
-<img src="https://lh3.googleusercontent.com/-OIL3stpOehc/Th8XA5_cwhI/AAAAAAAADtU/2RSjslEQmpQ/s400/screenshot-20110714-121716.png" height="250" width="400" />
+<img src="https://lh3.googleusercontent.com/-OIL3stpOehc/Th8XA5_cwhI/AAAAAAAADtU/2RSjslEQmpQ/s400/screenshot-20110714-121716.png" height="250" width="400" alt="Screenshot" />
 </a>
 </div>
 
