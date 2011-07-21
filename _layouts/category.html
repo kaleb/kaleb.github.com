@@ -1,0 +1,18 @@
+---
+layout: body
+---
+<section class="category">
+<hgroup>
+<h1>{% if page.h1 %}{{ page.h1 }}{% else %}{{ page.title }}{% endif %}</h1>
+{% if page.subtitle %}<h2>{{ page.subtitle }}</h2>{% endif %}
+</hgroup>
+{{ content }}
+{% if page.subpages %}
+<h2>Subpages</h2>
+<ul class="subpages">
+{% for subpage in page.subpages %}
+  <li><a href="subpage">subpage</a></li>
+{% endfor %}
+</ul>
+{% endif %}
+</section>

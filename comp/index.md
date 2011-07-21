@@ -1,8 +1,9 @@
 ---
-layout: default
+layout: category
 path: /comp/index.html
 subpages: [databases, editors, lang, misc, org, os, programming, text]
 title: comp
+subtitle: Computer Related Posts
 ---
 [![Stack Overflow profile][SO Flair]][SO Profile]
 
@@ -13,9 +14,9 @@ I am a computer science major at <a href="http://www.aug.edu">ASU</a> and a soft
 Favorites
 -------------
 
-- OS: <a href='../comp/os/linux/index.html'>GNU/Linux</a>
-- Programming Language: <a rel='nofollow' href='../comp/lang/python/index.html'>Python</a>
-- Data Transport Language: <a rel='nofollow' href='http://www.yaml.org/'>YAML</a>
+- OS: <a href='os/linux/index.html'>GNU/Linux</a>
+- Programming Language: <a href='lang/python/index.html'>Python</a>
+- Data Transport Language: <a href='http://www.yaml.org/'>YAML</a>
 
 Links
 --------
