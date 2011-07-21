@@ -25,6 +25,70 @@ author:
   disqus: 
     shortname: gh-pages-boilerplate
 
+cat:
+  comp:
+    descr: Computer-Related Topics
+    cat:
+      databases:
+        descr: Database and Data Management Issues and Theory
+      editors:
+        descr: Topics Related to Computerized Text Editing
+      internet:
+        descr: The International Computer Network
+        cat:
+          services:
+            descr: Internet Services
+            cat:
+              google:
+                descr: Search, Gmail, Groups, Maps, Picasa, etc.
+              wiki:
+                descr: Wikis, Such as Wikipedia
+      lang:
+        descr: Programing Languages
+        cat:
+          awk:
+            descr: The AWK Programming Language
+          c:
+            descr: The C Programming Language
+          c++:
+            descr: The Object-Oriented C++ Programming Language
+          csharp:
+            descr: The C# Programming Language
+          haskell:
+            descr: 
+          javascript:
+            descr: ECMAScript and JavaScript Programming Languages
+          go:
+            descr: The Go Programming Language
+          python:
+            descr: The Python Computer Language 
+      misc:
+        descr: General Topics About Computers Not Covered Elsewhere
+      org:
+        descr: Computer Organizations and Clubs
+      os:
+        descr: Computer Operating Systems
+        cat:
+      programming:
+        descr: Programming Issues That Transcend Languages and OSs
+        cat:
+          contests:
+            descr: Announcements and Results of Programming Contests
+      text:
+        descr: 
+        cat: 
+  rec:
+    descr: Recreational Activities
+    cat:
+  sci:
+    descr: Scientific Subjects
+    cat:
+  soc:
+    descr: Socialising and Social Issues
+    cat:
+  talk:
+    descr: Contentious Issues
+
 ## The absolute URL of your site. Should be user.github.com or whatever is in
 ## the root CNAME file
 url:         http://kaleb.hornsby.ws
