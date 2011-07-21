@@ -4,12 +4,12 @@ path: /comp/index.html
 subpages:
 - databases
 - editors
+- internet
 - lang
 - misc
 - org
 - os
 - programming
-- internet
 - text
 title: comp
 subtitle: Computer Related Posts
