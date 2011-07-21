@@ -11,7 +11,7 @@ title: comp.lang
 {% assign posts = site.categories.comp %}
 {% for post in site.categories.lang %}
 {% if post.categories[0] == 'comp' %}
-- [{{ post.title }}]({{ post.url }}) {{post.categories[0]}}
+- [{{ post.title }}]({{ post.url }}) {{post.categories[1]}}
 {% endif %}
 {% endfor %}
 
