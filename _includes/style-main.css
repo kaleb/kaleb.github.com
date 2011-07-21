@@ -29,6 +29,8 @@ article, .article, article.category {
 #site-header h2 { display:none;font-size:1em; }
 #site-footer img { float:right; }
 
+article.category hgroup h1, article.category hgroup h2 { display:inline; }
+
 {%comment%}--------------------------------------------------------------------
 %% Pagination
 -----------------------------------------------------------------{%endcomment%}
