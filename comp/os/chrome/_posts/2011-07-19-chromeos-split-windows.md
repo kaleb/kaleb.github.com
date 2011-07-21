@@ -1,7 +1,8 @@
 ---
     title: ChromeOS Split Windows
     subtitle: Kiling SSH and More
-    path: /comp/os/chrome/_posts/2011-07-19.md
+    path: /comp/os/chrome/_posts/2011-07-19-chromeos-split-windows.md
+    layout: post
 ---
 
 [ChromeOS][1] recently updated and added some new features.  One of them was an
@@ -37,14 +38,14 @@ It's a boon to productivity.  In the upper right hand corner of the browser
 windows there is now a _maximize_ button so that the user may quickly maximize
 a window. Another change made was the functionality of one of the function
 keys.  What used to be a button dedicated to switching windows&mdash;exactly the
-same functionality of <kbd>alt</alt> + <kbd>tab</kbd>&mdash;is now used to maximize
+same functionality of <kbd>alt</kbd> + <kbd>tab</kbd>&mdash;is now used to maximize
 windows from the keyboard.  If you want to be able to resize your windows with
 the keyboard, there's keyboard shortcuts for that. 
 
 Keyboard Shortcuts
 ------------------
 
-<a href="https://picasaweb.google.com/lh/photo/Pj_A9KSL73sQ7kYsUd69mg?feat=embedwebsite"><img src="https://lh4.googleusercontent.com/-uYbEbPcZIbI/TiTElYaaOkI/AAAAAAAADzc/KC83i4B1dt8/s400/ChromeOS-Resized-Windows.png" height="250" width="400" /></a>
+<a href="https://picasaweb.google.com/lh/photo/Pj_A9KSL73sQ7kYsUd69mg?feat=embedwebsite"><img src="https://lh4.googleusercontent.com/-uYbEbPcZIbI/TiTElYaaOkI/AAAAAAAADzc/KC83i4B1dt8/s400/ChromeOS-Resized-Windows.png" height="250" width="400" alt="Screenshot" /></a>
 
 If the user hits <kbd>ctrl</kbd> + <kbd>alt</kbd> + <kbd>&gt;</kbd> or
 <kbd>ctrl</kbd> + <kbd>alt</kbd> + <kbd>&lt; </kbd>, the window will resize to

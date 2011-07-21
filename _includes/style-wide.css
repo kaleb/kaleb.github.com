@@ -1,2 +1,2 @@
-#main { margin:0 1em; }
+#main { margin:auto;max-width:960px; }
 #site-header ul { position:absolute;top:0.5em;right:0.5em; }

@@ -2,6 +2,7 @@
     layout: post
     title: Google+ Hangout Hackathon
     subtitle: Google+ Hangouts Uses Google Wave and jQuery
+    path: /comp/internet/services/google/_posts/2011-07-14-hangout-hackathon.md
 ---
 
 Last night, I was invited to a [Google+ Hangout][1] to participate in a
@@ -28,7 +29,7 @@ logic and data.
 
 <div class="centered">
 <a href="https://picasaweb.google.com/lh/photo/XpQ8ldm8H5mZRFzsX1Nw_Q?feat=embedwebsite">
-<img src="https://lh3.googleusercontent.com/-OIL3stpOehc/Th8XA5_cwhI/AAAAAAAADtU/2RSjslEQmpQ/s400/screenshot-20110714-121716.png" height="250" width="400" />
+<img src="https://lh3.googleusercontent.com/-OIL3stpOehc/Th8XA5_cwhI/AAAAAAAADtU/2RSjslEQmpQ/s400/screenshot-20110714-121716.png" height="250" width="400" alt="Screenshot" />
 </a>
 </div>
 
