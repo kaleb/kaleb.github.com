@@ -1,7 +1,16 @@
 ---
 layout: category
 path: /comp/index.html
-subpages: [databases, editors, lang, misc, org, os, programming, text]
+subpages:
+- databases
+- editors
+- lang
+- misc
+- org
+- os
+- programming
+- internet
+- text
 title: comp
 subtitle: Computer Related Posts
 ---
