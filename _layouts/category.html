@@ -11,7 +11,7 @@ layout: body
 <h2>Subpages</h2>
 <ul class="subpages">
 {% for subpage in page.subpages %}
-  <li><a href="subpage">subpage</a></li>
+  <li><a href="{{subpage}}">{{subpage}}</a></li>
 {% endfor %}
 </ul>
 {% endif %}
