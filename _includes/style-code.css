@@ -24,8 +24,9 @@ div.highlight pre {
 .highlight .gr { color: #d22323 } /* Generic.Error */
 .highlight .gh { color: #ffffff; font-weight: bold } /* Generic.Heading */
 .highlight .gi { color: #589819 } /* Generic.Inserted */
-.highlight .go { color: #cccccc } /* Generic.Output */
-.highlight .gp { color: #aaaaaa } /* Generic.Prompt */
+.highlight .go { color: #cccccc; font-style: italic } /* Generic.Output */
+/*.highlight .gp { color: #aaaaaa } /* Generic.Prompt */
+.highlight .gp { color: #6ab825 } /* Generic.Prompt */
 .highlight .gs { color: #d0d0d0; font-weight: bold } /* Generic.Strong */
 .highlight .gu { color: #ffffff; text-decoration: underline } /* Generic.Subheading */
 .highlight .gt { color: #d22323 } /* Generic.Traceback */
