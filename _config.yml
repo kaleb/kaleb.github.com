@@ -106,7 +106,7 @@ keywords:    [ HTML5, CSS3, JavaScript, ES5, Linux ]
 paginate:    5
 
 ## Google Analytics id.
-ga: XXXXX-X
+ga: 15567355-1
 
 ## A list of directories and files to exclude from the conversion
 exclude: [ ]
