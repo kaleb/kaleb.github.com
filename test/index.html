@@ -2,5 +2,6 @@
 layout: default
 category: [comp, lang]
 ---
-{% capture page.title %}{{ page.category | join: "."}}{% endcapture %}
-{{ page.title }}
+{% for post in site.posts %}
+{{ post.categories | join: "." }}
+{% endfor %}
