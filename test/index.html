@@ -2,6 +2,12 @@
 layout: default
 category: [comp, lang]
 ---
+{% assign url = "site.url" %}
+{{ {{ url }} }}
 {% for post in site.posts %}
-{{ post.categories | join: "." }}
+<p>
+{% for cat in post.categories %}
+t
+{% endfor %}
+</p>
 {% endfor %}
