@@ -4,7 +4,7 @@
   {{ content }}
   </div>
 
-
+{% comment %}
 <!-- Include the Google Friend Connect javascript library. -->
 <script type="text/javascript" src="http://www.google.com/friendconnect/script/friendconnect.js"></script>
 <!-- Define the div tag where the gadget will be inserted. -->
@@ -34,5 +34,6 @@ google.friendconnect.container.renderSocialBar({
   , 'view-params': { scope:"PAGE", features: "video,comment", showWall: "true"}
 }, skin);
 </script>
+{% endcomment %}
   <footer id="site-footer" class="clearfix">{% include site-footer.html %}</footer>
 </div>
