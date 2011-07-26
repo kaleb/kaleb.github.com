@@ -5,7 +5,7 @@
 }
 #main { padding:1em 1em 0; }
 .narrow-hidden { display:inline; }
-article { padding:.5em 1em; }
+article, .article, section.category { padding:.5em 1em; }
 
 {%comment%}--------------------------------------------------------------------
 %% Cheatsheets
