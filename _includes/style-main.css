@@ -13,9 +13,6 @@ article, .article, section.category {
 	margin-bottom:1em;
 	border-radius:5px;
 }
-.no-cssgradients body {
-    background: url(/+/img/argyle-transparent.png);
-}
 
 {%comment%}--------------------------------------------------------------------
 %% Utility Classes
@@ -105,7 +102,10 @@ kbd {
 %% Background Pattern
 -----------------------------------------------------------------{%endcomment%}
 
-body {
+.no-cssgradients body {
+    background: url(/+/img/argyle-transparent.png);
+}
+.cssgradients body {
 	background-image:
 	  -webkit-repeating-linear-gradient(-30deg, rgba(255,255,255,.1), rgba(255,255,255,.1) 1px, transparent 1px, transparent 60px),
 	  -webkit-repeating-linear-gradient(30deg, rgba(255,255,255,.1), rgba(255,255,255,.1) 1px, transparent 1px, transparent 60px),
