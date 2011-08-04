@@ -60,7 +60,7 @@ function decr(n,i,ary) {
   //-> [2,3]
 {% endhighlight %}
 </dd>
-<dt id="Array.prototype.foreach"><a href="#Array.prototype.foreach">foreach(callback, <em>thisObj</em>)</a></dt>
+<dt id="Array.prototype.forEach"><a href="#Array.prototype.forEach">forEach(callback, <em>thisObj</em>)</a></dt>
 <dd>
 {% highlight js %}
 [1,2,3].forEach(alert);
