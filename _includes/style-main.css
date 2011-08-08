@@ -103,7 +103,7 @@ kbd {
 -----------------------------------------------------------------{%endcomment%}
 
 .no-cssgradients body {
-    background: url(/+/img/argyle-transparent.png);
+    background-image: url(/+/img/argyle-transparent.png);
 }
 .cssgradients body {
 	background-image:
