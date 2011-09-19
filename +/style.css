@@ -204,7 +204,7 @@ table { border-collapse: collapse; border-spacing: 0; }
 
 {%comment%} ===================================================================
    Primary styles
-   Author: 
+   Author: Kaleb Hornsby (kaleb.hornsby.ws)
 ================================================================ {%endcomment%}
 
 {% include style-main.css %}
