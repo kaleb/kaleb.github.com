@@ -8,7 +8,8 @@ body { background-color:#630;color:white; }
 a, a:active, a:visited { color:#f90; }
 h1, h2, h3 { color:#f60; }
 article, .article, section.category {
-    background-color:white;
+	-ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#88FFFFFF, endColorstr=#88FFFFFF)";
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#88FFFFFF, endColorstr=#88FFFFFF);
 	background-color:rgba(255,255,255,.3);
 	margin-bottom:1em;
 	border-radius:5px;
