@@ -4,9 +4,9 @@
 
 ---
 
-A couple of months ago, [Fog Creek][] came out with [WebPutty][], a
-"simple CSS editing and hosting service."  It is a fantastic tool which hosts
-CSS files for me.  This in itself is not that bspecial, but what makes this
+A couple of months ago, [Fog Creek][] came out with [WebPutty][], a "simple CSS
+editing and hosting service."  It is a fantastic tool which hosts CSS files for
+me.  This feature in itself is not that special, but what does make this
 service awesome is that it lets me write my styles in [SCSS][] and it also has
 a pretty slick interface for letting me see style changes on the fly.  I was
 loving it, but then I ran into a stumbling block, which I'll get to in a bit.
@@ -16,15 +16,16 @@ Respond.js
 
 I've been experimenting with [responsive web design][] for a little bit now.  To
 aid me in accomplishing this with older deficient Internet Explorer browsers, I
-turned to [Respond.js][].  Respond.js will parse all of a web pages CSS styles
-and find the [media queries][] it supports and emulate them with [JavaScript][]
-to the best of its abilities.  To be able to retrieve the external CSS files,
-Respond.js performs an [Ajax][] request.  Since Ajax has a
-[same origin policy][], Respond.js cannot access stylesheets that are stored
-externally on a separate domain, such as [webputty.net][WebPutty].  Respond.js
-does have a solution for this: a proxy HTML file that must be on the external
-site hosting the CSS.  I asked the guys at Fog Creek to implement this, and they
-have so kindly obliged.
+turned to [Respond.js][].  Respond.js will parse all of a web page's CSS styles
+and emulate the supported [media queries][] it finds with [JavaScript][] to the
+best of its abilities.
+
+To be able to retrieve the external CSS files, Respond.js performs an [Ajax][]
+request.  Since Ajax has a [same origin policy][], Respond.js cannot access
+stylesheets that are stored externally on a separate domain, such as
+[webputty.net][WebPutty].  Respond.js does have a solution for this: a proxy
+HTML file that must be on the external site hosting the CSS.  I asked the guys
+at Fog Creek to implement this, and they have so kindly obliged.
 
 WebPutty Responds
 -----------------
