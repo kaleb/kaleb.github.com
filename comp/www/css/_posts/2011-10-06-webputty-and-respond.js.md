@@ -44,13 +44,11 @@ WebPutty Responds
 > already got respond.proxy.gif and respond.proxy.js already on your own
 > server): 
 > 
-> {%highlight html%}
 >     <link href="http://www.webputty.net/respond-proxy.html" id="respond-proxy"
 >         rel="respond-proxy" />
 >     <link href="respond.proxy.gif" id="respond-redirect"
 >         rel="respond-redirect" />
 >     <script src="respond.proxy.js"></script>
-> {%endhighlight%}
 >
 > We don't have the proxy working in the editor just yet though, so if you're
 > trying to test your media queries in older versions of IE, you'll have to
