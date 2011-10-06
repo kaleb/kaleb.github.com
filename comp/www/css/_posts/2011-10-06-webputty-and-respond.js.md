@@ -29,10 +29,10 @@ have so kindly obliged.
 WebPutty Responds
 -----------------
 
-> From: "Dane Bertram" <customer-service@fogcreek.com>  
+> From: "Dane Bertram" 
 > Date: Oct 5, 2011 4:05 PM  
 > Subject: Re: (Case FC2120156) [webputty] Respond.js  
-> To: "Kaleb Hornsby" <thekaleb@gmail.com>  
+> To: "Kaleb Hornsby"
 > 
 > Hi Kaleb,
 > 
