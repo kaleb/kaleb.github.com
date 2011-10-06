@@ -30,7 +30,7 @@ at Fog Creek to implement this, and they have so kindly obliged.
 WebPutty Responds
 -----------------
 
-> From: "Dane Bertram" 
+> From: "Dane Bertram"  
 > Date: Oct 5, 2011 4:05 PM  
 > Subject: Re: (Case FC2120156) \[webputty\] Respond.js  
 > To: "Kaleb Hornsby"
