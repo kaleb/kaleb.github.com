@@ -1,5 +1,6 @@
 ---
     layout: category
-    title: Under Construction
+    hierarchy: [comp, internet, services, video]
+    subtitle: Web Video Services
 ---
 

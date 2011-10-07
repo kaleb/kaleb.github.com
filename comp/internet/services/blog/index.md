@@ -1,5 +1,6 @@
 ---
     layout: category
-    title: Under Construction
+    hierarchy: [comp, internet, services, blog]
+    subtitle: Web Logging Services
 ---
 

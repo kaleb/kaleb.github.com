@@ -1,5 +1,6 @@
 ---
     layout: category
-    title: Under Construction
+    hierarchy: [comp, internet, services, wiki]
+    title: Web Wiki Services
 ---
 
