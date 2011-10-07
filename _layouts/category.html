@@ -11,6 +11,8 @@ layout: body
   {% unless forloop.first %}
     {% capture href %}{{ href }}../{% endcapture %}
     {% capture h1 %}<a href="{{ href }}">{{ i }}</a>.{{ h1 }}{% endcapture %}
+  {% else %}
+    {% capture href %}{{ i }}{% endcapture %}
   {% endunless %}
 {% endfor %}
 {{ h1 }}
