@@ -7,11 +7,12 @@ layout: body
 <h2>: {{ page.subtitle }}</h2>{% endif %}
 </hgroup>
 {{ page.bc }}
-{% for i in page.bc %}
-{% capture href %}{{ href }}../{% endcapture %}
-{{ i }}: {{ href }}; 
+{% for i in page.bc reversed %}
+  {% unless forloop.first %}
+    {% capture href %}{{ href }}../{% endcapture %}
+  {% endunless %}
+  {{ i }}: {{ href }}; 
 {% endfor %}
-{{ href }}
 <p>{{site.time}}</p>
 {{ content }}
 {% if page.subpages %}
