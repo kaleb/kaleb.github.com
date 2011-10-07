@@ -6,8 +6,8 @@ layout: body
 <h1>{% if page.h1 %}{{ page.h1 }}{% else %}{{ page.title }}{% endif %}</h1>{% if page.subtitle %}
 <h2>: {{ page.subtitle }}</h2>{% endif %}
 </hgroup>
-{{ page.title | spliti:'.' }}
-<p>{{post.date}}</p>
+{{ page.title | split:'.' }}
+<p>{{site.time}}</p>
 {{ content }}
 {% if page.subpages %}
 <h2>Subpages</h2>
