@@ -1,7 +1,6 @@
 ---
     layout: category
-    title: comp.www.css
-    subtitle: Cascading Stylesheets
-    h1: <a href="../..">comp</a>.<a href="..">www</a>.css
+    title: comp.www.html
+    subtitle: Hypertext Markup Language
 ---
-Make the web pretty.
+The structure of the Web.
