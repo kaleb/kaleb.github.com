@@ -45,10 +45,10 @@ WebPutty Responds
 > already got respond.proxy.gif and respond.proxy.js already on your own
 > server): 
 > 
->     <link href="http://www.webputty.net/respond-proxy.html" id="respond-proxy"
->         rel="respond-proxy" />
->     <link href="respond.proxy.gif" id="respond-redirect"
->         rel="respond-redirect" />
+>     <link id="respond-proxy" rel="respond-proxy"
+>       href="http://www.webputty.net/respond-proxy.html" />
+>     <link id="respond-redirect" rel="respond-redirect"
+>       href="respond.proxy.gif" />
 >     <script src="respond.proxy.js"></script>
 >
 > We don't have the proxy working in the editor just yet though, so if you're
