@@ -1,8 +1,8 @@
 ---
-layout: default
-path: /rec/index.html
-subpages: [food, gardens, misc]
-title: rec
+    layout: category
+    path: /rec/index.md
+    subpages: [food, gardens, misc]
+    hierarchy: [ rec ]
 ---
 
 {% assign posts = site.categories.rec %}

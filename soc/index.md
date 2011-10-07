@@ -1,8 +1,8 @@
 ---
-layout: default
-path: /soc/index.html
-subpages: [geneaology, politics, religion]
-title: soc
+    layout: category
+    path: /soc/index.html
+    subpages: [geneaology, politics, religion]
+    hierarchy: [ soc ]
 ---
 
 {% assign posts = site.categories.soc %}

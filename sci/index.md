@@ -1,8 +1,8 @@
 ---
-layout: default
-path: /rec/index.html
-subpages: [lang, logic, math, physics]
-title: sci
+    layout: category
+    path: /rec/index.html
+    subpages: [lang, logic, math, physics]
+    hierarchy: [ sci ]
 ---
 
 Links

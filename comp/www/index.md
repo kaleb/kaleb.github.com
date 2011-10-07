@@ -1,8 +1,7 @@
 ---
     layout: category
-    title: comp.www
+    hierarchy: [ comp, www ]
     subtitle: The World-Wide Web
-    h1: <a href="..">comp</a>.www
     subpages:
     - browsers
     - css
@@ -10,3 +9,6 @@
     - html
 ---
 In USENET, this is usually `comp.infosystems.www`, but I'm not even sure what an _information system_ is.
+
+{% assign posts = site.categories.www %}
+{% include category.md %}
