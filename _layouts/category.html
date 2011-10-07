@@ -10,9 +10,10 @@ layout: body
 {% for i in page.bc reversed %}
   {% unless forloop.first %}
     {% capture href %}{{ href }}../{% endcapture %}
+    {% capture h1 %}<a href="{{ href }}">{{ i }}</a>.{{ h1 }}{% endcapture %}
   {% endunless %}
-  {{ i }}: {{ href }}; 
 {% endfor %}
+{{ h1 }}
 <p>{{site.time}}</p>
 {{ content }}
 {% if page.subpages %}
