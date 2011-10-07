@@ -6,8 +6,8 @@ layout: body
 <h1>{% if page.h1 %}{{ page.h1 }}{% else %}{{ page.title }}{% endif %}</h1>{% if page.subtitle %}
 <h2>: {{ page.subtitle }}</h2>{% endif %}
 </hgroup>
-{{ bc }}
-{% for i in bc %}
+{{ page.bc }}
+{% for i in page.bc %}
 {% capture href %}{{ href }}../{% endcapture %}
 {{ i }}: {{ href }}; 
 {% endfor %}
