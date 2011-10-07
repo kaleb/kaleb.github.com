@@ -3,10 +3,6 @@ layout: body
 ---
 <section class="category">
 <hgroup>
-<h1>{% if page.h1 %}{{ page.h1 }}{% else %}{{ page.title }}{% endif %}</h1>{% if page.subtitle %}
-<h2>: {{ page.subtitle }}</h2>{% endif %}
-</hgroup>
-{{ page.bc }}
 {% for i in page.hierarchy reversed %}
   {% unless forloop.first %}
     {% capture href %}{{ href }}../{% endcapture %}
@@ -15,8 +11,9 @@ layout: body
     {% capture h1 %}{{ i }}{% endcapture %}
   {% endunless %}
 {% endfor %}
-{{ h1 }}
-<p>{{site.time}}</p>
+<h1>{{ h1 }}</h1>{% if page.subtitle %}
+<h2>: {{ page.subtitle }}</h2>{% endif %}
+</hgroup>
 {{ content }}
 {% if page.subpages %}
 <h2>Subpages</h2>
