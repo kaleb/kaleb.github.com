@@ -11,8 +11,8 @@ layout: body
     {% capture h1 %}{{ i }}{% endcapture %}
   {% endunless %}
 {% endfor %}
-<h1>{{ h1 }}</h1>{% if page.subtitle %}
-<h2>: {{ page.subtitle }}</h2>{% endif %}
+<h1>{% if h1 %}{{ h1 }}{% else %}{{ page.h1 }}{% endif %}:</h1>
+{% if page.subtitle %}<h2>{{ page.subtitle }}</h2>{% endif %}
 </hgroup>
 {{ content }}
 {% if page.subpages %}
