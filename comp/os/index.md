@@ -6,7 +6,7 @@
     - chrome
     - linux
     - windows
-    layout: catrgory
+    layout: category
 ---
 
 {% assign posts = site.categories.os %}
