@@ -12,7 +12,7 @@ layout: body
     {% capture href %}{{ href }}../{% endcapture %}
     {% capture h1 %}<a href="{{ href }}">{{ i }}</a>.{{ h1 }}{% endcapture %}
   {% else %}
-    {% capture href %}{{ i }}{% endcapture %}
+    {% capture h1 %}{{ i }}{% endcapture %}
   {% endunless %}
 {% endfor %}
 {{ h1 }}
