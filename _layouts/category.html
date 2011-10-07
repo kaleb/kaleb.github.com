@@ -7,6 +7,7 @@ layout: body
 <h2>: {{ page.subtitle }}</h2>{% endif %}
 </hgroup>
 {{ page.title | spliti:'.' }}
+<p>{{post.date}}</p>
 {{ content }}
 {% if page.subpages %}
 <h2>Subpages</h2>
