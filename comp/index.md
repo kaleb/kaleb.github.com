@@ -1,23 +1,21 @@
 ---
-layout: category
-path: /comp/index.html
-subpages:
-- databases
-- editors
-- internet
-- lang
-- misc
-- org
-- os
-- programming
-- text
-title: comp
-subtitle: Computer Related Posts
+    layout: category
+    path: /comp/index.html
+    subpages:
+    - databases
+    - editors
+    - internet
+    - lang
+    - misc
+    - org
+    - os
+    - programming
+    - text
+    hierarchy: [ comp ]
+    subtitle: Computer Related Posts
 ---
 [![Stack Overflow profile][SO Flair]][SO Profile]
 
-  [SO Profile]: http://stackoverflow.com/users/143739 "Stack Overflow profile for kzh at Stack Overflow, Q&A for professional and enthusiast programmers"
-  [SO Flair]:    http://stackoverflow.com/users/flair/143739.png
 I am a computer science major at <a href="http://www.aug.edu">ASU</a> and a software developer at <a href="http://www.esi911.com">ESI</a>. Check out my <a href="../root/Portfolio/index.html">portfolio</a>.
 
 Favorites
@@ -34,3 +32,6 @@ Links
 
 {% assign posts = site.categories.comp %}
 {% include category.md %}
+
+  [SO Profile]: http://stackoverflow.com/users/143739 "Stack Overflow profile for kzh at Stack Overflow, Q&A for professional and enthusiast programmers"
+  [SO Flair]:    http://stackoverflow.com/users/flair/143739.png

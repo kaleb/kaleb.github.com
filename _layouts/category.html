@@ -7,7 +7,7 @@ layout: body
 <h2>: {{ page.subtitle }}</h2>{% endif %}
 </hgroup>
 {{ page.bc }}
-{% for i in page.bc reversed %}
+{% for i in page.hierarchy reversed %}
   {% unless forloop.first %}
     {% capture href %}{{ href }}../{% endcapture %}
     {% capture h1 %}<a href="{{ href }}">{{ i }}</a>.{{ h1 }}{% endcapture %}

@@ -1,10 +1,9 @@
 ---
-path: /comp/lang/index.md
-layout: category
-subpages: [c, c++, csharp, haskell, javascript, go, python]
-h1: '<a href="..">comp</a>.lang'
-title: comp.lang
-subtitle: Computer Languages
+    path: /comp/lang/index.md
+    layout: category
+    subpages: [c, c++, csharp, haskell, javascript, go, python]
+    hierarchy: [ comp, lang ]
+    subtitle: Computer Languages
 ---
 
 
