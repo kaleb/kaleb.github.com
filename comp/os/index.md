@@ -5,6 +5,7 @@
     - android
     - chrome
     - linux
+    - osx
     - windows
     layout: category
 ---

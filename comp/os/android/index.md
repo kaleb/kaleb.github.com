@@ -1,5 +1,6 @@
 ---
     layout: category
-    title: Under Construction
+    hierarchy: [comp, os, android]
+    subtitle: The Android Operating System
 ---
 
