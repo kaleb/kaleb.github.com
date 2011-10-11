@@ -2,6 +2,7 @@
     layout: post
     title: Maruku and Kramdown Compared
     subtitle: Github Pages and Jekyll
+    published: false
 
 ---
 My site is powered by [Github Pages][].  Github Pages, itself is a static web
