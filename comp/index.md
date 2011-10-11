@@ -1,4 +1,6 @@
 ---
+    hierarchy: [ comp ]
+    subtitle: Computer Related Posts
     layout: category
     path: /comp/index.html
     subpages:
@@ -12,27 +14,34 @@
     - programming
     - text
     - www
-    hierarchy: [ comp ]
-    subtitle: Computer Related Posts
+
 ---
 [![Stack Overflow profile][SO Flair]][SO Profile]
 
-I am a computer science major at <a href="http://www.aug.edu">ASU</a> and a software developer at <a href="http://www.esi911.com">ESI</a>. Check out my <a href="../root/Portfolio/index.html">portfolio</a>.
+I am a computer science major at [ASU][] and a software developer at
+[ESi][].
 
 Favorites
--------------
+---------
 
-- OS: <a href='os/linux/index.html'>GNU/Linux</a>
-- Programming Language: <a href='lang/python/index.html'>Python</a>
-- Data Transport Language: <a href='http://www.yaml.org/'>YAML</a>
+- OS: [GNU/Linux][1]
+- Programming Language: [Python][]
+- Data Transport Language: [YAML][]
 
 Links
---------
+-----
 
-- [Git vs. Mercurial](http://gitvsmercurial.com/)
+- [Git vs. Mercurial][2]
 
 {% assign posts = site.categories.comp %}
 {% include category.md %}
 
-  [SO Profile]: http://stackoverflow.com/users/143739 "Stack Overflow profile for kzh at Stack Overflow, Q&A for professional and enthusiast programmers"
-  [SO Flair]:    http://stackoverflow.com/users/flair/143739.png
+[SO Profile]: http://stackoverflow.com/users/143739
+  "Stack Overflow profile for kzh at Stack Overflow, Q&A for professional and enthusiast programmers"
+[SO Flair]: http://stackoverflow.com/users/flair/143739.png
+[ASU]: http://www.aug.edu "Augusta State University"
+[ESi]: http://www.esi911.com
+[1]: os/linux/
+[Python]: lang/python/
+[YAML]: http://www.yaml.org
+[2]: http://gitvsmercurial.com
