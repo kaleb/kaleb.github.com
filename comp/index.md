@@ -8,6 +8,7 @@
     - editors
     - internet
     - lang
+    - mail
     - misc
     - org
     - os
