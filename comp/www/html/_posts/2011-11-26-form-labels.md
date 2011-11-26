@@ -5,7 +5,7 @@
 
 When authoring HTML, if you find yourself writing an [`<input>` element][1],
 chances are that you are going to need to label it.  The proper way to label an
-`<input>` element is by using a [`<label>`][2] element.  I don't know how many
+`<input>` element is by using a [`<label>` element][2].  I don't know how many
 times I've seen web developers omit this tag.  Start using it.  It aids in the
 accessibility of your site.
 
