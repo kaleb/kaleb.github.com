@@ -17,7 +17,7 @@ I have with omitting the `for` attribute is in Internet Explorer 6 in which
 clicking the label will not activate the form element.  I don't have too many
 customers that still use IE6, so I omit the attribute depending on my customer.
 
-See below for an example.
+See below for an example. Hint: click on the label, and not the checkbox.
 
 <iframe style="width: 100%; height: 300px" src="http://jsfiddle.net/kaleb/YvPHN/embedded/result%2Chtml%2Cjs/" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
 
