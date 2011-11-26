@@ -19,7 +19,7 @@ customers that still use IE6, so I omit the attribute depending on my customer.
 
 See below for an example.
 
-<iframe style="width: 100%; height: 300px" src="http://jsfiddle.net/kaleb/YvPHN/embedded/" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
+<iframe style="width: 100%; height: 300px" src="http://jsfiddle.net/kaleb/YvPHN/embedded/result%2Chtml%2Cjs/" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
 
  [1]: http://dev.w3.org/html5/markup/input.html
  [2]: http://dev.w3.org/html5/markup/label.html
