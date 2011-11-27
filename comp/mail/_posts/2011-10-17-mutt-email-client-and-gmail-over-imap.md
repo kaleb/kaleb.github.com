@@ -11,7 +11,7 @@ share my `mutt` configuration to emulate Gmail.
 
 <script src="https://gist.github.com/1289741.js"> </script>
 
-[mutt]: http:/www.mutt.org "The Mutt E-Mail Client"
+[mutt]: http://www.mutt.org "The Mutt E-Mail Client"
 [gmail]: http://gmail.com "Google Mail"
 [IMAP]: http://en.wikipedia.org/wiki/Internet_Message_Access_Protocol "Internet Message Access Protocol"
 [TUI]: http://en.wikipedia.org/wiki/Text-based_user_interface "Text User Interface"
