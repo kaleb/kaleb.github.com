@@ -14,6 +14,10 @@ layout: body
 <h1>{% if h1 %}{{ h1 }}{% else %}{{ page.h1 }}{% endif %}:</h1>
 {% if page.subtitle %}<h2>{{ page.subtitle }}</h2>{% endif %}
 </hgroup>
+<div>
+<p itemprop="description">
+  {{ page.description }}
+</p>
 {{ content }}
 {% if page.subpages %}
 <h2>Subpages</h2>
@@ -23,4 +27,5 @@ layout: body
 {% endfor %}
 </ul>
 {% endif %}
+</div>
 </section>
