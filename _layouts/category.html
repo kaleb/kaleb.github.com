@@ -3,7 +3,7 @@ layout: body
 ---
 <section class="category">
 <hgroup>
-{% for i in page.hierarchy reversed %}
+{% for i in page.categories reversed %}
   {% unless forloop.first %}
     {% capture href %}{{ href }}../{% endcapture %}
     {% capture h1 %}<a href="{{ href }}">{{ i }}</a>.{{ h1 }}{% endcapture %}
