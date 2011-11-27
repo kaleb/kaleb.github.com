@@ -65,7 +65,7 @@ WebPutty Responds
 [Fog Creek]: http://www.fogcreek.com "Fog Creek Software"
 [WebPutty]: http://www.webputty.net
 [SCSS]: http://sass-lang.com/ "Sassy CSS"
-[responsive web design]: /htes5/respond/
+[responsive web design]: /htes5/respond
 [Respond.js]: https://github.com/scottjehl/Respond "CSS Media Query Shim"
 [media queries]: https://developer.mozilla.org/en/CSS/Media_queries
 [JavaScript]: /comp/lang/javascript/
