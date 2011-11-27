@@ -1,6 +1,7 @@
 ---
-    hierarchy: [ comp ]
+    categories: [ comp ]
     subtitle: Computer Related Posts
+    description: Computers, software, and similar things are to be found here.
     layout: category
     path: /comp/index.html
     subpages:
