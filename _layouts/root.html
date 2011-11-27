@@ -12,7 +12,7 @@
   Always force latest IE rendering engine (even in intranet) & Chrome Frame
 {% endcomment %}
 <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-<title>{% if page.hierarchy %}{{ page.hierarchy | join:'.' }}{% elsif page.title %}{{page.title}}{% if page.subtitle %}: {{page.subtitle}}{% endif %} - {% endif %} {{site.title}}</title>
+<title>{% if page.layout = 'category' %}{{ page.categories | join:'.' }}: {{ page.subtitle }} | {% elsif page.layout = 'post' %}{{ page.title }}{% if page.subtitle %}: {{page.subtitle}}{% endif %} | {{ page.categories | join:'.' }} | {% endif %}{{site.title}}</title>
 {% if page.description %}<meta name="description" content="{{ page.description }}">{% endif %}
 {% if page.categories %}<meta name="keywords" content="{{ page.categories | join: ',' }}">{% endif %}
 <meta name="author" content="{%if page.author%}{{page.author}}{%else%}{{site.author.name}}{%endif%}">
