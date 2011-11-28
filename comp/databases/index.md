@@ -1,6 +1,6 @@
 ---
     title: comp.databases
-    categories: [ comp, databases ]
+    hierarchy: [ comp, databases ]
     layout: category
     description: Database and data management issues and theory.
 ---
