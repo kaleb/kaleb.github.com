@@ -42,8 +42,8 @@
 <body>
 {{ content }}
 <script type="test">
-{% if paginator %}paginator{% endif %}
-{% if post %}post{% endif %}
+{% if paginator.page %}paginator{% endif %}
+{% if post.id %}post{% endif %}
 </script>
 </body>
 </html>
