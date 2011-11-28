@@ -12,7 +12,7 @@
   Always force latest IE rendering engine (even in intranet) & Chrome Frame
 {% endcomment %}
 <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-<title>{% if page.layout == 'category' %}{{ page.categories | join:'.' }}: {{ page.subtitle }} | {% elsif page.layout == 'post' %}{{ page.title }}{% if page.subtitle %}: {{page.subtitle}}{% endif %} | {{ page.categories | join:'.' }} | {% endif %}{{site.title}}</title>
+<title>{% if page.hierarchy %}{{ page.hierarchy | join:'.' }}{% else %}{{ page.title }}{% endif %}{% if page.subtitle %}: {{ page.subtitle }}{% endif %}{% if paginator.page %} | {% endif %}{{ site.title }}{% if paginator.page > 1 %} | Page {{ paginator.page }}{% endif %}</title>
 {% if page.description %}<meta name="description" content="{{ page.description }}">{% endif %}
 {% if page.categories %}<meta name="keywords" content="{{ page.categories | join: ',' }}">{% endif %}
 <meta name="author" content="{%if page.author%}{{page.author}}{%else%}{{site.author.name}}{%endif%}">
@@ -41,14 +41,5 @@
 </head>
 <body>
 {{ content }}
-<script type="test/2">
-paginator:
-  {% if paginator.page %}true{% endif %}
-  {{ paginator.page }}
-
-post:
-  {% if page.id %}true{% endif %}
-  {{ page.id }}
-</script>
 </body>
 </html>
