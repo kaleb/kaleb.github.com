@@ -2,7 +2,42 @@
   <header class="navbar navbar-fixed-top">
     <div class="navbar-inner">
       <div class="container">
-        {% include site-header.html %}
+        <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </a>
+        <hgroup>
+  <h1 class="brand"><a href="{{ site.url }}">{{ site.title }}</a></h1>
+  <h2>{{ site.description }}</h2>
+</hgroup>
+<ul id="site-header-nav">
+  <li>
+    <a href="/comp" title="Computer Science">comp</a> |
+  </li>
+  <li>
+    <a href="/rec" title="Recreation">rec</a> |
+  </li>
+  <li>
+    <a href="/sci" title="Science">sci</a> |
+  </li>
+  <li>
+    <a href="/soc" title="Sociology">soc</a> |
+  </li>
+  <li>
+    <a href="/talk" title="Talk">talk</a> |
+  </li>
+  <li>
+    <a href="http://feeds.feedburner.com/KalebHornsby" title="Atom Feed">Feed</a> |
+  </li>
+  <li>
+    <a id="edit-link" href="{% include edit.url %}" title="Edit this page on GitHub">Edit</a>
+  </li>
+<li><a rel="author" href="https://profiles.google.com/thekaleb">
+  <img src="http://www.google.com/images/icons/ui/gprofile_button-16.png" alt="Google+">
+</a></li>
+</ul>
+
       </div>
     </div>
   </header>
