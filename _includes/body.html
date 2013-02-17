@@ -1,5 +1,11 @@
 <div id="container">
-  <header id="site-header">{% include site-header.html %}</header>
+  <header class="navbar navbar-fixed-top">
+    <div class="navbar-inner">
+      <div class="container">
+        {% include site-header.html %}
+      </div>
+    </div>
+  </header>
   <div id="main" role="main">
   {{ content }}
   </div>
