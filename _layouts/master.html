@@ -17,24 +17,59 @@
 <link rel="alternate" type="application/atom+xml" title="Blog Atom Feed" href="http://feeds.feedburner.com/KalebHornsby">
 <link rel="alternate" type="application/atom+xml" title="Site Changes Atom Feed" href="https://github.com/{{site.author.gh.user}}/{{site.author.gh.repo}}/commits/gh-pages.atom">
 <link rel="alternate" type="application/x-wiki" title="Edit this page on Github." href="{% include edit.url %}">{% comment %}http://universaleditbutton.org{% endcomment %}
-<!--link rel="stylesheet" type="text/css" href="/+/style.css" /-->
+<link href="/+/style.css" rel="stylesheet">
 <link href="//netdna.bootstrapcdn.com/bootswatch/2.3.0/united/bootstrap.min.css" rel="stylesheet">
-<link href="http://www.webputty.net/css/agtzfmNzc2ZpZGRsZXIMCxIEUGFnZRiFwRMM" rel="stylesheet">
-<script type="text/javascript">
-(function(w,d){if(w.location!=w.parent.location||w.location.search.indexOf('__preview_css__')>-1){
-  var t=d.createElement('script');t.type='text/javascript';t.async=true;
-  t.src='http://www.webputty.net/js/agtzfmNzc2ZpZGRsZXIMCxIEUGFnZRiFwRMM';
-  (d.body||d.documentElement).appendChild(t);}})(window,document);
-</script>
-<link href="http://www.webputty.net/respond-proxy.html" id="respond-proxy" rel="respond-proxy">
 <!--script src="//cdnjs.cloudflare.com/ajax/libs/modernizr/2.0.6/modernizr.min.js"--><script src="/+/modernizr.js">{% comment %}
     All JavaScript at the bottom, except for Modernizr which enables HTML5
     elements & feature detects
 {% endcomment %}</script>
-<link href="/+/respond.proxy.gif" id="respond-redirect" rel="respond-redirect">
-<script src="/+/respond.proxy.js"></script>
 </head>
 <body>
+<header class="navbar navbar-fixed-top">
+  <div class="navbar-inner">
+    <div class="container">
+      <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </a>
+      <hgroup class="brand">
+        <h1><a href="/">{{ site.title }}</a></h1>
+        <h2>{{ site.description }}</h2>
+      </hgroup>
+      <ul class="nav pull-right">
+        <li>
+          <a href="/comp" title="Computer Science">comp</a>
+        </li>
+        <li>
+          <a href="/rec" title="Recreation">rec</a>
+        </li>
+        <li>
+          <a href="/sci" title="Science">sci</a>
+        </li>
+        <li>
+          <a href="/soc" title="Sociology">soc</a>
+        </li>
+        <li>
+          <a href="/talk" title="Talk">talk</a>
+        </li>
+        <li>
+          <a href="http://feeds.feedburner.com/KalebHornsby" title="Atom Feed">Feed</a>
+        </li>
+        <li>
+          <a id="edit-link" href="{% include edit.url %}" title="Edit this page on GitHub">Edit</a>
+        </li>
+        <li>
+          <a rel="author" href="https://profiles.google.com/thekaleb"><img src="http://www.google.com/images/icons/ui/gprofile_button-16.png" alt="Google+"></a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</header>
+<div id="main" role="main">
 {{ content }}
+</div>
+<footer id="site-footer" class="clearfix">{% include site-footer.html %}</footer>
+{% include scripts.html %}
 </body>
 </html>

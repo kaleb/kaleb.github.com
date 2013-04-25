@@ -1,7 +1,7 @@
 ---
-    layout:      body
+    layout:      master
     description: Software Developer in Augusta, GA
-    categories:    [ HTML5, CSS3, JavaScript, ES5, Linux ]
+    categories:  [ HTML5, CSS3, JavaScript, ES5, Linux ]
 ---
 <div class="article clearfix">
 <div id="SE-flair">
@@ -14,22 +14,18 @@
     href="http://superuser.com/users/3304" coords="78,36,98,56" />
   <area shape="rect" alt="Ask Ubuntu" title="Ask Ubuntu" rel="me"
     href="http://askubuntu.com/users/1879" coords="98,36,118,56" />
+  <area shape="rect" alt="Android Enthusiasts" title="Android Enthusiasts" rel="me"
+    href="http://android.stackexchange.com/users/1204" coords="118,36,138,56" />
+  <area shape="rect" alt="Gardening and Landscaping" title="Gardening and Landscaping" rel="me"
+    href="http://gardening.stackexchange.com/users/368" coords="138,36,158,56" />
   <area shape="rect" alt="Web Applications" title="Web Applications" rel="me"
-    href="http://webapps.stackexchange.com/users/4282" coords="118,36,138,56" />
-  <area shape="rect" alt="Android Enthusiasts" title="Android Enthusiasts"
-    rel="me" href="http://android.stackexchange.com/users/1204"
-    coords="138,36,158,56" />
+    href="http://webapps.stackexchange.com/users/4282" coords="158,36,178,56" />
   <area shape="rect" alt="Area 51" title="Area 51" rel="me"
     href="http://area51.stackexchange.com/users/10632" coords="178,36,198,56" />
-  <area shape="rect" alt="English Language and Usage"
-    title="English Language and Usage" rel="me" 
-    href="http://english.stackexchange.com/users/2329" coords="158,36,178,56" />
-  <!--area shape="rect" alt="Gardening and Landscaping"
-    title="Gardening and Landscaping" rel="me"
-    href="http://gardening.stackexchange.com/users/368"
-    coords="178,36,198,56" /-->
+  <!--area shape="rect" alt="English Language and Usage" title="English Language and Usage" rel="me" 
+    href="http://english.stackexchange.com/users/2329" coords="158,36,178,56" /-->
   <!--area shape="rect" alt="Home Improvement" title="Home Improvement" rel="me"
-    coords="158,36,178,56" href="http://diy.stackexchange.com/users/62" /-->
+    href="http://diy.stackexchange.com/users/62" coords="158,36,178,56" /-->
   <area shape="rect" alt="Google Profile" title="Google Profile" rel="me" coords="2,2,56,56"
     href="http://google.com/profiles/thekaleb" />
   <area shape="rect" alt="Stack Exchange" title="Stack Exchange" rel="me" coords="58,2,206,36"
@@ -50,15 +46,15 @@
 </section>
 <footer class="pagination">
 {% if paginator.previous_page == 1 %}
-  <a href="{{ site.url }}" rel="prev start" class="previous">Newer</a>
+  <a href="/" rel="prev start" class="previous">Newer</a>
 {% elsif paginator.previous_page %}
-  <a href="{{ site.url }}/page{{paginator.previous_page}}" rel="prev" class="previous">Newer</a>
+  <a href="/page{{paginator.previous_page}}" rel="prev" class="previous">Newer</a>
 {% else %}
   <span class="previous">Newer</span>
 {% endif %}
 <span class="page-number">Page: {{paginator.page}} of {{paginator.total_pages}}</span>
 {% if paginator.next_page %}
-  <a href="{{ site.url }}/page{{paginator.next_page}}" rel="next" class="next">Older</a>
+  <a href="/page{{paginator.next_page}}" rel="next" class="next">Older</a>
 {% else %}
   <span class="next">Older</span>
 {% endif %}

@@ -1,7 +1,10 @@
+body { padding-top:60px }
+
 {%comment%}--------------------------------------------------------------------
 %% Colors
 -----------------------------------------------------------------{%endcomment%}
 
+{%comment%}
 body { background-color:#630;color:white; }
 #site-header, #site-footer { background-color:#f90; }
 #site-header h1, #site-header a, #site-header h2 { color:white; }
@@ -15,7 +18,7 @@ article, .article, section.category {
 	margin-bottom:1em;
 	border-radius:5px;
 }
-
+{%endcomment%}
 {%comment%}--------------------------------------------------------------------
 %% Utility Classes
 -----------------------------------------------------------------{%endcomment%}
@@ -27,6 +30,10 @@ article, .article, section.category {
 {%comment%}--------------------------------------------------------------------
 %% Headers and Footers
 -----------------------------------------------------------------{%endcomment%}
+
+header.navbar hgroup.brand { padding:0; }
+.brand h1, .brand h2, .brand a { margin:0; padding:0; color:inherit; font-size:inherit; display:inherit; float:left }
+.brand h2 { font-size:.6em; font-style:italic; padding:0 1em }
 
 #site-header h1, #site-header h2 { margin:0; }
 #site-header h2 { display:none;font-size:1em; }
@@ -103,7 +110,7 @@ kbd {
 {%comment%}--------------------------------------------------------------------
 %% Background Pattern
 -----------------------------------------------------------------{%endcomment%}
-
+{%comment%}
 .no-cssgradients body {
     background-image: url(/+/img/argyle-transparent.png);
 }
@@ -130,3 +137,4 @@ kbd {
 	  linear-gradient(-30deg, rgba(0,0,0,.1) 25%, transparent 25%, transparent 75%, rgba(0,0,0,.1) 75%, rgba(0,0,0,.1));
 	background-size: 70px 120px;
 }
+{%endcomment%}

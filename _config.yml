@@ -13,7 +13,7 @@ author:
   ## Author's email address
   email:     kaleb@hornsby.ws
   ## Author's web site
-  url:       http://kaleb.hornsby.ws
+  url:       http://kaleb.horns.by
   ## Author's location
   location:  "Augusta, GA, US"
   ## Author's github user name
@@ -33,7 +33,7 @@ url:         http://kaleb.hornsby.ws
 title:       Kaleb Hornsby
 
 ## <meta name=description> and <h2> in /_layouts/default.html
-description: Software Developer in Augusta, GA
+description: Software Engineer in Augusta
 
 ## <meta name=keywords> in  /_layouts/default.html, probably not useful anymore.
 keywords:    [ HTML5, CSS3, JavaScript, ES5, Linux ]
@@ -62,7 +62,7 @@ markdown:    kramdown
 permalink:   /:categories/:title
 
 ## Enables or disables Jekyll from recreating the site when files are modified.
-#auto:        false
+auto:        true
 
 ## Fires up a server that will host your _site directory
 #server:      false
