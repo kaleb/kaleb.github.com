@@ -47,6 +47,8 @@ ga: 15567355-1
 ## A list of directories and files to exclude from the conversion
 exclude: [ ]
 
+include: [ _ ]
+
 #################
 # Jekyll Defaults
 #################
