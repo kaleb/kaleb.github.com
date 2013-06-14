@@ -1,9 +1,9 @@
 ---
 layout: nil
 ---
-@import url("//netdna.bootstrapcdn.com/bootswatch/2.3.0/united/bootstrap.min.css");
+@import url("//netdna.bootstrapcdn.com/bootswatch/2.3.2/united/bootstrap.min.css");
 @import url("//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.1/css/bootstrap-responsive.min.css");
-@import url("//netdna.bootstrapcdn.com/font-awesome/3.0.2/css/font-awesome.css");
+@import url("//netdna.bootstrapcdn.com/font-awesome/3.2.0/css/font-awesome.css");
 {%comment%} ===================================================================
    Primary styles
    Author: Kaleb Hornsby (kaleb.horns.by)
