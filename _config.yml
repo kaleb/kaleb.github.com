@@ -39,7 +39,7 @@ description: Software Engineer in Augusta
 keywords:    [ HTML5, CSS3, JavaScript, ES5, Linux ]
 
 ## Splits your posts up over multiple subdirectories called “page2”, “page3”, … “pageN”
-paginate:    5
+paginate:    6
 
 ## Google Analytics id.
 ga: 15567355-1

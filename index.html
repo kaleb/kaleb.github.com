@@ -9,27 +9,27 @@
     src="http://stackexchange.com/users/flair/d67268b6910a49d8810f22b34b1081f9.png">
 <map id="SE_img_map" name="SE_img_map">
   <area shape="rect" alt="Stack Overflow" title="Stack Overflow" rel="me"
-    href="http://stackoverflow.com/users/143739" coords="58,36,78,56" />
+    href="http://stackoverflow.com/users/143739" coords="58,36,78,56">
   <area shape="rect" alt="Super User" title="Super User" rel="me"
-    href="http://superuser.com/users/3304" coords="78,36,98,56" />
+    href="http://superuser.com/users/3304" coords="78,36,98,56">
   <area shape="rect" alt="Ask Ubuntu" title="Ask Ubuntu" rel="me"
-    href="http://askubuntu.com/users/1879" coords="98,36,118,56" />
+    href="http://askubuntu.com/users/1879" coords="98,36,118,56">
   <area shape="rect" alt="Android Enthusiasts" title="Android Enthusiasts" rel="me"
-    href="http://android.stackexchange.com/users/1204" coords="118,36,138,56" />
+    href="http://android.stackexchange.com/users/1204" coords="118,36,138,56">
   <area shape="rect" alt="Gardening and Landscaping" title="Gardening and Landscaping" rel="me"
-    href="http://gardening.stackexchange.com/users/368" coords="138,36,158,56" />
+    href="http://gardening.stackexchange.com/users/368" coords="138,36,158,56">
   <area shape="rect" alt="Web Applications" title="Web Applications" rel="me"
-    href="http://webapps.stackexchange.com/users/4282" coords="158,36,178,56" />
+    href="http://webapps.stackexchange.com/users/4282" coords="158,36,178,56">
   <area shape="rect" alt="Area 51" title="Area 51" rel="me"
-    href="http://area51.stackexchange.com/users/10632" coords="178,36,198,56" />
+    href="http://area51.stackexchange.com/users/10632" coords="178,36,198,56">
   <!--area shape="rect" alt="English Language and Usage" title="English Language and Usage" rel="me" 
-    href="http://english.stackexchange.com/users/2329" coords="158,36,178,56" /-->
+    href="http://english.stackexchange.com/users/2329" coords="158,36,178,56"-->
   <!--area shape="rect" alt="Home Improvement" title="Home Improvement" rel="me"
-    href="http://diy.stackexchange.com/users/62" coords="158,36,178,56" /-->
+    href="http://diy.stackexchange.com/users/62" coords="158,36,178,56"-->
   <area shape="rect" alt="Google Profile" title="Google Profile" rel="me" coords="2,2,56,56"
-    href="http://google.com/profiles/thekaleb" />
+    href="http://google.com/profiles/thekaleb">
   <area shape="rect" alt="Stack Exchange" title="Stack Exchange" rel="me" coords="58,2,206,36"
-    href="http://stackexchange.com/users/d67268b6910a49d8810f22b34b1081f9" />
+    href="http://stackexchange.com/users/d67268b6910a49d8810f22b34b1081f9">
 </map>
 </div>
 
@@ -38,27 +38,74 @@
 </p>
 
 </div>
-<section>
-<h2 class="visuallyhidden">Web Log</h2>
+{% if paginator %}
+<article role="main" itemscope itemtype="http://schema.org/Blog" class="container">
+<h1 class="visuallyhidden">Web Log</h1>
 {% for page in paginator.posts %}
-{% include post.html %}
+{% cycle 'open row': '<div class="row">', nil, nil %}
+  <div class="span4">
+    <section itemprop="blogPost" itemscope itemtype="http://schema.org/BlogPosting">
+      <h2><a itemprop="url" href="{{ page.url }}"><span itemprop="headline name">{{ page.title }}</span></a></h2>
+      <p itemprop="description">
+        {% if page.description %}
+        {{ page.description }}
+        {% else %}
+        {{ page.content | strip_html | truncatewords:'30' }}
+        {% endif %}
+      </p>
+    </section>
+  </div>
+{% cycle 'close row': nil, nil, '</div>' %}
 {% endfor %}
-</section>
+{% cycle 'close row': nil, '</div>', '</div>' %}
 <footer class="pagination">
-{% if paginator.previous_page == 1 %}
-  <a href="/" rel="prev start" class="previous">Newer</a>
-{% elsif paginator.previous_page %}
-  <a href="/page{{paginator.previous_page}}" rel="prev" class="previous">Newer</a>
-{% else %}
-  <span class="previous">Newer</span>
-{% endif %}
-<span class="page-number">Page: {{paginator.page}} of {{paginator.total_pages}}</span>
-{% if paginator.next_page %}
-  <a href="/page{{paginator.next_page}}" rel="next" class="next">Older</a>
-{% else %}
-  <span class="next">Older</span>
-{% endif %}
+<div class="pagination pagination-centered pagination-small">
+  <ul>
+  {% if paginator.previous_page %}
+  {%capture prev_page%}/{%if paginator.previous_page > 1%}page{{paginator.previous_page}}{%endif%}{%endcapture%}
+    <li>
+      <a rel="first" title="First Page" href="/"><i class="icon-fast-backward"> </i></a>
+    </li>
+    <li>
+      <a rel="prev" title="Previous Page" href="{{prev_page}}"><i class="icon-step-backward"> </i></a>
+    </li>
+  {% else %}
+    <li class="disabled"><span><i class="icon-fast-backward"> </i></span></li>
+    <li class="disabled"><span><i class="icon-step-backward"> </i></span></li>
+  {% endif %}
+  {% for count in (1..paginator.total_pages) %}
+  {%capture page_num%}/{% if count > 1%}page{{count}}{%endif%}{%endcapture%}
+  {% if count == paginator.page %}
+    <li class="active"><span>{{ count }}</span></li>
+  {% else %}
+    <li>
+      <a href="{{page_num}}">{{ count }}</a>
+    </li>
+  {% endif %}
+  {% endfor %}
+  {% if paginator.total_pages < 5 %}
+    <!-- Adding some dummy filler page refs -->
+    {% capture filler %}{{ paginator.total_pages | plus:'1' }}{% endcapture %}
+    {% for count in (filler..5) %}
+    <li class="disabled"><span>{{ count }}</span></li>
+    {% endfor %}
+  {% endif %}
+  {% if paginator.next_page %}
+    <li>
+      <a rel="next" title="Next Page" href="/page{{ paginator.next_page }}"><i class="icon-step-forward"> </i></a>
+    </li>
+    <li>
+      <a rel="last" title="Last Page" href="/page{{ paginator.total_pages }}"><i class="icon-fast-forward"> </i></a>
+    </li>
+  {% else %}
+    <li class="disabled"><span title="Next Page"><i class="icon-step-forward"> </i></span></li>
+    <li class="disabled"><span title="Last Page"><i class="icon-fast-forward"> </i></span></li>
+  {% endif %}
+  </ul>
+</div>
 </footer>
+</article>
+{% endif %}
 <!--
 <link href="http://google.com/profiles/thekaleb" rel="me" />
 <link href="http://twitter.com/thekaleb" rel="me" />
