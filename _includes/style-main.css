@@ -32,12 +32,10 @@ article, .article, section.category {
 %% Headers and Footers
 -----------------------------------------------------------------{%endcomment%}
 
-header.navbar hgroup.brand { padding:0; }
-.brand h1, .brand h2, .brand a { margin:0; padding:0; color:inherit; font-size:inherit; display:inherit; float:left }
-.brand h2 { font-size:.6em; font-style:italic; padding:0 1em }
+.brand a { color:inherit; }
+.brand small { font-style:italic; font-size:75%; }
+.navbar .brand { padding-left:10px; padding-right:10px; margin:0 0 0 -5px; }
 
-#site-header h1, #site-header h2 { margin:0; }
-#site-header h2 { display:none;font-size:1em; }
 #site-footer img { float:right; }
 
 section.category hgroup h1, section.category hgroup h2 { display:inline; }
