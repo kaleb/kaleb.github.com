@@ -38,27 +38,66 @@
 </p>
 
 </div>
-<section>
+{% if paginator %}
+<section class="container" itemscope itemtype="http://schema.org/Blog">
 <h2 class="visuallyhidden">Web Log</h2>
 {% for page in paginator.posts %}
-{% include post.html %}
+{% cycle 'open row': '<div class="row">', nil, nil %}
+  <div class="span4">
+    <section itemprop="blogPost" itemscope itemtype="http://schema.org/BlogPosting">
+      <h2 itemprop="name"><a href="{{ page.url }}" itemprop="url">{{ page.title }}</a></h2>
+      <p itemprop="description">
+        {% if page.description %}
+        {{ page.description }}
+        {% else %}
+        {{ page.content | strip_html | truncatewords:'30' }}
+        {% endif %}
+      </p>
+    </section>
+  </div>
+{% cycle 'close row': nil, nil, '</div>' %}
 {% endfor %}
+{% cycle 'close row': nil, '</div>', '</div>' %}
 </section>
 <footer class="pagination">
-{% if paginator.previous_page == 1 %}
-  <a href="/" rel="prev start" class="previous">Newer</a>
-{% elsif paginator.previous_page %}
-  <a href="/page{{paginator.previous_page}}" rel="prev" class="previous">Newer</a>
-{% else %}
-  <span class="previous">Newer</span>
-{% endif %}
-<span class="page-number">Page: {{paginator.page}} of {{paginator.total_pages}}</span>
-{% if paginator.next_page %}
-  <a href="/page{{paginator.next_page}}" rel="next" class="next">Older</a>
-{% else %}
-  <span class="next">Older</span>
-{% endif %}
+<div class="pagination pagination-centered pagination-small">
+  <ul>
+  {% if paginator.previous_page %}
+    <li><a href="/" title="First Page"><i class="icon-fast-backward"> </i></a></li>
+    <li>
+      <a href="/{% if paginator.previous_page > 1 %}page{{ paginator.previous_page }}{% endif %}" title="Previous Page">
+        <i class="icon-step-backward"> </i>
+      </a>
+    </li>
+  {% else %}
+    <li class="disabled"><span title="First Page"><i class="icon-fast-backward"> </i></span></li>
+    <li class="disabled"><span title="Previous Page"><i class="icon-step-backward"> </i></span></li>
+  {% endif %}
+  {% for count in (1..paginator.total_pages) %}
+  {% if count == paginator.page %}
+    <li class="active"><span>{{ count }}</span></li>
+  {% else %}
+    <li><a href="/{% if count > 1 %}page{{ count }}{% endif %}">{{ count }}</a></li>
+  {% endif %}
+  {% endfor %}
+  {% if paginator.total_pages < 5 %}
+    <!-- Adding some dummy filler page refs -->
+    {% capture filler %}{{ paginator.total_pages | plus:'1' }}{% endcapture %}
+    {% for count in (filler..5) %}
+    <li class="disabled"><span>{{ count }}</span></li>
+    {% endfor %}
+  {% endif %}
+  {% if paginator.next_page %}
+    <li><a href="/page{{ paginator.next_page }}" title="Next Page"><i class="icon-step-forward"> </i></a></li>
+    <li><a href="/page{{ paginator.total_pages }}" title="Last Page"><i class="icon-fast-forward"> </i></a></li>
+  {% else %}
+    <li class="disabled"><span title="Next Page"><i class="icon-step-forward"> </i></span></li>
+    <li class="disabled"><span title="Last Page"><i class="icon-fast-forward"> </i></span></li>
+  {% endif %}
+  </ul>
+</div>
 </footer>
+{% endif %}
 <!--
 <link href="http://google.com/profiles/thekaleb" rel="me" />
 <link href="http://twitter.com/thekaleb" rel="me" />
