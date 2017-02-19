@@ -11,7 +11,7 @@ author:
   ## Author's title
   title:     Software Engineer
   ## Author's email address
-  email:     kaleb@hornsby.ws
+  email:     kaleb@horns.by
   ## Author's web site
   url:       http://kaleb.horns.by
   ## Author's location
@@ -27,7 +27,7 @@ author:
 
 ## The absolute URL of your site. Should be user.github.com or whatever is in
 ## the root CNAME file
-url:         http://kaleb.hornsby.ws
+url:         http://kaleb.horns.by
 
 ## The name of the site, <title> and <h1> in _layouts/default.html
 title:       Kaleb Hornsby
@@ -36,7 +36,7 @@ title:       Kaleb Hornsby
 description: Software Engineer in Augusta
 
 ## <meta name=keywords> in  /_layouts/default.html, probably not useful anymore.
-keywords:    [ HTML5, CSS3, JavaScript, ES5, Linux ]
+keywords:    [ HTML5, CSS3, JavaScript, Linux ]
 
 ## Splits your posts up over multiple subdirectories called “page2”, “page3”, … “pageN”
 paginate:    6
@@ -61,10 +61,7 @@ markdown:    kramdown
 
 ## Controls the URLs that posts are generated with.
 ## https://github.com/mojombo/jekyll/wiki/Permalinks
-permalink:   /:categories/:title
-
-## Enables or disables Jekyll from recreating the site when files are modified.
-auto:        true
+permalink:   /:categories/:title/
 
 ## Fires up a server that will host your _site directory
 #server:      false
@@ -74,6 +71,9 @@ auto:        true
 
 ##
 #plugins:     ./_plugins
+
+gems:
+- jekyll-paginate
 
 ## Maruku options, if it is being used.
 maruku:
@@ -93,7 +93,7 @@ kramdown:
   footnote_nr: 1
   entity_output: as_char
   toc_levels: 1..6
-  use_coderay: true
+  enable_coderay: true
   
   coderay:
     coderay_wrap: div
@@ -111,7 +111,7 @@ kramdown:
 #lsi:         false
 
 ## Enables highlight tag with Pygments.
-pygments:    yes
+highlighter:    yes
 
 ##
 #safe:        false
