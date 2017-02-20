@@ -1,1 +1,1 @@
-http://git.kaleb.hornsby.ws/
+http://git.kaleb.horns.by/
