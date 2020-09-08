@@ -1,0 +1,29 @@
+{
+  "name": "@kaleb/kaleb.horns.by",
+  "version": "0.0.0",
+  "description": "My Site",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "dependencies": {
+    "@11ty/eleventy": "^0.11.0"
+  },
+  "devDependencies": {
+    "@11ty/eleventy-plugin-syntaxhighlight": "^3.0.1"
+  },
+  "scripts": {
+    "start": "eleventy --serve",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kaleb/kaleb.github.com.git"
+  },
+  "author": "Kaleb Hornsby <kaleb@horns.by> (http://kaleb.horns.by/)",
+  "license": "UNLICENSED",
+  "bugs": {
+    "url": "https://github.com/kaleb/kaleb.github.com/issues"
+  },
+  "homepage": "https://github.com/kaleb/kaleb.github.com#readme"
+}
