@@ -1,5 +1,5 @@
 ---
-layout: nil
+layout: null
 ---
 /* the humans responsible & colophon */
 /* humanstxt.org */
