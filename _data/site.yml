@@ -121,3 +121,5 @@ highlighter:    yes
 
 ## Changes the directory where Jekyll will write files to
 #destination: ./_site
+
+time: "now"

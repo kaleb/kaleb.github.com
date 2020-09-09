@@ -1,5 +1,6 @@
 // @ts-check
 const syntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight");
+const yaml = require('js-yaml');
 
 /**
  * 
@@ -10,6 +11,8 @@ module.exports = eleventyConfig => {
 
     eleventyConfig.addPlugin(syntaxHighlight);
     eleventyConfig.addFilter('date_to_long_string', dateToLongString);
+    eleventyConfig.addDataExtension("yml", contents => yaml.safeLoad(contents));
+    eleventyConfig.setDataDeepMerge(true);
     eleventyConfig.addCollection('posts', collectionApi =>  collectionApi
         .getFilteredByGlob('**/_posts/*.{md,html}')
         .filter(x => x.data.published !== false));
