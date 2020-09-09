@@ -2,11 +2,17 @@
     layout:      master
     description: Software Developer in Augusta, GA
     categories:  [ HTML5, CSS3, JavaScript, ES5, Linux ]
+    pagination:
+      data: collections.posts
+      size: 6
+      alias: posts
+      reverse: true
+    permalink: "{% if pagination.pageNumber > 0 %}page{{ pagination.pageNumber | plus:1 }}/{% endif %}index.html"
 ---
 <div class="article clearfix">
 <div id="SE-flair">
 <img width="208" height="58" alt="profile for kzh on Stack Exchange" usemap="#SE_img_map" 
-    src="https://stackexchange.com/users/flair/d67268b6910a49d8810f22b34b1081f9.png">
+    src="https://stackexchange.com/users/flair/48383.png">
 <map id="SE_img_map" name="SE_img_map">
   <area shape="rect" alt="Stack Overflow" title="Stack Overflow" rel="me"
     href="https://stackoverflow.com/users/143739" coords="58,36,78,56">
@@ -40,19 +46,19 @@
 </p>
 
 </div>
-{% if paginator %}
+{% if pagination %}
 <article role="main" itemscope itemtype="http://schema.org/Blog" class="container">
 <h1 class="visuallyhidden">Web Log</h1>
-{% for page in paginator.posts %}
+{% for post in posts %}
 {% cycle 'open row': '<div class="row">', nil, nil %}
   <div class="span4">
     <section itemprop="blogPost" itemscope itemtype="http://schema.org/BlogPosting">
-      <h2><a itemprop="url" href="{{ page.url }}"><span itemprop="headline name">{{ page.title }}</span></a></h2>
+      <h2><a itemprop="url" href="{{ post.url }}"><span itemprop="headline name">{{ post.data.title }}</span></a></h2>
       <p itemprop="description">
-        {% if page.description %}
-        {{ page.description }}
+        {% if post.data.description %}
+        {{ post.data.description }}
         {% else %}
-        {{ page.content | strip_html | truncatewords:'30' }}
+        {{ post.templateContent | strip_html | truncatewords:'30' }}
         {% endif %}
       </p>
     </section>
@@ -63,41 +69,39 @@
 <footer class="pagination">
 <div class="pagination pagination-centered pagination-small">
   <ul>
-  {% if paginator.previous_page %}
-  {%capture prev_page%}/{%if paginator.previous_page > 1%}page{{paginator.previous_page}}{%endif%}{%endcapture%}
+  {% if pagination.href.previous %}
     <li>
-      <a rel="first" title="First Page" href="/"><i class="icon-fast-backward"> </i></a>
+      <a rel="first" title="First Page" href="{{pagination.href.first}}"><i class="icon-fast-backward"> </i></a>
     </li>
     <li>
-      <a rel="prev" title="Previous Page" href="{{prev_page}}"><i class="icon-step-backward"> </i></a>
+      <a rel="prev" title="Previous Page" href="{{pagination.href.previous}}"><i class="icon-step-backward"> </i></a>
     </li>
   {% else %}
     <li class="disabled"><span><i class="icon-fast-backward"> </i></span></li>
     <li class="disabled"><span><i class="icon-step-backward"> </i></span></li>
   {% endif %}
-  {% for count in (1..paginator.total_pages) %}
-  {%capture page_num%}/{% if count > 1%}page{{count}}{%endif%}{%endcapture%}
-  {% if count == paginator.page %}
-    <li class="active"><span>{{ count }}</span></li>
+  {% for href in pagination.hrefs %}
+  {% if href == page.url %}
+    <li class="active"><span>{{ forloop.index }}</span></li>
   {% else %}
     <li>
-      <a href="{{page_num}}">{{ count }}</a>
+      <a href="{{href}}">{{ forloop.index }}</a>
     </li>
   {% endif %}
   {% endfor %}
-  {% if paginator.total_pages < 5 %}
+  {% if pagination.pages.length < 5 %}
     <!-- Adding some dummy filler page refs -->
-    {% capture filler %}{{ paginator.total_pages | plus:'1' }}{% endcapture %}
+    {% capture filler %}{{ pagination.pages.length | plus:'1' }}{% endcapture %}
     {% for count in (filler..5) %}
     <li class="disabled"><span>{{ count }}</span></li>
     {% endfor %}
   {% endif %}
-  {% if paginator.next_page %}
+  {% if pagination.href.next %}
     <li>
-      <a rel="next" title="Next Page" href="/page{{ paginator.next_page }}"><i class="icon-step-forward"> </i></a>
+      <a rel="next" title="Next Page" href="{{ pagination.href.next }}"><i class="icon-step-forward"> </i></a>
     </li>
     <li>
-      <a rel="last" title="Last Page" href="/page{{ paginator.total_pages }}"><i class="icon-fast-forward"> </i></a>
+      <a rel="last" title="Last Page" href="{{ pagination.href.last }}"><i class="icon-fast-forward"> </i></a>
     </li>
   {% else %}
     <li class="disabled"><span title="Next Page"><i class="icon-step-forward"> </i></span></li>
