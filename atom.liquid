@@ -1,23 +1,24 @@
 ---
 layout: null
+permalink: _/atom.xml
 ---
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>{{ site.title }}</title>
   <link href="{{ site.url }}/+/atom.xml" rel="self"/>
   <link href="{{ site.url }}"/>
-  <updated>{{ site.time | date_to_xmlschema }}</updated>
+  <updated>{{ site.time | to_date | date_to_xmlschema }}</updated>
   <id>{{ site.url }}/</id>
   <author>
     <name>{{ site.author.name }}</name>
     <email>{{ site.author.email }}</email>
-  </author>{% for post in site.posts %}
+  </author>{% for post in collections.posts %}
   <entry>
-    <title>{{ post.title }}</title>
+    <title>{{ post.data.title }}</title>
     <link href="{{site.url}}{{ post.url }}"/>
     <updated>{{ post.date | date_to_xmlschema }}</updated>
     <id>{{ site.url }}{{ post.id }}</id>
     {% if post.categories and post.categories[0] %}<category term="{{ post.categories | join: "."}}" scheme="{{ site.url }}/{{ post.categories | join: "/" }}" />{% endif %}
-    <content type="html">{{ post.content | xml_escape }}</content>
+    <content type="html">{{ post.templateContent | xml_escape }}</content>
   </entry>{% endfor %}
 </feed>

@@ -1,6 +1,8 @@
 // @ts-check
 const syntaxHighlight = require('@11ty/eleventy-plugin-syntaxhighlight');
 const yaml = require('js-yaml');
+const {XmlEntities} = require('html-entities');
+const xmlFiltersPlugin = require('eleventy-xml-plugin');
 const POSTS = '**/_posts/*.{md,html}'
 
 const categories = {
@@ -25,12 +27,18 @@ module.exports = eleventyConfig => {
 
     eleventyConfig.addPlugin(syntaxHighlight);
     eleventyConfig.addFilter('date_to_long_string', dateToLongString);
-    eleventyConfig.addFilter('date_to_xmlschema', dateToIsoString);
+    eleventyConfig.addFilter('to_date', toDate);
+    eleventyConfig.addPlugin(xmlFiltersPlugin);
+    eleventyConfig.liquidFilters['xml_escape'] = function (args) {
+        // fix broken filter
+        return XmlEntities.encode(args);
+    }
     eleventyConfig.addDataExtension('yml', contents => yaml.safeLoad(contents));
     eleventyConfig.setDataDeepMerge(true);
     eleventyConfig.addCollection('posts', collectionApi => collectionApi
         .getFilteredByGlob(POSTS)
-        .filter(isPublished));
+        .filter(isPublished)
+        .reverse());
     addCategories(categories);
     return {
         dir: {
@@ -85,9 +93,12 @@ const months = [
 const dateToLongString = date => `${date.getDate()} ${months[date.getMonth()]} ${date.getFullYear()}`;
 
 /**
- * @param {Date} date 
+ * @param {Date|'now'} date 
  */
-const dateToIsoString = date => date.toISOString();
+const toDate = date => {
+    if (date === 'now') date = new Date();
+    return date;
+}
 
 /**
  * 
