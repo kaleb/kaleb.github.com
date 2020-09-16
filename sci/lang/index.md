@@ -10,11 +10,5 @@ layout: default
 </a>
 I am interested in both <a href='http://en.wikipedia.org/wiki/Natural_language'>natural</a> and <a href='http://en.wikipedia.org/wiki/Constructed_language'>constructed</a> human language, linguistics, and <a href='http://en.wikipedia.org/wiki/Philology'>philology</a>.
 
-Posts
------
-
-{% for post in site.categories.lang %}
-{% if post.categories[0] == 'sci' %}
-- [{{ post.title }}]({{ post.url }})
-{% endif %}
-{% endfor %}
+{% assign posts = collections['sci.lang'] %}
+{% include category.md %}

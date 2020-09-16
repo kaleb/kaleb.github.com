@@ -35,7 +35,7 @@ Links
 
 - [Git vs. Mercurial][2]
 
-{% assign posts = site.categories.comp %}
+{% assign posts = collections.comp %}
 {% include category.md %}
 
 [SO Profile]: http://stackoverflow.com/users/143739

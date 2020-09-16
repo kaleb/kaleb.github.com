@@ -6,7 +6,6 @@
       data: collections.posts
       size: 6
       alias: posts
-      reverse: true
     permalink: "{% if pagination.pageNumber > 0 %}page{{ pagination.pageNumber | plus:1 }}/{% endif %}index.html"
 ---
 <div class="article clearfix">
@@ -49,64 +48,65 @@
 {% if pagination %}
 <article role="main" itemscope itemtype="http://schema.org/Blog" class="container">
 <h1 class="visuallyhidden">Web Log</h1>
-{% for post in posts %}
-{% cycle 'open row': '<div class="row">', nil, nil %}
+{% for post in posts -%}
+{% assign column = forloop.index | modulo: 3 -%}
+{%- if column == '1' %}<div class="row">{% endif %}
   <div class="span4">
     <section itemprop="blogPost" itemscope itemtype="http://schema.org/BlogPosting">
       <h2><a itemprop="url" href="{{ post.url }}"><span itemprop="headline name">{{ post.data.title }}</span></a></h2>
       <p itemprop="description">
-        {% if post.data.description %}
+        {%- if post.data.description %}
         {{ post.data.description }}
-        {% else %}
+        {%- else %}
         {{ post.templateContent | strip_html | truncatewords:'30' }}
-        {% endif %}
+        {%- endif %}
       </p>
     </section>
   </div>
-{% cycle 'close row': nil, nil, '</div>' %}
-{% endfor %}
-{% cycle 'close row': nil, '</div>', '</div>' %}
+{% if column == '0' %}</div><!-- /.row -->{% endif %}
+{%- endfor -%}
+{% if column != '0' %}</div><!-- /.row -->{% endif %}
 <footer class="pagination">
 <div class="pagination pagination-centered pagination-small">
   <ul>
-  {% if pagination.href.previous %}
+  {%- if pagination.href.previous %}
     <li>
       <a rel="first" title="First Page" href="{{pagination.href.first}}"><i class="icon-fast-backward"> </i></a>
     </li>
     <li>
       <a rel="prev" title="Previous Page" href="{{pagination.href.previous}}"><i class="icon-step-backward"> </i></a>
     </li>
-  {% else %}
+  {%- else %}
     <li class="disabled"><span><i class="icon-fast-backward"> </i></span></li>
     <li class="disabled"><span><i class="icon-step-backward"> </i></span></li>
-  {% endif %}
-  {% for href in pagination.hrefs %}
-  {% if href == page.url %}
+  {%- endif %}
+  {%- for href in pagination.hrefs %}
+  {%- if href == page.url %}
     <li class="active"><span>{{ forloop.index }}</span></li>
-  {% else %}
+  {%- else %}
     <li>
       <a href="{{href}}">{{ forloop.index }}</a>
     </li>
-  {% endif %}
-  {% endfor %}
-  {% if pagination.pages.length < 5 %}
+  {%- endif %}
+  {%- endfor %}
+  {%- if pagination.pages.length < 5 %}
     <!-- Adding some dummy filler page refs -->
-    {% capture filler %}{{ pagination.pages.length | plus:'1' }}{% endcapture %}
-    {% for count in (filler..5) %}
+    {%- capture filler %}{{ pagination.pages.length | plus:'1' }}{% endcapture %}
+    {%- for count in (filler..5) %}
     <li class="disabled"><span>{{ count }}</span></li>
-    {% endfor %}
-  {% endif %}
-  {% if pagination.href.next %}
+    {%- endfor %}
+  {%- endif %}
+  {%- if pagination.href.next %}
     <li>
       <a rel="next" title="Next Page" href="{{ pagination.href.next }}"><i class="icon-step-forward"> </i></a>
     </li>
     <li>
       <a rel="last" title="Last Page" href="{{ pagination.href.last }}"><i class="icon-fast-forward"> </i></a>
     </li>
-  {% else %}
+  {%- else %}
     <li class="disabled"><span title="Next Page"><i class="icon-step-forward"> </i></span></li>
     <li class="disabled"><span title="Last Page"><i class="icon-fast-forward"> </i></span></li>
-  {% endif %}
+  {%- endif %}
   </ul>
 </div>
 </footer>

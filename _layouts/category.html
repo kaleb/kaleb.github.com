@@ -3,7 +3,7 @@ layout: master
 ---
 <section class="category">
 <hgroup>
-{% for i in page.hierarchy reversed %}
+{% for i in hierarchy reversed %}
   {% unless forloop.first %}
     {% capture href %}{{ href }}../{% endcapture %}
     {% capture h1 %}<a href="{{ href }}">{{ i }}</a>.{{ h1 }}{% endcapture %}
@@ -12,17 +12,17 @@ layout: master
   {% endunless %}
 {% endfor %}
 <h1>{% if h1 %}{{ h1 }}{% else %}{{ page.h1 }}{% endif %}:</h1>
-{% if page.subtitle %}<h2>{{ page.subtitle }}</h2>{% endif %}
+{% if subtitle %}<h2>{{ subtitle }}</h2>{% endif %}
 </hgroup>
 <div>
 <p itemprop="description">
-  {{ page.description }}
+  {{ description }}
 </p>
 {{ content }}
-{% if page.subpages %}
+{% if subpages %}
 <h2>Subpages</h2>
 <ul class="subpages">
-{% for subpage in page.subpages %}
+{% for subpage in subpages %}
   <li><a href="{{subpage}}">{{subpage}}</a></li>
 {% endfor %}
 </ul>

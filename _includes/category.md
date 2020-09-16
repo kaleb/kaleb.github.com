@@ -3,5 +3,5 @@ Posts
 -----
 
 {% for post in posts %}
-- [{{ post.title }}]({{ post.url }}){% endfor %}
+- [{{ post.data.title }}]({{ post.url }}){% endfor %}
 {% endif %}

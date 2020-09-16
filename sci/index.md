@@ -10,5 +10,5 @@ Links
 
 - [http://hasthelargehadroncolliderdestroyedtheworldyet.com/](http://hasthelargehadroncolliderdestroyedtheworldyet.com)
 
-{% assign posts = site.categories.sci %}
+{% assign posts = collections.sci %}
 {% include category.md %}

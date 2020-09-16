@@ -1,6 +1,6 @@
 <article class="post" itemscope="itemscope" itemtype="http://schema.org/BlogPosting">
   <header>
-    <h1 itemprop="name"><a href="{{ page.url }}">{{ page.title }}</a></h1>
+    <h1 itemprop="name"><a href="{{ page.url }}">{{ title }}</a></h1>
     <div class="posted">posted
     {% if page.date %}
     <time pubdate="pubdate" datetime="{{ page.date | date_to_xmlschema }}">
@@ -18,10 +18,10 @@
     {% endif %}
     <span>
     {% endif %}
-    {% if page.categories and page.categories[0] %}
+    {% if categories and categories[0] %}
     in
     <span class="categories" itemprop="articleSection">
-      {% assign previous_category = '' %}{% for category in page.categories %}{% capture previous_category %}{{ previous_category }}/{{ category }}{% endcapture %}{% unless forloop.first %}.{% endunless %}<a href="{{ previous_category }}" rel="tag">{{ category }}</a>{% endfor %}
+      {% assign previous_category = '' %}{% for category in categories %}{% capture previous_category %}{{ previous_category }}/{{ category }}{% endcapture %}{% unless forloop.first %}.{% endunless %}<a href="{{ previous_category }}" rel="tag">{{ category }}</a>{% endfor %}
     </span>
     {% endif %}
     </div>
