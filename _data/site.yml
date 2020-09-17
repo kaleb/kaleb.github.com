@@ -5,17 +5,6 @@
 
 ## Site author's information.
 author:
-  ## Author's name, <meta name=author> in _layouts/default.html and used in
-  ## humans.txt
-  name:      Kaleb Hornsby
-  ## Author's title
-  title:     Software Engineer
-  ## Author's email address
-  email:     kaleb@horns.by
-  ## Author's web site
-  url:       http://kaleb.horns.by
-  ## Author's location
-  location:  "Augusta, GA, US"
   ## Author's github user name
   gh:
     user:    kaleb

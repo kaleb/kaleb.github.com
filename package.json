@@ -3,29 +3,31 @@
   "version": "0.0.0",
   "description": "My Site",
   "main": "index.js",
-  "directories": {
-    "test": "test"
-  },
+  "directories": {},
   "dependencies": {
-    "@11ty/eleventy": "^0.11.0"
   },
   "devDependencies": {
+    "@11ty/eleventy": "^0.11.0",
     "@11ty/eleventy-plugin-syntaxhighlight": "^3.0.1",
     "eleventy-xml-plugin": "^0.1.0",
     "js-yaml": "^3.14.0"
   },
   "scripts": {
     "start": "eleventy --serve",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "eleventy"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/kaleb/kaleb.github.com.git"
+  "repository": "kaleb/kaleb.github.com",
+  "author": {
+    "name": "Kaleb Hornsby",
+    "email": "kaleb@horns.by",
+    "url": "https://kaleb.horns.by",
+    "twitter": "thekaleb",
+    "location": "Augusta, GA"
   },
-  "author": "Kaleb Hornsby <kaleb@horns.by> (http://kaleb.horns.by/)",
   "license": "UNLICENSED",
   "bugs": {
     "url": "https://github.com/kaleb/kaleb.github.com/issues"
   },
-  "homepage": "https://github.com/kaleb/kaleb.github.com#readme"
+  "homepage": "https://kaleb.horns.by"
 }

@@ -9,7 +9,7 @@
 <title>{% if page.hierarchy %}{{ page.hierarchy | join:'.' }}{% else %}{{ page.title }}{% endif %}{% if page.subtitle %}: {{ page.subtitle }}{% endif %}{% unless paginator.page %} | {% endunless %}{{ site.title }}{% if paginator.page > 1 %} | Page {{ paginator.page }}{% endif %}</title>
 <meta name="description" content="{{ page.description }}">
 {% if page.categories %}<meta name="keywords" content="{{ page.categories | join: ',' }}">{% endif %}
-<meta name="author" content="{%if page.author%}{{page.author}}{%else%}{{site.author.name}}{%endif%}">
+<meta name="author" content="{%if page.author%}{{page.author}}{%else%}{{pkg.author.name}}{%endif%}">
 {% comment %}
 	Mobile viewport optimized: http://j.mp/bplateviewport
 {% endcomment %}
