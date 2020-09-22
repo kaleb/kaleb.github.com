@@ -55,7 +55,7 @@
   <div class="span4">
     <section class="h-entry" itemprop="blogPost" itemscope itemtype="http://schema.org/BlogPosting">
       <h2><a class="u-url" itemprop="url" href="{{ post.url }}"><span class="p-name" itemprop="headline name">{{ post.data.title }}</span></a></h2>
-      <p itemprop="description">
+      <p class="p-summary" itemprop="description">
         {%- if post.data.description %}
         {{ post.data.description }}
         {%- else %}
