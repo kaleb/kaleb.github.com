@@ -47,14 +47,14 @@
 
 </div>
 {% if pagination %}
-<article role="main" itemscope itemtype="http://schema.org/Blog" class="container">
-<h1 class="visuallyhidden">Web Log</h1>
+<article role="main" itemscope itemtype="http://schema.org/Blog" class="container h-feed">
+<h1 class="p-name visuallyhidden">Web Log</h1>
 {% for post in posts -%}
 {% assign column = forloop.index | modulo: 3 -%}
 {%- if column == '1' %}<div class="row">{% endif %}
   <div class="span4">
-    <section itemprop="blogPost" itemscope itemtype="http://schema.org/BlogPosting">
-      <h2><a itemprop="url" href="{{ post.url }}"><span itemprop="headline name">{{ post.data.title }}</span></a></h2>
+    <section class="h-entry" itemprop="blogPost" itemscope itemtype="http://schema.org/BlogPosting">
+      <h2><a class="u-url" itemprop="url" href="{{ post.url }}"><span class="p-name" itemprop="headline name">{{ post.data.title }}</span></a></h2>
       <p itemprop="description">
         {%- if post.data.description %}
         {{ post.data.description }}

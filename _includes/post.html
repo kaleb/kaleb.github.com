@@ -1,4 +1,4 @@
-<article class="post" itemscope="itemscope" itemtype="http://schema.org/BlogPosting">
+<article class="post h-entry" itemscope="itemscope" itemtype="http://schema.org/BlogPosting">
   <header>
     <h1 itemprop="name"><a href="{{ page.url }}">{{ title }}</a></h1>
     <div class="posted">posted
@@ -26,7 +26,7 @@
     {% endif %}
     </div>
   </header>
-  <div itemprop="articleBody">
+  <div class="e-content" itemprop="articleBody">
   {% if content %}{{ content }}{% else %}{{ page.content }}{% endif %}
   </div>
   {% if site.related_posts %}
