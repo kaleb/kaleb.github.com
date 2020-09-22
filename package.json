@@ -2,7 +2,7 @@
   "name": "@kaleb/kaleb.horns.by",
   "version": "0.0.0",
   "description": "My Site",
-  "main": "index.js",
+  "main": ".eleventy.js",
   "directories": {},
   "dependencies": {
   },

@@ -21,7 +21,7 @@ const categories = {
  * @param {import('@11ty/eleventy/src/UserConfig')} eleventyConfig 
  */
 module.exports = eleventyConfig => {
-    '_ robots.txt favicon.ico *.png'
+    '_ robots.txt favicon.ico *.png admin/config.yml'
         .split(' ')
         .forEach(file => eleventyConfig.addPassthroughCopy(file));
 
