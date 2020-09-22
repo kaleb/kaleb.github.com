@@ -1,5 +1,6 @@
 // @ts-check
 const syntaxHighlight = require('@11ty/eleventy-plugin-syntaxhighlight');
+const fs = require('fs');
 const yaml = require('js-yaml');
 const {XmlEntities} = require('html-entities');
 const xmlFiltersPlugin = require('eleventy-xml-plugin');
@@ -21,9 +22,27 @@ const categories = {
  * @param {import('@11ty/eleventy/src/UserConfig')} eleventyConfig 
  */
 module.exports = eleventyConfig => {
-    '_ robots.txt favicon.ico *.png admin/config.yml'
+    '_ robots.txt favicon.ico *.png admin/config.yml _redirects'
         .split(' ')
         .forEach(file => eleventyConfig.addPassthroughCopy(file));
+
+    // Add 404 handling for development server
+    eleventyConfig.setBrowserSyncConfig({
+        callbacks: {
+            ready: function(err, bs) {
+                bs.addMiddleware("*", (req, res) => {
+                    const content_404 = fs.readFileSync('_site/404/index.html');
+                    // Provides the 404 content without redirect.
+                    res.write(content_404);
+                    // Add 404 http status code in request header.
+                    // res.writeHead(404, { "Content-Type": "text/html" });
+                    res.writeHead(404);
+                    res.end();
+                });
+            }
+        }
+    });
+
 
     eleventyConfig.addPlugin(syntaxHighlight);
     eleventyConfig.addFilter('date_to_long_string', dateToLongString);
